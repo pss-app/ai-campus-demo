@@ -1,0 +1,4 @@
+import type { Lesson } from '@/domain/types';
+import { ObjectiveSection } from './objective-section';
+import { LessonOutline } from './lesson-outline';
+export function LessonRenderer({lesson}:{lesson:Lesson}){return <><LessonOutline lesson={lesson}/>{lesson.objectives.map((o,i)=><ObjectiveSection key={o.id} objective={o} index={i}/>)}<section className="lesson-summary"><h2>確認問題の前に、おさらい</h2><ul>{lesson.objectives.map(o=><li key={o.id}>{o.keyPoint}</li>)}</ul><p>説明できないところがあれば、上の解説に戻って確かめてください。</p></section>{lesson.sources.some(s=>s.startsWith('https://'))&&<details className="supporting"><summary>参考資料（公式の解説）</summary><ul>{lesson.sources.filter(s=>s.startsWith('https://')).map((s,i)=><li key={s}><a href={s} target="_blank" rel="noreferrer">参考資料 {i+1}：{new URL(s).hostname}（別タブ）</a></li>)}</ul></details>}</>;}

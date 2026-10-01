@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "PC05",
+  "lessonVersion": 1,
+  "questions": [
+    {
+      "prompt": "ストレージに当たるものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "SSD"
+        },
+        {
+          "id": "c2",
+          "text": "HDD"
+        },
+        {
+          "id": "c3",
+          "text": "ディスプレイ"
+        },
+        {
+          "id": "c4",
+          "text": "マイク"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2"
+      ],
+      "explanation": "SSDとHDDは保存用の記憶装置です。",
+      "id": "PC05-O1-Q1",
+      "version": 1,
+      "objectiveId": "PC05-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC05-O1-needs-review",
+      "objectiveTitle": "SSDとHDD",
+      "hint": "記録方式と、どこに取り付けるかを分けます。",
+      "remediation": "SSDとHDDは方式の違い、内蔵と外付けは取り付け方の違いです。どちらも故障しない保証はありません。",
+      "example": "PC内のSSDから外付けSSDへ文書をコピーする場合、どちらも物理的な保存装置です。"
+    },
+    {
+      "prompt": "適切な説明はどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "外付けSSDは必ずインターネット上にある"
+        },
+        {
+          "id": "c2",
+          "text": "内蔵と外付けは取り付け方の違い"
+        },
+        {
+          "id": "c3",
+          "text": "SSDは文書を編集するアプリの名前"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "外付けはPCの外から接続する方式です。",
+      "id": "PC05-O1-Q2",
+      "version": 1,
+      "objectiveId": "PC05-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC05-O1-needs-review",
+      "objectiveTitle": "SSDとHDD",
+      "hint": "記録方式と、どこに取り付けるかを分けます。",
+      "remediation": "SSDとHDDは方式の違い、内蔵と外付けは取り付け方の違いです。どちらも故障しない保証はありません。",
+      "example": "PC内のSSDから外付けSSDへ文書をコピーする場合、どちらも物理的な保存装置です。"
+    },
+    {
+      "prompt": "SSDとHDDに共通する説明をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "ファイル保存に使う"
+        },
+        {
+          "id": "c2",
+          "text": "通常は電源を切っても記録を保持する"
+        },
+        {
+          "id": "c3",
+          "text": "絶対に故障しない"
+        },
+        {
+          "id": "c4",
+          "text": "どちらも回転するディスクを使う"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2"
+      ],
+      "explanation": "保存機能は共通しますが、記録方式と故障可能性を区別します。",
+      "id": "PC05-O1-Q3",
+      "version": 1,
+      "objectiveId": "PC05-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC05-O1-needs-review",
+      "objectiveTitle": "SSDとHDD",
+      "hint": "記録方式と、どこに取り付けるかを分けます。",
+      "remediation": "SSDとHDDは方式の違い、内蔵と外付けは取り付け方の違いです。どちらも故障しない保証はありません。",
+      "example": "PC内のSSDから外付けSSDへ文書をコピーする場合、どちらも物理的な保存装置です。"
+    },
+    {
+      "prompt": "保存先の容量は500GB、使用済みは480GBです。概算の空きは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "20GB"
+        },
+        {
+          "id": "c2",
+          "text": "480GB"
+        },
+        {
+          "id": "c3",
+          "text": "980GB"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "全体から使用済みを引いた量が概算の空きです。",
+      "id": "PC05-O2-Q1",
+      "version": 1,
+      "objectiveId": "PC05-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC05-O2-needs-review",
+      "objectiveTitle": "容量・空き容量・速さ",
+      "hint": "全体の容量と、今使える量を分けます。",
+      "remediation": "購入時の容量が大きくても、既に使っていれば空きは少なくなります。保存先ごとに確認します。",
+      "example": "空きが1GBの保存先に、2GBのファイルをそのまま保存することはできません。どの保存先の空きかも確認します。"
+    },
+    {
+      "prompt": "適切な説明をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "容量と読み書きの速さは別の特性"
+        },
+        {
+          "id": "c2",
+          "text": "空き容量は保存先ごとに確認する"
+        },
+        {
+          "id": "c3",
+          "text": "2TBなら1TBより必ず2倍速い"
+        },
+        {
+          "id": "c4",
+          "text": "保存できる数はファイルの大きさにもよる"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2",
+        "c4"
+      ],
+      "explanation": "量と速さを混同しないことが大切です。",
+      "id": "PC05-O2-Q2",
+      "version": 1,
+      "objectiveId": "PC05-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC05-O2-needs-review",
+      "objectiveTitle": "容量・空き容量・速さ",
+      "hint": "全体の容量と、今使える量を分けます。",
+      "remediation": "購入時の容量が大きくても、既に使っていれば空きは少なくなります。保存先ごとに確認します。",
+      "example": "空きが1GBの保存先に、2GBのファイルをそのまま保存することはできません。どの保存先の空きかも確認します。"
+    },
+    {
+      "prompt": "保存できないとき、まず確認に役立つ情報は？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "保存先と、その空き容量、ファイルの大きさ"
+        },
+        {
+          "id": "c2",
+          "text": "マウスの形だけ"
+        },
+        {
+          "id": "c3",
+          "text": "ディスプレイの色だけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "保存先の状態と保存する情報量を照合します。",
+      "id": "PC05-O2-Q3",
+      "version": 1,
+      "objectiveId": "PC05-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC05-O2-needs-review",
+      "objectiveTitle": "容量・空き容量・速さ",
+      "hint": "全体の容量と、今使える量を分けます。",
+      "remediation": "購入時の容量が大きくても、既に使っていれば空きは少なくなります。保存先ごとに確認します。",
+      "example": "空きが1GBの保存先に、2GBのファイルをそのまま保存することはできません。どの保存先の空きかも確認します。"
+    },
+    {
+      "prompt": "同じSSDの別フォルダにコピーした場合、残るリスクは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "SSD自体の故障で両方失う可能性"
+        },
+        {
+          "id": "c2",
+          "text": "元の文書が必ずアプリになる"
+        },
+        {
+          "id": "c3",
+          "text": "コピーすると必ず文字化けする"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "コピーが同じ装置に依存しています。",
+      "id": "PC05-O3-Q1",
+      "version": 1,
+      "objectiveId": "PC05-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC05-O3-needs-review",
+      "objectiveTitle": "保存してあっても失うことがある",
+      "hint": "何が壊れたときに、どこから戻せるかを考えます。",
+      "remediation": "コピーの所在と、復旧できることの確認が重要です。「二つある」だけで装置故障への備えとは言えません。",
+      "example": "文書を同じSSD内の二つのフォルダに置くだけでは、そのSSDの故障に備えた別保存先にはなりません。"
+    },
+    {
+      "prompt": "バックアップで確認する項目をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "どこに保存しているか"
+        },
+        {
+          "id": "c2",
+          "text": "必要な内容が含まれるか"
+        },
+        {
+          "id": "c3",
+          "text": "復旧用コピーを取り出せるか"
+        },
+        {
+          "id": "c4",
+          "text": "名前にbackupと付けば必ず安全か"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "explanation": "名前ではなく、所在・内容・復旧可能性を確認します。",
+      "id": "PC05-O3-Q2",
+      "version": 1,
+      "objectiveId": "PC05-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC05-O3-needs-review",
+      "objectiveTitle": "保存してあっても失うことがある",
+      "hint": "何が壊れたときに、どこから戻せるかを考えます。",
+      "remediation": "コピーの所在と、復旧できることの確認が重要です。「二つある」だけで装置故障への備えとは言えません。",
+      "example": "文書を同じSSD内の二つのフォルダに置くだけでは、そのSSDの故障に備えた別保存先にはなりません。"
+    },
+    {
+      "prompt": "バックアップの練習方法として適切なのは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "重要な原本を削除してから試す"
+        },
+        {
+          "id": "c2",
+          "text": "サンプルを使い、元を残してコピーを取り出してみる"
+        },
+        {
+          "id": "c3",
+          "text": "確認せず完了とする"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "大切な情報を失わずに手順を確認します。",
+      "id": "PC05-O3-Q3",
+      "version": 1,
+      "objectiveId": "PC05-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC05-O3-needs-review",
+      "objectiveTitle": "保存してあっても失うことがある",
+      "hint": "何が壊れたときに、どこから戻せるかを考えます。",
+      "remediation": "コピーの所在と、復旧できることの確認が重要です。「二つある」だけで装置故障への備えとは言えません。",
+      "example": "文書を同じSSD内の二つのフォルダに置くだけでは、そのSSDの故障に備えた別保存先にはなりません。"
+    }
+  ]
+}

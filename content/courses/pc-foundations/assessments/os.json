@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "PC08",
+  "lessonVersion": 1,
+  "questions": [
+    {
+      "prompt": "OSに当たるものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Windows"
+        },
+        {
+          "id": "c2",
+          "text": "macOS"
+        },
+        {
+          "id": "c3",
+          "text": "Excel"
+        },
+        {
+          "id": "c4",
+          "text": "SSD"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2"
+      ],
+      "explanation": "WindowsとmacOSはOSです。Excelはアプリ、SSDは機器です。",
+      "id": "PC08-O1-Q1",
+      "version": 1,
+      "objectiveId": "PC08-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC08-O1-needs-review",
+      "objectiveTitle": "OSが仲介するもの",
+      "hint": "機器そのものと、機器を管理するソフトウェアを区別します。",
+      "remediation": "OSはアプリと機器の間で働くソフトウェアです。機種名だけでOSの版まで特定できるとは限りません。",
+      "example": "「このPCで使えますか」と聞く際、本体の名前だけでなくOS名とその版を伝えると、確認の手掛かりになります。"
+    },
+    {
+      "prompt": "OSの役割として適切なのは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "機器の資源やアプリの動作を管理する"
+        },
+        {
+          "id": "c2",
+          "text": "紙を印刷する物理装置"
+        },
+        {
+          "id": "c3",
+          "text": "画像ファイルそのもの"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "OSはPCの動作を管理するソフトウェアです。",
+      "id": "PC08-O1-Q2",
+      "version": 1,
+      "objectiveId": "PC08-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC08-O1-needs-review",
+      "objectiveTitle": "OSが仲介するもの",
+      "hint": "機器そのものと、機器を管理するソフトウェアを区別します。",
+      "remediation": "OSはアプリと機器の間で働くソフトウェアです。機種名だけでOSの版まで特定できるとは限りません。",
+      "example": "「このPCで使えますか」と聞く際、本体の名前だけでなくOS名とその版を伝えると、確認の手掛かりになります。"
+    },
+    {
+      "prompt": "アプリの対応を相談するとき有用な情報を選んでください。",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "OS名と版"
+        },
+        {
+          "id": "c2",
+          "text": "本体の色だけ"
+        },
+        {
+          "id": "c3",
+          "text": "キーボードに置いた手の位置"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "対応環境を確認する基礎情報です。",
+      "id": "PC08-O1-Q3",
+      "version": 1,
+      "objectiveId": "PC08-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC08-O1-needs-review",
+      "objectiveTitle": "OSが仲介するもの",
+      "hint": "機器そのものと、機器を管理するソフトウェアを区別します。",
+      "remediation": "OSはアプリと機器の間で働くソフトウェアです。機種名だけでOSの版まで特定できるとは限りません。",
+      "example": "「このPCで使えますか」と聞く際、本体の名前だけでなくOS名とその版を伝えると、確認の手掛かりになります。"
+    },
+    {
+      "prompt": "ドライバーの説明はどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "OSが機器を扱うためのソフトウェア"
+        },
+        {
+          "id": "c2",
+          "text": "PCを運ぶ人だけを指す言葉"
+        },
+        {
+          "id": "c3",
+          "text": "文書の保存場所の名前"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "PCの文脈では機器を扱うソフトウェアを指します。",
+      "id": "PC08-O2-Q1",
+      "version": 1,
+      "objectiveId": "PC08-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC08-O2-needs-review",
+      "objectiveTitle": "ドライバーと周辺機器",
+      "hint": "どの機器を、どのOSで使うためのものかを確かめます。",
+      "remediation": "ドライバーは物理的な部品ではなく、OSが機器を扱うためのソフトウェアです。",
+      "example": "プリンターをつないでも動かない場合、電源・接続だけでなく、OSと機器の対応やドライバーの状態を確認します。"
+    },
+    {
+      "prompt": "ドライバーを入手するとき確認するものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "機器の機種"
+        },
+        {
+          "id": "c2",
+          "text": "OSとその対応"
+        },
+        {
+          "id": "c3",
+          "text": "提供元"
+        },
+        {
+          "id": "c4",
+          "text": "名前が似ているかだけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "explanation": "機器と環境に合う正しい提供物を選びます。",
+      "id": "PC08-O2-Q2",
+      "version": 1,
+      "objectiveId": "PC08-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC08-O2-needs-review",
+      "objectiveTitle": "ドライバーと周辺機器",
+      "hint": "どの機器を、どのOSで使うためのものかを確かめます。",
+      "remediation": "ドライバーは物理的な部品ではなく、OSが機器を扱うためのソフトウェアです。",
+      "example": "プリンターをつないでも動かない場合、電源・接続だけでなく、OSと機器の対応やドライバーの状態を確認します。"
+    },
+    {
+      "prompt": "機器をつないだ後の説明として適切なのは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "OSが自動で準備する場合もある"
+        },
+        {
+          "id": "c2",
+          "text": "必ず無関係なソフトを買う必要がある"
+        },
+        {
+          "id": "c3",
+          "text": "機種に関係なく同じドライバーを使う"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "自動対応の有無は機器とOSによります。",
+      "id": "PC08-O2-Q3",
+      "version": 1,
+      "objectiveId": "PC08-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC08-O2-needs-review",
+      "objectiveTitle": "ドライバーと周辺機器",
+      "hint": "どの機器を、どのOSで使うためのものかを確かめます。",
+      "remediation": "ドライバーは物理的な部品ではなく、OSが機器を扱うためのソフトウェアです。",
+      "example": "プリンターをつないでも動かない場合、電源・接続だけでなく、OSと機器の対応やドライバーの状態を確認します。"
+    },
+    {
+      "prompt": "アプリ導入前に確認するものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "対応OS"
+        },
+        {
+          "id": "c2",
+          "text": "必要な機器条件"
+        },
+        {
+          "id": "c3",
+          "text": "会社の利用ルール"
+        },
+        {
+          "id": "c4",
+          "text": "アイコンが好きかだけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "explanation": "利用できる条件を確認します。",
+      "id": "PC08-O3-Q1",
+      "version": 1,
+      "objectiveId": "PC08-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC08-O3-needs-review",
+      "objectiveTitle": "対応と更新を確認する",
+      "hint": "更新の目的と、今使うものへの影響を合わせて考えます。",
+      "remediation": "更新を避け続ける・無条件に実行するという二択ではなく、対応と運用手順を確認します。",
+      "example": "会社の業務アプリを使うPCでは、個人の判断だけでOSの大きな更新を行わず、対応状況と社内の手順を確認します。"
+    },
+    {
+      "prompt": "業務用PCのOS更新で適切な対応は？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "利用アプリの対応と管理者の方針を確認する"
+        },
+        {
+          "id": "c2",
+          "text": "作業を保存せず強制終了する"
+        },
+        {
+          "id": "c3",
+          "text": "更新後の確認を省く"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "業務への影響と手順を確認して行います。",
+      "id": "PC08-O3-Q2",
+      "version": 1,
+      "objectiveId": "PC08-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC08-O3-needs-review",
+      "objectiveTitle": "対応と更新を確認する",
+      "hint": "更新の目的と、今使うものへの影響を合わせて考えます。",
+      "remediation": "更新を避け続ける・無条件に実行するという二択ではなく、対応と運用手順を確認します。",
+      "example": "会社の業務アプリを使うPCでは、個人の判断だけでOSの大きな更新を行わず、対応状況と社内の手順を確認します。"
+    },
+    {
+      "prompt": "更新後に行うこととして適切なのは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "必要な機能が動くか確認する"
+        },
+        {
+          "id": "c2",
+          "text": "完了表示だけで全アプリの動作を断定する"
+        },
+        {
+          "id": "c3",
+          "text": "保存場所を記録せず変更する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "実際の業務で使う機能も確認します。",
+      "id": "PC08-O3-Q3",
+      "version": 1,
+      "objectiveId": "PC08-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC08-O3-needs-review",
+      "objectiveTitle": "対応と更新を確認する",
+      "hint": "更新の目的と、今使うものへの影響を合わせて考えます。",
+      "remediation": "更新を避け続ける・無条件に実行するという二択ではなく、対応と運用手順を確認します。",
+      "example": "会社の業務アプリを使うPCでは、個人の判断だけでOSの大きな更新を行わず、対応状況と社内の手順を確認します。"
+    }
+  ]
+}

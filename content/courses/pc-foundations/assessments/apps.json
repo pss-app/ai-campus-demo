@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "PC09",
+  "lessonVersion": 1,
+  "questions": [
+    {
+      "prompt": "区別すべき操作をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "アプリを終了する"
+        },
+        {
+          "id": "c2",
+          "text": "アプリを削除する"
+        },
+        {
+          "id": "c3",
+          "text": "文書ファイルを削除する"
+        },
+        {
+          "id": "c4",
+          "text": "終了とアプリ削除は、常に同じ結果になるという扱い"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "explanation": "対象と結果が異なる三つの操作です。",
+      "id": "PC09-O1-Q1",
+      "version": 1,
+      "objectiveId": "PC09-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC09-O1-needs-review",
+      "objectiveTitle": "アプリと作成した内容",
+      "hint": "道具を閉じる、道具を取り除く、内容を消す、を分けます。",
+      "remediation": "終了・アプリ削除・ファイル削除は対象と結果が異なります。未保存の変更を失わないよう保存を確認します。",
+      "example": "文書作成アプリを閉じても、保存してある文書が必ず削除されるわけではありません。保存前の変更は別に確認します。"
+    },
+    {
+      "prompt": "文書作成アプリを閉じる前に確認することは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "変更内容が保存されているか"
+        },
+        {
+          "id": "c2",
+          "text": "必ずPCを分解するか"
+        },
+        {
+          "id": "c3",
+          "text": "モニターを買い替えるか"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "終了前に作業の保存を確認します。",
+      "id": "PC09-O1-Q2",
+      "version": 1,
+      "objectiveId": "PC09-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC09-O1-needs-review",
+      "objectiveTitle": "アプリと作成した内容",
+      "hint": "道具を閉じる、道具を取り除く、内容を消す、を分けます。",
+      "remediation": "終了・アプリ削除・ファイル削除は対象と結果が異なります。未保存の変更を失わないよう保存を確認します。",
+      "example": "文書作成アプリを閉じても、保存してある文書が必ず削除されるわけではありません。保存前の変更は別に確認します。"
+    },
+    {
+      "prompt": "同じ文書を別のアプリで開いたとき、適切な考え方は？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "表示や編集機能が異なる可能性を確認する"
+        },
+        {
+          "id": "c2",
+          "text": "必ず完全に同じ表示になる"
+        },
+        {
+          "id": "c3",
+          "text": "別アプリなら元のファイルが必ず削除される"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "対応形式と再現性はアプリごとに確認します。",
+      "id": "PC09-O1-Q3",
+      "version": 1,
+      "objectiveId": "PC09-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC09-O1-needs-review",
+      "objectiveTitle": "アプリと作成した内容",
+      "hint": "道具を閉じる、道具を取り除く、内容を消す、を分けます。",
+      "remediation": "終了・アプリ削除・ファイル削除は対象と結果が異なります。未保存の変更を失わないよう保存を確認します。",
+      "example": "文書作成アプリを閉じても、保存してある文書が必ず削除されるわけではありません。保存前の変更は別に確認します。"
+    },
+    {
+      "prompt": "Firefoxは何に当たりますか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Webページを表示するブラウザ"
+        },
+        {
+          "id": "c2",
+          "text": "表示する写真ファイル"
+        },
+        {
+          "id": "c3",
+          "text": "保存用SSD"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "Firefoxはブラウザというアプリです。",
+      "id": "PC09-O2-Q1",
+      "version": 1,
+      "objectiveId": "PC09-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC09-O2-needs-review",
+      "objectiveTitle": "ブラウザと検索サービス",
+      "hint": "見る道具と、探すためのサービスを分けます。",
+      "remediation": "ブラウザで検索もできますが、検索サービスだけがブラウザの用途ではありません。指定URLへ直接移動もできます。",
+      "example": "Firefoxで検索サービスを開く場合、使っているブラウザの名前と検索サービスの名前は別々に説明できます。"
+    },
+    {
+      "prompt": "適切な説明をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "ブラウザの中で検索サービスを利用できる"
+        },
+        {
+          "id": "c2",
+          "text": "URL指定とキーワード検索は異なる"
+        },
+        {
+          "id": "c3",
+          "text": "検索サービスとブラウザは必ず同じもの"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2"
+      ],
+      "explanation": "道具とサービス、アクセス方法を区別します。",
+      "id": "PC09-O2-Q2",
+      "version": 1,
+      "objectiveId": "PC09-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC09-O2-needs-review",
+      "objectiveTitle": "ブラウザと検索サービス",
+      "hint": "見る道具と、探すためのサービスを分けます。",
+      "remediation": "ブラウザで検索もできますが、検索サービスだけがブラウザの用途ではありません。指定URLへ直接移動もできます。",
+      "example": "Firefoxで検索サービスを開く場合、使っているブラウザの名前と検索サービスの名前は別々に説明できます。"
+    },
+    {
+      "prompt": "相手から正しいURLを渡されたとき、直接開く操作は？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "ブラウザの入力欄にURLを指定する"
+        },
+        {
+          "id": "c2",
+          "text": "似た言葉だけで検索して最上位を必ず選ぶ"
+        },
+        {
+          "id": "c3",
+          "text": "ファイルを削除する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "指定されたアクセス先へ直接移動します。",
+      "id": "PC09-O2-Q3",
+      "version": 1,
+      "objectiveId": "PC09-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC09-O2-needs-review",
+      "objectiveTitle": "ブラウザと検索サービス",
+      "hint": "見る道具と、探すためのサービスを分けます。",
+      "remediation": "ブラウザで検索もできますが、検索サービスだけがブラウザの用途ではありません。指定URLへ直接移動もできます。",
+      "example": "Firefoxで検索サービスを開く場合、使っているブラウザの名前と検索サービスの名前は別々に説明できます。"
+    },
+    {
+      "prompt": "ブラウザで編集した文書の保存先はどう判断しますか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "必ずPC内と決める"
+        },
+        {
+          "id": "c2",
+          "text": "使うサービスの保存先と状態を確認する"
+        },
+        {
+          "id": "c3",
+          "text": "必ず保存されていないと決める"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "利用する仕組みによって異なります。",
+      "id": "PC09-O3-Q1",
+      "version": 1,
+      "objectiveId": "PC09-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC09-O3-needs-review",
+      "objectiveTitle": "PCのアプリとWebアプリ",
+      "hint": "ブラウザで見えていることと、保存先が手元にあることを分けます。",
+      "remediation": "Webアプリは外部保存の場合があります。端末内のアプリもクラウド保存を使う場合があるため、方式だけで所在を断定しません。",
+      "example": "ブラウザで文書を編集している場合、PC内にファイルが保存されているとは限りません。サービスの保存先を確認します。"
+    },
+    {
+      "prompt": "適切な説明をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Webアプリはブラウザから利用する"
+        },
+        {
+          "id": "c2",
+          "text": "インストール型でも外部に保存する場合がある"
+        },
+        {
+          "id": "c3",
+          "text": "Webアプリは必ずどれもオフラインで全機能が使える"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2"
+      ],
+      "explanation": "保存や通信の条件は個別に確認します。",
+      "id": "PC09-O3-Q2",
+      "version": 1,
+      "objectiveId": "PC09-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC09-O3-needs-review",
+      "objectiveTitle": "PCのアプリとWebアプリ",
+      "hint": "ブラウザで見えていることと、保存先が手元にあることを分けます。",
+      "remediation": "Webアプリは外部保存の場合があります。端末内のアプリもクラウド保存を使う場合があるため、方式だけで所在を断定しません。",
+      "example": "ブラウザで文書を編集している場合、PC内にファイルが保存されているとは限りません。サービスの保存先を確認します。"
+    },
+    {
+      "prompt": "Webアプリの作業を引き継ぐときに記録する情報は？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "サービス名、利用アカウント、保存先"
+        },
+        {
+          "id": "c2",
+          "text": "画面の背景色だけ"
+        },
+        {
+          "id": "c3",
+          "text": "PCの重量だけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "どこで誰として作業したかが再開に必要です。",
+      "id": "PC09-O3-Q3",
+      "version": 1,
+      "objectiveId": "PC09-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC09-O3-needs-review",
+      "objectiveTitle": "PCのアプリとWebアプリ",
+      "hint": "ブラウザで見えていることと、保存先が手元にあることを分けます。",
+      "remediation": "Webアプリは外部保存の場合があります。端末内のアプリもクラウド保存を使う場合があるため、方式だけで所在を断定しません。",
+      "example": "ブラウザで文書を編集している場合、PC内にファイルが保存されているとは限りません。サービスの保存先を確認します。"
+    }
+  ]
+}

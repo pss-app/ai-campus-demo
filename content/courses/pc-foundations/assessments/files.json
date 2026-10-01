@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "PC10",
+  "lessonVersion": 1,
+  "questions": [
+    {
+      "prompt": "拡張子だけを変更した場合、適切な説明は？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "中身の形式まで必ず変換される"
+        },
+        {
+          "id": "c2",
+          "text": "名前が変わっても中身の形式は自動変換されない"
+        },
+        {
+          "id": "c3",
+          "text": "元ファイルが必ず消える"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "名前の変更と形式変換は別です。",
+      "id": "PC10-O1-Q1",
+      "version": 1,
+      "objectiveId": "PC10-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC10-O1-needs-review",
+      "objectiveTitle": "ファイル名と形式",
+      "hint": "名前の表示と、実際の記録形式を分けます。",
+      "remediation": "形式変換には、それに対応した機能が必要です。拡張子の変更だけでは中身は変わりません。",
+      "example": "「写真.png」を「写真.txt」に名前変更しても、写真が自動的に文字の文章へ変換されるわけではありません。"
+    },
+    {
+      "prompt": "ファイルについて確認する項目をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "名前"
+        },
+        {
+          "id": "c2",
+          "text": "形式"
+        },
+        {
+          "id": "c3",
+          "text": "開くアプリの対応"
+        },
+        {
+          "id": "c4",
+          "text": "名前だけで全内容を確定できるか"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "explanation": "名前だけでは内容や対応は確定しません。",
+      "id": "PC10-O1-Q2",
+      "version": 1,
+      "objectiveId": "PC10-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC10-O1-needs-review",
+      "objectiveTitle": "ファイル名と形式",
+      "hint": "名前の表示と、実際の記録形式を分けます。",
+      "remediation": "形式変換には、それに対応した機能が必要です。拡張子の変更だけでは中身は変わりません。",
+      "example": "「写真.png」を「写真.txt」に名前変更しても、写真が自動的に文字の文章へ変換されるわけではありません。"
+    },
+    {
+      "prompt": "同じ文章を画像とテキストで保存した場合、適切な説明は？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "見た目が同じでも検索・編集の方法が異なり得る"
+        },
+        {
+          "id": "c2",
+          "text": "どちらも必ず同じ構造"
+        },
+        {
+          "id": "c3",
+          "text": "拡張子を変えれば自由に編集できる"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "情報の記録形式が異なります。",
+      "id": "PC10-O1-Q3",
+      "version": 1,
+      "objectiveId": "PC10-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC10-O1-needs-review",
+      "objectiveTitle": "ファイル名と形式",
+      "hint": "名前の表示と、実際の記録形式を分けます。",
+      "remediation": "形式変換には、それに対応した機能が必要です。拡張子の変更だけでは中身は変わりません。",
+      "example": "「写真.png」を「写真.txt」に名前変更しても、写真が自動的に文字の文章へ変換されるわけではありません。"
+    },
+    {
+      "prompt": "同名のファイルを区別する手掛かりとして適切なのは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "保存先のパス"
+        },
+        {
+          "id": "c2",
+          "text": "名前が同じなら必ず同じファイルとする"
+        },
+        {
+          "id": "c3",
+          "text": "モニターの解像度だけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "別の場所に同じ名前のファイルが置けます。",
+      "id": "PC10-O2-Q1",
+      "version": 1,
+      "objectiveId": "PC10-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC10-O2-needs-review",
+      "objectiveTitle": "フォルダとパス",
+      "hint": "名前が同じでも、その上にあるフォルダを見ます。",
+      "remediation": "パスは場所をたどる情報です。OSなどによって表示方法は違っても、所在を特定する目的は共通します。",
+      "example": "「練習/下書き/案内.txt」と「練習/完成/案内.txt」は、同じ名前でも別の所在を表します。ここでは / を区切りとして示しています。"
+    },
+    {
+      "prompt": "「練習/完成/案内.txt」で、案内.txtが直接入っているフォルダは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "練習"
+        },
+        {
+          "id": "c2",
+          "text": "完成"
+        },
+        {
+          "id": "c3",
+          "text": "案内.txt"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "ファイルの一つ手前が、この例で直接の保存先です。",
+      "id": "PC10-O2-Q2",
+      "version": 1,
+      "objectiveId": "PC10-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC10-O2-needs-review",
+      "objectiveTitle": "フォルダとパス",
+      "hint": "名前が同じでも、その上にあるフォルダを見ます。",
+      "remediation": "パスは場所をたどる情報です。OSなどによって表示方法は違っても、所在を特定する目的は共通します。",
+      "example": "「練習/下書き/案内.txt」と「練習/完成/案内.txt」は、同じ名前でも別の所在を表します。ここでは / を区切りとして示しています。"
+    },
+    {
+      "prompt": "他の人にファイルを探してもらう説明として適切なのは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "名前だけ伝えればどんな場合も十分"
+        },
+        {
+          "id": "c2",
+          "text": "保存場所と名前を合わせて伝える"
+        },
+        {
+          "id": "c3",
+          "text": "更新日時は必ず所在と同じ意味"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "必要なら日時なども補い、対象を特定します。",
+      "id": "PC10-O2-Q3",
+      "version": 1,
+      "objectiveId": "PC10-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC10-O2-needs-review",
+      "objectiveTitle": "フォルダとパス",
+      "hint": "名前が同じでも、その上にあるフォルダを見ます。",
+      "remediation": "パスは場所をたどる情報です。OSなどによって表示方法は違っても、所在を特定する目的は共通します。",
+      "example": "「練習/下書き/案内.txt」と「練習/完成/案内.txt」は、同じ名前でも別の所在を表します。ここでは / を区切りとして示しています。"
+    },
+    {
+      "prompt": "元のサンプルを残して編集したいとき、適切なものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "コピーして複製側を編集する"
+        },
+        {
+          "id": "c2",
+          "text": "別名保存して対象を確認する"
+        },
+        {
+          "id": "c3",
+          "text": "元を上書きしてから必ず戻せると思う"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2"
+      ],
+      "explanation": "元を残す操作と、編集対象の確認を組み合わせます。",
+      "id": "PC10-O3-Q1",
+      "version": 1,
+      "objectiveId": "PC10-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC10-O3-needs-review",
+      "objectiveTitle": "コピー・移動・別名保存",
+      "hint": "操作後に元が残るかと、編集している対象を確認します。",
+      "remediation": "コピーしても、誤って元を開けば元を編集してしまいます。操作名だけでなく、現在のファイルの所在を確認します。",
+      "example": "配布されたサンプルをそのまま残したいなら、自分用に複製してから編集します。"
+    },
+    {
+      "prompt": "移動した場合の基本的な結果は？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "元の場所と移動先に必ず複製が残る"
+        },
+        {
+          "id": "c2",
+          "text": "対象の所在が移動先へ変わる"
+        },
+        {
+          "id": "c3",
+          "text": "ファイル形式が必ず変わる"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "コピーと移動の違いです。",
+      "id": "PC10-O3-Q2",
+      "version": 1,
+      "objectiveId": "PC10-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC10-O3-needs-review",
+      "objectiveTitle": "コピー・移動・別名保存",
+      "hint": "操作後に元が残るかと、編集している対象を確認します。",
+      "remediation": "コピーしても、誤って元を開けば元を編集してしまいます。操作名だけでなく、現在のファイルの所在を確認します。",
+      "example": "配布されたサンプルをそのまま残したいなら、自分用に複製してから編集します。"
+    },
+    {
+      "prompt": "コピー後に編集を始めるときに確かめることは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "複製側を開いているか"
+        },
+        {
+          "id": "c2",
+          "text": "コピーしたので確認は不要か"
+        },
+        {
+          "id": "c3",
+          "text": "元も自動で保護されるか"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "複製を作ることと、どちらを編集するかは別です。",
+      "id": "PC10-O3-Q3",
+      "version": 1,
+      "objectiveId": "PC10-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC10-O3-needs-review",
+      "objectiveTitle": "コピー・移動・別名保存",
+      "hint": "操作後に元が残るかと、編集している対象を確認します。",
+      "remediation": "コピーしても、誤って元を開けば元を編集してしまいます。操作名だけでなく、現在のファイルの所在を確認します。",
+      "example": "配布されたサンプルをそのまま残したいなら、自分用に複製してから編集します。"
+    }
+  ]
+}

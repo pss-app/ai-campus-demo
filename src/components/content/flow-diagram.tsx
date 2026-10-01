@@ -1,0 +1,1 @@
+export function FlowDiagram({items,title}:{items:string[];title:string}){if(!items.length)return null;return <figure className="flow-diagram"><figcaption>{title}の流れ</figcaption><ol>{items.map((item,i)=><li key={i}>{item}</li>)}</ol><p className="supporting">役割のつながりを示した簡略図です。</p></figure>;}

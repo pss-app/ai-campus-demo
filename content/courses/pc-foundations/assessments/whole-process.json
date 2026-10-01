@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "PC11",
+  "lessonVersion": 1,
+  "questions": [
+    {
+      "prompt": "ファイルを開くときの役割として適切なのは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "保存元はストレージ、作業中の保持はメモリー"
+        },
+        {
+          "id": "c2",
+          "text": "保存元はマウス、作業中の保持はモニター"
+        },
+        {
+          "id": "c3",
+          "text": "すべてCPUの永久保存領域で行う"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "各部品の役割を結び付けます。",
+      "id": "PC11-O1-Q1",
+      "version": 1,
+      "objectiveId": "PC11-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC11-O1-needs-review",
+      "objectiveTitle": "開くときの流れ",
+      "hint": "情報を読み込むことと、ファイルの所在を移すことを分けます。",
+      "remediation": "開く操作は処理のための読み込みを伴います。ファイルの移動とは別です。",
+      "example": "保存した案内文をアプリで開いても、元の保存ファイルは通常その場所に残ります。"
+    },
+    {
+      "prompt": "ファイルを開くことについて適切な説明は？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "必ず保存元から削除される"
+        },
+        {
+          "id": "c2",
+          "text": "読み込みとファイル移動は別の操作"
+        },
+        {
+          "id": "c3",
+          "text": "拡張子が必ず変更される"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "情報の読み込みと所在の移動を区別します。",
+      "id": "PC11-O1-Q2",
+      "version": 1,
+      "objectiveId": "PC11-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC11-O1-needs-review",
+      "objectiveTitle": "開くときの流れ",
+      "hint": "情報を読み込むことと、ファイルの所在を移すことを分けます。",
+      "remediation": "開く操作は処理のための読み込みを伴います。ファイルの移動とは別です。",
+      "example": "保存した案内文をアプリで開いても、元の保存ファイルは通常その場所に残ります。"
+    },
+    {
+      "prompt": "この作業でOSが担うことは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "アプリと機器・ファイルへのアクセスを仲介する"
+        },
+        {
+          "id": "c2",
+          "text": "紙の上に直接文字を描く部品になる"
+        },
+        {
+          "id": "c3",
+          "text": "文書の内容を自動で正しいと認定する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "OSは動作や資源の管理を担います。",
+      "id": "PC11-O1-Q3",
+      "version": 1,
+      "objectiveId": "PC11-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC11-O1-needs-review",
+      "objectiveTitle": "開くときの流れ",
+      "hint": "情報を読み込むことと、ファイルの所在を移すことを分けます。",
+      "remediation": "開く操作は処理のための読み込みを伴います。ファイルの移動とは別です。",
+      "example": "保存した案内文をアプリで開いても、元の保存ファイルは通常その場所に残ります。"
+    },
+    {
+      "prompt": "自動保存の文書で確認するものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "保存完了の状態"
+        },
+        {
+          "id": "c2",
+          "text": "保存先"
+        },
+        {
+          "id": "c3",
+          "text": "共有されている対象か"
+        },
+        {
+          "id": "c4",
+          "text": "画面に出ればすべて保存済みとする"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "explanation": "見えていることだけで保存と共有の状態は確定しません。",
+      "id": "PC11-O2-Q1",
+      "version": 1,
+      "objectiveId": "PC11-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC11-O2-needs-review",
+      "objectiveTitle": "編集と保存のタイミング",
+      "hint": "自分に見える内容と、保存先に反映された内容を分けます。",
+      "remediation": "自動保存でも完了状態を確認します。編集する対象が共有物かも確認します。",
+      "example": "「保存中」と表示されているときに、保存済みと決めつけて画面を閉じないようにします。"
+    },
+    {
+      "prompt": "共有の原本で練習を始める前に行うことは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "練習用に複製できるか確認する"
+        },
+        {
+          "id": "c2",
+          "text": "他の人への反映を無視して変更する"
+        },
+        {
+          "id": "c3",
+          "text": "保存先を見ない"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "共有物への影響を確認します。",
+      "id": "PC11-O2-Q2",
+      "version": 1,
+      "objectiveId": "PC11-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC11-O2-needs-review",
+      "objectiveTitle": "編集と保存のタイミング",
+      "hint": "自分に見える内容と、保存先に反映された内容を分けます。",
+      "remediation": "自動保存でも完了状態を確認します。編集する対象が共有物かも確認します。",
+      "example": "「保存中」と表示されているときに、保存済みと決めつけて画面を閉じないようにします。"
+    },
+    {
+      "prompt": "「保存中」という表示の解釈として適切なのは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "必ず保存が完了している"
+        },
+        {
+          "id": "c2",
+          "text": "保存の完了状態をさらに確認する必要がある"
+        },
+        {
+          "id": "c3",
+          "text": "文書が必ず破損した"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "処理の途中と完了を区別します。",
+      "id": "PC11-O2-Q3",
+      "version": 1,
+      "objectiveId": "PC11-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC11-O2-needs-review",
+      "objectiveTitle": "編集と保存のタイミング",
+      "hint": "自分に見える内容と、保存先に反映された内容を分けます。",
+      "remediation": "自動保存でも完了状態を確認します。編集する対象が共有物かも確認します。",
+      "example": "「保存中」と表示されているときに、保存済みと決めつけて画面を閉じないようにします。"
+    },
+    {
+      "prompt": "開き直した文書が古い内容でした。まず確認する情報は？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "開いたファイル名と保存先"
+        },
+        {
+          "id": "c2",
+          "text": "CPUの購入価格だけ"
+        },
+        {
+          "id": "c3",
+          "text": "モニターのサイズだけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "別ファイルや別の版を開いていないか確かめます。",
+      "id": "PC11-O3-Q1",
+      "version": 1,
+      "objectiveId": "PC11-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC11-O3-needs-review",
+      "objectiveTitle": "開き直して確かめる",
+      "hint": "開いているものが、本当に確認したい対象かを確かめます。",
+      "remediation": "内容が違うときは、保存失敗だけでなく別ファイルの可能性も確認します。",
+      "example": "「案内_下書き」と「案内_完成」を取り違えないよう、ファイル名と保存先をセットで確認します。"
+    },
+    {
+      "prompt": "作業記録に残すものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "編集した内容"
+        },
+        {
+          "id": "c2",
+          "text": "保存先とファイル名"
+        },
+        {
+          "id": "c3",
+          "text": "保存後に確認した結果"
+        },
+        {
+          "id": "c4",
+          "text": "未確認の点も完了扱いにした説明"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "explanation": "確認した事実を記録します。",
+      "id": "PC11-O3-Q2",
+      "version": 1,
+      "objectiveId": "PC11-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC11-O3-needs-review",
+      "objectiveTitle": "開き直して確かめる",
+      "hint": "開いているものが、本当に確認したい対象かを確かめます。",
+      "remediation": "内容が違うときは、保存失敗だけでなく別ファイルの可能性も確認します。",
+      "example": "「案内_下書き」と「案内_完成」を取り違えないよう、ファイル名と保存先をセットで確認します。"
+    },
+    {
+      "prompt": "保存確認の練習に適切な方法は？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "サンプルを変更・保存し、対象を確かめて開き直す"
+        },
+        {
+          "id": "c2",
+          "text": "大切な原本を削除して試す"
+        },
+        {
+          "id": "c3",
+          "text": "画面が閉じれば必ず成功とする"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "対象と内容を実際に照合します。",
+      "id": "PC11-O3-Q3",
+      "version": 1,
+      "objectiveId": "PC11-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC11-O3-needs-review",
+      "objectiveTitle": "開き直して確かめる",
+      "hint": "開いているものが、本当に確認したい対象かを確かめます。",
+      "remediation": "内容が違うときは、保存失敗だけでなく別ファイルの可能性も確認します。",
+      "example": "「案内_下書き」と「案内_完成」を取り違えないよう、ファイル名と保存先をセットで確認します。"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+import type { Lesson } from '@/domain/types';
+export function LessonOutline({lesson}:{lesson:Lesson}){return <><nav className="lesson-outline" aria-label="このレッスンの目次"><h2>今回覚えること</h2><ol>{lesson.objectives.map(o=><li key={o.id}><a href={`#${o.id}`}>{o.title}</a></li>)}</ol></nav><section className="term-list" aria-label="今回使う言葉"><h2>今回使う言葉</h2><ul>{lesson.terms.map(term=><li key={term}>{term}</li>)}</ul></section></>;}

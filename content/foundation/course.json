@@ -1,0 +1,4173 @@
+{
+  "schemaVersion": 1,
+  "id": "pc-foundations",
+  "version": 1,
+  "status": "draft",
+  "title": "PCを構成するものと言葉",
+  "description": "身近な機器から、部品の役割と情報の流れを学び、自分の環境を説明できるようになる。",
+  "audience": "PCを普段使っているが、仕組みと用語を体系的に学びたい成人の初学者",
+  "assessmentPolicy": {
+    "questionsPerObjective": 1,
+    "objectivesPerLesson": 3,
+    "pass": "all_objectives_confirmed",
+    "allowHintedPass": true,
+    "retry": "unconfirmed_objectives_only",
+    "avoidRecentQuestions": true,
+    "noAutomaticPass": true,
+    "finalAssessment": "instructor_review_required"
+  },
+  "lessons": [
+    {
+      "id": "PC01",
+      "slug": "components",
+      "title": "PCを構成するもの",
+      "version": 1,
+      "status": "draft",
+      "estimatedMinutes": [
+        10,
+        20
+      ],
+      "goal": "機器・ソフトウェア・扱う情報の役割を区別できる。",
+      "terms": [
+        "PC",
+        "本体",
+        "周辺機器",
+        "ハードウェア",
+        "ソフトウェア",
+        "データ"
+      ],
+      "prerequisites": [],
+      "sources": [
+        "content/foundation/01-pc-components.md"
+      ],
+      "objectives": [
+        {
+          "title": "機器の名前と役割",
+          "body": [
+            "PCはパーソナルコンピューターの略で、パソコンと呼ばれます。本体には、命令に従って処理する部品や情報を保存する部品が入っています。ディスプレイ（モニター）は文字や画像を表示する機器です。",
+            "デスクトップPCには本体と画面が別々のものと、一体になったものがあります。ノートPCも本体・画面・キーボードを一つにまとめた形です。配置が違っても、それぞれの役割は分かれています。",
+            "キーボードは文字や数字を入力し、マウスやタッチパッドは画面上の位置を指して項目を選びます。マイクは音を取り込み、スピーカーは音を出します。つないで使うマウスやプリンターなどを周辺機器と呼びます。"
+          ],
+          "example": "Web会議では、相手の声をスピーカーで聞き、自分の声をマイクから取り込みます。音を扱う機器でも、情報の向きが違います。",
+          "hint": "何を取り込み、何を表示・出力する部分なのかを考えましょう。",
+          "remediation": "マイク→PCは音の入力、PC→スピーカーは音の出力です。画面は表示、キーボードは文字入力を担当します。一体型でもこの役割は変わりません。",
+          "questions": [
+            {
+              "prompt": "文字や写真を目に見える形で表示する機器はどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "キーボード"
+                },
+                {
+                  "id": "c2",
+                  "text": "ディスプレイ"
+                },
+                {
+                  "id": "c3",
+                  "text": "マイク"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "ディスプレイは文字や画像を表示する機器です。",
+              "id": "PC01-O1-Q1",
+              "version": 1,
+              "objectiveId": "PC01-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC01-O1-needs-review"
+            },
+            {
+              "prompt": "「表示する・位置を指して選ぶ・音を取り込む」の順で、正しく機器を並べたものはどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "モニター・マウス・マイク"
+                },
+                {
+                  "id": "c2",
+                  "text": "モニター・キーボード・スピーカー"
+                },
+                {
+                  "id": "c3",
+                  "text": "マウス・モニター・マイク"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "マウスの位置指定とキーボードの文字入力、マイクの入力とスピーカーの出力を区別します。",
+              "id": "PC01-O1-Q2",
+              "version": 1,
+              "objectiveId": "PC01-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC01-O1-needs-review"
+            },
+            {
+              "prompt": "Web会議で「相手の声を聞く・自分の声を取り込む・文章を入力する」の順に使う機器はどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "マイク・スピーカー・キーボード"
+                },
+                {
+                  "id": "c2",
+                  "text": "スピーカー・マイク・キーボード"
+                },
+                {
+                  "id": "c3",
+                  "text": "スピーカー・キーボード・マイク"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "音の入力と出力、文字の入力は別の役割です。",
+              "id": "PC01-O1-Q3",
+              "version": 1,
+              "objectiveId": "PC01-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC01-O1-needs-review"
+            }
+          ],
+          "diagram": [
+            "キーボード・マイク：入力",
+            "本体：処理・記憶・保存",
+            "モニター・スピーカー：出力"
+          ],
+          "id": "PC01-O1",
+          "keyPoint": "本体・画面・入力機器は、一体になっていても役割が違います。"
+        },
+        {
+          "title": "ハードウェアとソフトウェア",
+          "body": [
+            "物理的な機器や部品をハードウェアと呼びます。モニターやマウスだけでなく、内部のGPUやメモリーも含まれます。外から見えるかどうかでは決まりません。",
+            "GPUは画像処理や大量の計算などを担う部品、メモリー（RAM）は作業中の情報を一時的に保持する部品、SSDはファイルを保存する部品です。詳しい働きは後のレッスンで学びます。",
+            "コンピューターが実行する手順や命令を記述したものをプログラムと呼びます。ソフトウェアはプログラムなどを指す言葉です。Excelは表や数式を扱うソフトウェア、FirefoxはWebページを見るブラウザという種類のソフトウェアです。WindowsはPCの動作を管理するOSというソフトウェアです。"
+          ],
+          "example": "同じPCでExcelを閉じてFirefoxを開いても、マウスやモニターを取り替える必要はありません。使うソフトウェアが変わっています。",
+          "hint": "製品名が、物理的な機器・部品と、その上で動くもののどちらを指すか確認します。",
+          "remediation": "モニター・マウス・GPU・RAM・SSDは物理的なものです。Excel・Firefox・Windowsはソフトウェアです。OSもソフトウェアに含まれます。",
+          "questions": [
+            {
+              "prompt": "ハードウェアをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "モニター"
+                },
+                {
+                  "id": "c2",
+                  "text": "マウス"
+                },
+                {
+                  "id": "c3",
+                  "text": "Excel"
+                },
+                {
+                  "id": "c4",
+                  "text": "GPU"
+                },
+                {
+                  "id": "c5",
+                  "text": "Firefox"
+                },
+                {
+                  "id": "c6",
+                  "text": "メモリー（RAM）"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2",
+                "c4",
+                "c6"
+              ],
+              "explanation": "外付け機器と内部部品の両方がハードウェアです。",
+              "id": "PC01-O2-Q1",
+              "version": 1,
+              "objectiveId": "PC01-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC01-O2-needs-review"
+            },
+            {
+              "prompt": "ソフトウェアをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "Windows"
+                },
+                {
+                  "id": "c2",
+                  "text": "SSD"
+                },
+                {
+                  "id": "c3",
+                  "text": "Firefox"
+                },
+                {
+                  "id": "c4",
+                  "text": "キーボード"
+                },
+                {
+                  "id": "c5",
+                  "text": "Excel"
+                },
+                {
+                  "id": "c6",
+                  "text": "GPU"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c3",
+                "c5"
+              ],
+              "explanation": "WindowsはOS、FirefoxとExcelはアプリで、いずれもソフトウェアです。",
+              "id": "PC01-O2-Q2",
+              "version": 1,
+              "objectiveId": "PC01-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC01-O2-needs-review"
+            },
+            {
+              "prompt": "導入予定一覧から、物理的な機器・部品をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "モニター"
+                },
+                {
+                  "id": "c2",
+                  "text": "Windows"
+                },
+                {
+                  "id": "c3",
+                  "text": "メモリー（RAM）"
+                },
+                {
+                  "id": "c4",
+                  "text": "Excel"
+                },
+                {
+                  "id": "c5",
+                  "text": "SSD"
+                },
+                {
+                  "id": "c6",
+                  "text": "Firefox"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c3",
+                "c5"
+              ],
+              "explanation": "ソフトウェアの導入と、機器や部品の追加を区別します。",
+              "id": "PC01-O2-Q3",
+              "version": 1,
+              "objectiveId": "PC01-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC01-O2-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC01-O2",
+          "keyPoint": "機器や部品がハードウェア。その上で動くプログラムなどがソフトウェアです。"
+        },
+        {
+          "title": "データとファイルの関係",
+          "body": [
+            "文章・数値・写真・音声など、コンピューターが扱う情報をデータと呼びます。数値だけを指す言葉ではありません。",
+            "ファイルは、情報を名前の付いたまとまりとして保存・管理する単位です。「売上表.xlsx」には数値・文字・数式・書式などが保存されます。そのファイルも、内容も、扱い方に応じてデータと呼びます。入力中で未保存の文章もデータです。",
+            "プログラム自体も保存や通信ではデータとして扱われます。ソフトウェアとデータは、常に重ならない分類ではありません。ここではExcelという作業の道具と、その中で編集する売上表という役割を区別します。"
+          ],
+          "example": "写真をPCからクラウドという外部の保存先へ移しても、保存先が変わったのであって、写真がデータでなくなるわけではありません。",
+          "hint": "何を使って作業しているか、何を編集しているか、どう保存しているかを分けます。",
+          "remediation": "入力した文章は保存前もデータです。保存するとファイルとして管理できます。「データかファイルか」という二択ではなく、情報を見る観点が違います。",
+          "questions": [
+            {
+              "prompt": "データについて適切な説明をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "文章・写真・音声も含まれる"
+                },
+                {
+                  "id": "c2",
+                  "text": "入力中の文章は保存するまでデータではない"
+                },
+                {
+                  "id": "c3",
+                  "text": "写真はクラウドへ移すとデータではなくなる"
+                },
+                {
+                  "id": "c4",
+                  "text": "ファイルとして保存された情報もデータとして扱う"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c4"
+              ],
+              "explanation": "データかどうかは、保存済みか、どこにあるかだけで決まりません。",
+              "id": "PC01-O3-Q1",
+              "version": 1,
+              "objectiveId": "PC01-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC01-O3-needs-review"
+            },
+            {
+              "prompt": "Excelで金額と商品名を編集しています。適切な説明はどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "Excelはソフトウェアで、金額と商品名は扱うデータ"
+                },
+                {
+                  "id": "c2",
+                  "text": "データは金額だけで、商品名は含まれない"
+                },
+                {
+                  "id": "c3",
+                  "text": "保存した売上表のファイル自体がExcelになる"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "道具と内容を区別します。文字も数値もデータです。",
+              "id": "PC01-O3-Q2",
+              "version": 1,
+              "objectiveId": "PC01-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC01-O3-needs-review"
+            },
+            {
+              "prompt": "文章を「案内文.txt」として保存しました。適切な説明をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "ファイルは情報を保存・管理する単位"
+                },
+                {
+                  "id": "c2",
+                  "text": "保存した瞬間に初めて文章がデータになる"
+                },
+                {
+                  "id": "c3",
+                  "text": "保存前の文章も保存した内容もデータとして扱う"
+                },
+                {
+                  "id": "c4",
+                  "text": "txtという名前にしたので文章がソフトウェアに変わる"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c3"
+              ],
+              "explanation": "保存は情報をファイルとして残す操作であり、データを初めて生み出す境界ではありません。",
+              "id": "PC01-O3-Q3",
+              "version": 1,
+              "objectiveId": "PC01-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC01-O3-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC01-O3",
+          "keyPoint": "データは扱う情報、ファイルは保存・管理の単位です。この二つは対立する分類ではありません。"
+        }
+      ],
+      "practice": "手元の機器を2つ、使用するソフトウェアを2つ、そのソフトウェアで扱う内容を1つ挙げてください。"
+    },
+    {
+      "id": "PC02",
+      "slug": "information-flow",
+      "title": "入力・処理・出力・保存",
+      "version": 1,
+      "status": "draft",
+      "estimatedMinutes": [
+        10,
+        20
+      ],
+      "goal": "一つの操作を、情報の流れに分けて説明できる。",
+      "terms": [
+        "入力",
+        "処理",
+        "出力",
+        "保存"
+      ],
+      "prerequisites": [
+        "PC01"
+      ],
+      "sources": [],
+      "objectives": [
+        {
+          "title": "入力と出力の向き",
+          "body": [
+            "入力は、コンピューターに情報や指示を取り込むことです。文字を打つ、マイクで声を取り込む、マウスで項目を選ぶことが含まれます。",
+            "出力は、処理した結果などを外へ出すことです。画面表示、スピーカーからの音、紙への印刷などがあります。同じ「音」でも、取り込むときと聞くときで向きが違います。",
+            "タッチパネルは表示と入力を兼ねています。一つの機器に複数の役割がある場合は、今どの働きを見ているかを区別します。"
+          ],
+          "example": "画面上のボタンに触れるのは入力、触れた結果として確認メッセージが出るのは出力です。",
+          "hint": "情報がPCに入るのか、PCから出るのかを考えましょう。",
+          "remediation": "機器名だけで入力専用・出力専用と決めつけず、その場面の働きを見ます。タッチパネルは両方を担います。",
+          "questions": [
+            {
+              "prompt": "PCへの入力に当たる操作をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "キーボードで数量を打つ"
+                },
+                {
+                  "id": "c2",
+                  "text": "スピーカーから通知音が鳴る"
+                },
+                {
+                  "id": "c3",
+                  "text": "マイクで声を取り込む"
+                },
+                {
+                  "id": "c4",
+                  "text": "画面に計算結果を表示する"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c3"
+              ],
+              "explanation": "数量と声は取り込む情報です。通知音と画面表示は出力です。",
+              "id": "PC02-O1-Q1",
+              "version": 1,
+              "objectiveId": "PC02-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC02-O1-needs-review"
+            },
+            {
+              "prompt": "タッチパネルについて適切な説明はどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "文字や画像を表示し、触れた位置も入力できる"
+                },
+                {
+                  "id": "c2",
+                  "text": "表示機器なので入力はできない"
+                },
+                {
+                  "id": "c3",
+                  "text": "入力機器なので表示は別の装置が必要"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "一つの機器が入力と出力を兼ねることがあります。",
+              "id": "PC02-O1-Q2",
+              "version": 1,
+              "objectiveId": "PC02-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC02-O1-needs-review"
+            },
+            {
+              "prompt": "出力に当たるものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "文章を紙に印刷する"
+                },
+                {
+                  "id": "c2",
+                  "text": "PCが読み上げた音声を聞く"
+                },
+                {
+                  "id": "c3",
+                  "text": "マウスで項目を選ぶ"
+                },
+                {
+                  "id": "c4",
+                  "text": "マイクで録音する"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2"
+              ],
+              "explanation": "印刷と音声の再生は外に結果を出す働きです。",
+              "id": "PC02-O1-Q3",
+              "version": 1,
+              "objectiveId": "PC02-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC02-O1-needs-review"
+            }
+          ],
+          "diagram": [
+            "入力：取り込む",
+            "処理：命令に従って扱う",
+            "出力：結果を出す"
+          ],
+          "id": "PC02-O1",
+          "keyPoint": "入力は情報を取り込むこと、出力は結果などを外へ出すことです。"
+        },
+        {
+          "title": "処理は何をすることか",
+          "body": [
+            "処理とは、命令に従って情報を計算・比較・並べ替え・変換するなどの作業です。数値の計算だけではありません。",
+            "表計算では、入力された単価と数量を使って金額を計算できます。写真を小さくする、名前を順番に並べることも処理です。",
+            "どんな処理が行われるかは、使うソフトウェアや指示によって変わります。PCがあるだけで、目的に合う処理が自動的に決まるわけではありません。"
+          ],
+          "example": "単価500円・数量3個を入力し、掛け算を行い、1500円を画面に表示する。入力・処理・出力を分けてみます。",
+          "hint": "材料と結果の間で、何をしているかに注目します。",
+          "remediation": "金額を入力するのは入力、掛け算は処理、結果を表示するのは出力です。情報の並べ替えも処理です。",
+          "questions": [
+            {
+              "prompt": "処理に当たるものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "入力された単価と数量を掛ける"
+                },
+                {
+                  "id": "c2",
+                  "text": "名簿を名前順に並べ替える"
+                },
+                {
+                  "id": "c3",
+                  "text": "完成した金額を紙で受け取る"
+                },
+                {
+                  "id": "c4",
+                  "text": "キーを押して数量を入力する"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2"
+              ],
+              "explanation": "計算や並べ替えが処理に当たります。",
+              "id": "PC02-O2-Q1",
+              "version": 1,
+              "objectiveId": "PC02-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC02-O2-needs-review"
+            },
+            {
+              "prompt": "500と3から1500を得る例で「処理」に当たるのはどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "500と3を打ち込む"
+                },
+                {
+                  "id": "c2",
+                  "text": "二つの数値を掛け算する"
+                },
+                {
+                  "id": "c3",
+                  "text": "1500を画面に表示する"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "入力された情報に計算を行う段階です。",
+              "id": "PC02-O2-Q2",
+              "version": 1,
+              "objectiveId": "PC02-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC02-O2-needs-review"
+            },
+            {
+              "prompt": "写真の幅を指定し、縮小した写真を表示しました。処理はどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "幅を指定する操作"
+                },
+                {
+                  "id": "c2",
+                  "text": "指定された幅に画像を変換する働き"
+                },
+                {
+                  "id": "c3",
+                  "text": "変換後の画像を見ること"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "指定に応じて情報を変換する働きが処理です。",
+              "id": "PC02-O2-Q3",
+              "version": 1,
+              "objectiveId": "PC02-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC02-O2-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC02-O2",
+          "keyPoint": "処理には、計算だけでなく比較・並べ替え・変換も含まれます。"
+        },
+        {
+          "title": "表示と保存を分ける",
+          "body": [
+            "画面に出ていることと、後で使えるように保存されていることは別です。保存は、情報をストレージなどに記録して残すことです。",
+            "アプリによって、自分で保存するものと自動保存するものがあります。自動保存があっても、保存先や保存完了の表示を確認します。",
+            "保存できたかは、アプリの状態と保存したファイルを確かめます。初めて練習するときは、失っても困らないサンプルを使います。"
+          ],
+          "example": "文章が画面に見えるだけでは保存完了の証拠になりません。保存状態を確認してから、保存したファイルを開き直して内容を確かめます。",
+          "hint": "画面で確認できることと、後から取り出せることを分けましょう。",
+          "remediation": "自動保存の有無はアプリ次第です。画面に出たから保存されたと決めず、保存先と状態を確認します。",
+          "questions": [
+            {
+              "prompt": "保存の確認として適切なものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "保存先を確認する"
+                },
+                {
+                  "id": "c2",
+                  "text": "文章が画面に見えれば保存済みとする"
+                },
+                {
+                  "id": "c3",
+                  "text": "保存したファイルを開き直して内容を確かめる"
+                },
+                {
+                  "id": "c4",
+                  "text": "アプリの保存状態を確認する"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c3",
+                "c4"
+              ],
+              "explanation": "表示だけで判断せず、保存先・状態・内容を確認します。",
+              "id": "PC02-O3-Q1",
+              "version": 1,
+              "objectiveId": "PC02-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC02-O3-needs-review"
+            },
+            {
+              "prompt": "自動保存について適切な説明はどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "どのアプリでも必ず自動保存される"
+                },
+                {
+                  "id": "c2",
+                  "text": "アプリの仕組みと保存状態を確認する必要がある"
+                },
+                {
+                  "id": "c3",
+                  "text": "自動保存なら保存先は存在しない"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "保存の方式や場所はアプリによって異なります。",
+              "id": "PC02-O3-Q2",
+              "version": 1,
+              "objectiveId": "PC02-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC02-O3-needs-review"
+            },
+            {
+              "prompt": "入力・計算・画面表示ができました。後日同じ内容を使うため、次に確認するものはどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "結果が保存されている場所と状態"
+                },
+                {
+                  "id": "c2",
+                  "text": "モニターの大きさ"
+                },
+                {
+                  "id": "c3",
+                  "text": "キーボードの色"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "結果の表示とは別に、残すための保存を確認します。",
+              "id": "PC02-O3-Q3",
+              "version": 1,
+              "objectiveId": "PC02-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC02-O3-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC02-O3",
+          "keyPoint": "画面に表示されていることと、保存が完了していることは別です。"
+        }
+      ],
+      "practice": "文書を書く作業を、入力・処理・出力・保存に分けて、一文ずつ説明してください。"
+    },
+    {
+      "id": "PC03",
+      "slug": "cpu",
+      "title": "CPU：命令を実行する部品",
+      "version": 1,
+      "status": "draft",
+      "estimatedMinutes": [
+        10,
+        20
+      ],
+      "goal": "CPUの役割と、性能を一つの数値だけで決められないことを説明できる。",
+      "terms": [
+        "CPU",
+        "命令",
+        "コア",
+        "クロック周波数"
+      ],
+      "prerequisites": [
+        "PC02"
+      ],
+      "sources": [
+        "word/textbook_data/01_コンピュータ.json#CPU",
+        "word/textbook_data/01_コンピュータ.json#コア数",
+        "word/textbook_data/01_コンピュータ.json#クロック周波数"
+      ],
+      "objectives": [
+        {
+          "title": "CPUとプログラムの関係",
+          "body": [
+            "CPUはプログラムの命令を解釈し、実行する部品です。計算や比較、データの移動などを行い、ほかの部品と連携します。",
+            "プログラムは行う作業を記述したもので、CPUはその命令を実行する側です。目的を自分で考えて任意の仕事を始める部品ではありません。",
+            "ストレージは保存、メモリーは作業中の情報の保持を担います。CPUだけですべての役割を代わりに行うわけではありません。"
+          ],
+          "example": "計算アプリで入力した数値に、プログラムの命令に従って計算を行い、結果を表示します。",
+          "hint": "命令を記述するものと、それを実行する部品を分けます。",
+          "remediation": "CPUは実行、ストレージは保存、メモリーは作業中の保持です。それぞれが連携してアプリが動きます。",
+          "questions": [
+            {
+              "prompt": "CPUの主な役割として適切なものはどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "プログラムの命令を実行する"
+                },
+                {
+                  "id": "c2",
+                  "text": "電源を切った後も文書を保管する"
+                },
+                {
+                  "id": "c3",
+                  "text": "画面の大きさを決める"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "CPUは命令を解釈して実行する部品です。",
+              "id": "PC03-O1-Q1",
+              "version": 1,
+              "objectiveId": "PC03-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC03-O1-needs-review"
+            },
+            {
+              "prompt": "適切な説明をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "CPUはほかの部品と連携する"
+                },
+                {
+                  "id": "c2",
+                  "text": "CPUがあれば情報を保存する部品は不要"
+                },
+                {
+                  "id": "c3",
+                  "text": "プログラムは実行する手順や命令を記述する"
+                },
+                {
+                  "id": "c4",
+                  "text": "CPUは依頼者の目的を自分で決める"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c3"
+              ],
+              "explanation": "CPUだけで保存などの役割をすべて担うわけではありません。",
+              "id": "PC03-O1-Q2",
+              "version": 1,
+              "objectiveId": "PC03-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC03-O1-needs-review"
+            },
+            {
+              "prompt": "計算に使うプログラムとCPUの関係はどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "プログラムが命令を記述し、CPUが実行する"
+                },
+                {
+                  "id": "c2",
+                  "text": "CPUが文書を永久保存し、プログラムが画面になる"
+                },
+                {
+                  "id": "c3",
+                  "text": "どちらも同じ部品の別名"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "ソフトウェアと、それを実行するハードウェアの関係です。",
+              "id": "PC03-O1-Q3",
+              "version": 1,
+              "objectiveId": "PC03-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC03-O1-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC03-O1",
+          "keyPoint": "CPUはプログラムの命令を実行し、ほかの部品と連携します。"
+        },
+        {
+          "title": "コアとクロック周波数",
+          "body": [
+            "コアはCPU内で処理を実行する単位です。複数のコアがあれば、作業を分けて実行できる場合があります。ただしソフトウェアや作業の性質によって、活用できる程度が変わります。",
+            "クロック周波数は、1秒あたりの動作サイクルの数です。GHzは10億回毎秒を表す単位です。1サイクルで必ず一つの仕事が終わる、という意味ではありません。",
+            "CPUの性能には内部の設計や作業内容なども関係します。コア数やGHzだけで、どちらが必ず速いとは決められません。"
+          ],
+          "example": "8コアだから、4コアに比べてすべての作業が必ず2倍速く終わる、とは言えません。",
+          "hint": "数値が示すものと、実際の仕事の速さを区別します。",
+          "remediation": "コア数は処理単位の数、周波数はサイクルの頻度です。どれだけ速く終わるかは、作業や設計にも依存します。",
+          "questions": [
+            {
+              "prompt": "適切な説明をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "コア数はCPU内の処理単位の数を示す"
+                },
+                {
+                  "id": "c2",
+                  "text": "8コアならどの作業も4コアの2倍速い"
+                },
+                {
+                  "id": "c3",
+                  "text": "GHzだけで異なるCPUの総合性能が決まる"
+                },
+                {
+                  "id": "c4",
+                  "text": "複数コアを活用できる程度は作業によって違う"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c4"
+              ],
+              "explanation": "数値の意味を理解して、性能の断定と分けます。",
+              "id": "PC03-O2-Q1",
+              "version": 1,
+              "objectiveId": "PC03-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC03-O2-needs-review"
+            },
+            {
+              "prompt": "クロック周波数が表すのはどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "1秒あたりの動作サイクル数"
+                },
+                {
+                  "id": "c2",
+                  "text": "保存できるファイル数"
+                },
+                {
+                  "id": "c3",
+                  "text": "CPU内のコア数"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "周波数はサイクルの頻度を表します。",
+              "id": "PC03-O2-Q2",
+              "version": 1,
+              "objectiveId": "PC03-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC03-O2-needs-review"
+            },
+            {
+              "prompt": "CPUを比較するとき、適切な見方はどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "周波数の高い方を常に最速とする"
+                },
+                {
+                  "id": "c2",
+                  "text": "使う作業と、設計やコア数など複数の条件を見る"
+                },
+                {
+                  "id": "c3",
+                  "text": "コア数だけでアプリの対応も判断する"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "目的の作業でどう働くかを考えます。",
+              "id": "PC03-O2-Q3",
+              "version": 1,
+              "objectiveId": "PC03-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC03-O2-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC03-O2",
+          "keyPoint": "コア数やクロック周波数だけで、実際の作業の速さは決まりません。"
+        },
+        {
+          "title": "CPUの忙しさとPC全体の遅さ",
+          "body": [
+            "CPU使用率は、CPUが処理に使われている程度を示す情報です。どのアプリが処理を使っているかと合わせて確認します。",
+            "PCの待ち時間には、通信やストレージへの読み書きなども関係します。CPU使用率が低いまま待っているなら、別の工程を待っている可能性があります。",
+            "使用率が高いことだけで故障とは言えません。重い処理中か、処理終了後も続くか、普段との違いを見る必要があります。"
+          ],
+          "example": "Webページの表示待ちでCPU使用率が低いとき、CPUを交換すれば必ず直ると決めず、通信なども確認します。",
+          "hint": "一つの表示だけで原因を決めず、何の作業中かを確かめます。",
+          "remediation": "高い使用率は仕事をしている状態でも起こります。遅さの原因はCPU以外にもあります。",
+          "questions": [
+            {
+              "prompt": "CPU使用率が高いとき、適切な対応はどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "直ちにCPUの故障と判断する"
+                },
+                {
+                  "id": "c2",
+                  "text": "実行中の作業と、どのアプリが使っているかを確認する"
+                },
+                {
+                  "id": "c3",
+                  "text": "保存したファイルをすべて削除する"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "負荷の高い作業中かを確認してから判断します。",
+              "id": "PC03-O3-Q1",
+              "version": 1,
+              "objectiveId": "PC03-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC03-O3-needs-review"
+            },
+            {
+              "prompt": "CPU使用率が低いのにページ表示が遅いとき、適切な説明はどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "CPUだけが原因だと確定できる"
+                },
+                {
+                  "id": "c2",
+                  "text": "通信など他の工程を待っている可能性もある"
+                },
+                {
+                  "id": "c3",
+                  "text": "低使用率は必ず故障を意味する"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "処理の待ちには他の要素も関係します。",
+              "id": "PC03-O3-Q2",
+              "version": 1,
+              "objectiveId": "PC03-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC03-O3-needs-review"
+            },
+            {
+              "prompt": "遅さを調べる記録として役立つものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "そのとき行っていた作業"
+                },
+                {
+                  "id": "c2",
+                  "text": "CPU使用率の変化"
+                },
+                {
+                  "id": "c3",
+                  "text": "いつから起きているか"
+                },
+                {
+                  "id": "c4",
+                  "text": "本体の色だけ"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2",
+                "c3"
+              ],
+              "explanation": "状況と数値を合わせて見るための記録です。",
+              "id": "PC03-O3-Q3",
+              "version": 1,
+              "objectiveId": "PC03-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC03-O3-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC03-O3",
+          "keyPoint": "PCが遅いという症状だけでは、CPUが原因とは判断できません。"
+        }
+      ],
+      "practice": "CPUが担うことと担わないことを挙げ、「高いGHzなら常に速い」と言えない理由を説明してください。"
+    },
+    {
+      "id": "PC04",
+      "slug": "memory",
+      "title": "メモリー：作業中の情報を保持する",
+      "version": 1,
+      "status": "draft",
+      "estimatedMinutes": [
+        10,
+        20
+      ],
+      "goal": "RAMとストレージの違い、容量不足時の働きを説明できる。",
+      "terms": [
+        "RAM",
+        "揮発性",
+        "容量",
+        "仮想メモリー"
+      ],
+      "prerequisites": [
+        "PC03"
+      ],
+      "sources": [
+        "word/textbook_data/01_コンピュータ.json#メモリー（RAM）"
+      ],
+      "objectives": [
+        {
+          "title": "作業中の保持と保存",
+          "body": [
+            "このレッスンでのメモリーは、主にRAMを指します。動かしているプログラムや作業中のデータを、処理のために保持する部品です。",
+            "RAMは通常、電源供給がなくなると保持した内容が失われます。この性質を揮発性と呼びます。後から取り出すための保存には、SSDなどのストレージを使います。",
+            "アプリが自動保存している場合は、文章が別の保存先に残ることがあります。「アプリで見えた内容はすべてRAMだけにある」とも決めつけられません。"
+          ],
+          "example": "作成中の文書を失わないためには、RAMの容量だけでなく、保存先と保存状態を確認します。",
+          "hint": "電源がなくなったときの性質と、アプリによる保存を分けます。",
+          "remediation": "RAMの保持とファイル保存は別です。自動保存や復元の有無はアプリにもよるため、保存状態を確かめます。",
+          "questions": [
+            {
+              "prompt": "RAMについて適切な説明をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "作業中の情報を保持する"
+                },
+                {
+                  "id": "c2",
+                  "text": "通常、電源供給がなくなると内容を失う"
+                },
+                {
+                  "id": "c3",
+                  "text": "文書の長期保存専用の部品"
+                },
+                {
+                  "id": "c4",
+                  "text": "保存状態の確認が不要になる部品"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2"
+              ],
+              "explanation": "RAMは作業用の保持で、ファイル保存を代わりに保証しません。",
+              "id": "PC04-O1-Q1",
+              "version": 1,
+              "objectiveId": "PC04-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC04-O1-needs-review"
+            },
+            {
+              "prompt": "「揮発性」がここで意味するのはどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "通常、電源を失うと保持内容が失われる性質"
+                },
+                {
+                  "id": "c2",
+                  "text": "空気中へ部品が蒸発する性質"
+                },
+                {
+                  "id": "c3",
+                  "text": "保存先が自動でクラウドになる性質"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "記憶装置の電源と保持の関係を指します。",
+              "id": "PC04-O1-Q2",
+              "version": 1,
+              "objectiveId": "PC04-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC04-O1-needs-review"
+            },
+            {
+              "prompt": "入力中の文章が残るか確かめるには？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "RAMが大きければ必ず残ると判断する"
+                },
+                {
+                  "id": "c2",
+                  "text": "アプリの保存先と保存状態を確認する"
+                },
+                {
+                  "id": "c3",
+                  "text": "画面にある限り保存確認を省く"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "RAMの容量と保存完了は別の事項です。",
+              "id": "PC04-O1-Q3",
+              "version": 1,
+              "objectiveId": "PC04-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC04-O1-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC04-O1",
+          "keyPoint": "RAMは作業中の情報を保持します。通常、電源を失うと保持内容が失われます。"
+        },
+        {
+          "title": "容量と作業量の関係",
+          "body": [
+            "容量は保持できる情報の量です。GBなどの単位で表します。RAM容量とストレージ容量は、同じ単位でも役割が違います。",
+            "複数のアプリや大きな資料を開くと、使うメモリーが増える場合があります。必要量はアプリや作業内容によって異なります。",
+            "容量を増やせば必ずすべての作業が速くなるわけではありません。今の作業で不足しているか、別の部分が待ち時間の原因かを確認します。"
+          ],
+          "example": "「RAM 16GB、SSD 512GB」という表示は、同じ一つの容量を二通りに示しているのではありません。",
+          "hint": "GBという単位だけでなく、何の容量かを読みます。",
+          "remediation": "RAMは作業用、SSDは保存用です。保存場所の空きと作業用メモリーの余裕を混同しないようにします。",
+          "questions": [
+            {
+              "prompt": "「RAM 16GB／SSD 512GB」の正しい読み方は？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "作業用メモリーと保存用ストレージの容量"
+                },
+                {
+                  "id": "c2",
+                  "text": "二つを足すとRAMが528GBになる"
+                },
+                {
+                  "id": "c3",
+                  "text": "512GBの方が必ず処理が速い"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "単位が同じでも役割の異なる容量です。",
+              "id": "PC04-O2-Q1",
+              "version": 1,
+              "objectiveId": "PC04-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC04-O2-needs-review"
+            },
+            {
+              "prompt": "適切な説明をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "同時に開くアプリによってメモリー使用量が変わる"
+                },
+                {
+                  "id": "c2",
+                  "text": "RAMを増やせば通信待ちも必ずなくなる"
+                },
+                {
+                  "id": "c3",
+                  "text": "必要なメモリー容量は作業によって違う"
+                },
+                {
+                  "id": "c4",
+                  "text": "SSDの空き容量はRAMの空き容量と同じ"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c3"
+              ],
+              "explanation": "容量不足なのか、別の工程なのかを分けて考えます。",
+              "id": "PC04-O2-Q2",
+              "version": 1,
+              "objectiveId": "PC04-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC04-O2-needs-review"
+            },
+            {
+              "prompt": "メモリー増設を考える前に確認するものは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "使用中のメモリー量と作業内容"
+                },
+                {
+                  "id": "c2",
+                  "text": "写真のファイル名だけ"
+                },
+                {
+                  "id": "c3",
+                  "text": "画面の明るさだけ"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "使い方に対して不足しているかが出発点です。",
+              "id": "PC04-O2-Q3",
+              "version": 1,
+              "objectiveId": "PC04-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC04-O2-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC04-O2",
+          "keyPoint": "RAM容量とストレージ容量は、同じ単位でも役割が違います。"
+        },
+        {
+          "title": "不足したときの仕組み",
+          "body": [
+            "OSは、メモリー管理のためにストレージも利用する場合があります。作業中の情報の一部をストレージへ退避させることがあり、仮想メモリーの仕組みと関係します。",
+            "ストレージとのやり取りが頻繁になると、RAM内で扱う場合より待ち時間が増えることがあります。「遅い」だけでメモリー不足と断定はできません。",
+            "アプリを閉じる前には作業を保存します。解決策として勝手に重要なファイルを削除するのではなく、使用状況を確認して対処します。"
+          ],
+          "example": "多数のアプリを開いたときだけ動きが重くなり、メモリー使用量も高い場合、保存して不要なアプリを閉じ、変化を確認します。",
+          "hint": "不足した情報の置き場所と、その読み書きの負担に注目します。",
+          "remediation": "ストレージを使った退避には待ち時間が伴うことがあります。作業を保存し、使用状況を見ながら一つずつ確認します。",
+          "questions": [
+            {
+              "prompt": "メモリーが不足し、ストレージとのやり取りが増えたときに起こり得ることは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "読み書きの待ち時間が増える"
+                },
+                {
+                  "id": "c2",
+                  "text": "必ず通信料金が増える"
+                },
+                {
+                  "id": "c3",
+                  "text": "保存済み文書が必ず消える"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "RAMとストレージではアクセスの特性が異なります。",
+              "id": "PC04-O3-Q1",
+              "version": 1,
+              "objectiveId": "PC04-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC04-O3-needs-review"
+            },
+            {
+              "prompt": "対処として適切なものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "作業を保存して不要なアプリを閉じる"
+                },
+                {
+                  "id": "c2",
+                  "text": "メモリー使用状況を見る"
+                },
+                {
+                  "id": "c3",
+                  "text": "原因確認なしに保存文書を全部削除する"
+                },
+                {
+                  "id": "c4",
+                  "text": "状況を記録して変化を確認する"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2",
+                "c4"
+              ],
+              "explanation": "保存と確認を伴う段階的な対処を行います。",
+              "id": "PC04-O3-Q2",
+              "version": 1,
+              "objectiveId": "PC04-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC04-O3-needs-review"
+            },
+            {
+              "prompt": "「PCが遅い」という情報だけから言えることは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "メモリー故障が確定した"
+                },
+                {
+                  "id": "c2",
+                  "text": "作業内容や使用状況などを追加で確認する必要がある"
+                },
+                {
+                  "id": "c3",
+                  "text": "RAMを交換すれば必ず直る"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "症状だけでは原因を特定できません。",
+              "id": "PC04-O3-Q3",
+              "version": 1,
+              "objectiveId": "PC04-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC04-O3-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC04-O3",
+          "keyPoint": "メモリーの不足でストレージとのやり取りが増えると、待ち時間が増えることがあります。"
+        }
+      ],
+      "practice": "RAMとSSDについて「何のために保持・保存するか」「電源がなくなるとどうなるか」を比較してください。"
+    },
+    {
+      "id": "PC05",
+      "slug": "storage",
+      "title": "ストレージ：情報を保存する",
+      "version": 1,
+      "status": "draft",
+      "estimatedMinutes": [
+        10,
+        20
+      ],
+      "goal": "保存用部品、容量、バックアップの役割を区別できる。",
+      "terms": [
+        "ストレージ",
+        "SSD",
+        "HDD",
+        "空き容量",
+        "バックアップ"
+      ],
+      "prerequisites": [
+        "PC04"
+      ],
+      "sources": [
+        "word/textbook_data/01_コンピュータ.json#ストレージ"
+      ],
+      "objectives": [
+        {
+          "title": "SSDとHDD",
+          "body": [
+            "ストレージは、ファイルなどを保存するための記憶装置です。通常、電源を切っても記録内容を保持します。ただし故障や削除などで失われる可能性はあります。",
+            "HDDは回転する磁気ディスクに読み書きし、SSDは半導体の記憶素子に記録します。どちらも保存の役割を担います。",
+            "内蔵ストレージは本体内にあり、外付けストレージは外から接続します。「外付け」だけでクラウドを意味するわけではありません。"
+          ],
+          "example": "PC内のSSDから外付けSSDへ文書をコピーする場合、どちらも物理的な保存装置です。",
+          "hint": "記録方式と、どこに取り付けるかを分けます。",
+          "remediation": "SSDとHDDは方式の違い、内蔵と外付けは取り付け方の違いです。どちらも故障しない保証はありません。",
+          "questions": [
+            {
+              "prompt": "ストレージに当たるものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "SSD"
+                },
+                {
+                  "id": "c2",
+                  "text": "HDD"
+                },
+                {
+                  "id": "c3",
+                  "text": "ディスプレイ"
+                },
+                {
+                  "id": "c4",
+                  "text": "マイク"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2"
+              ],
+              "explanation": "SSDとHDDは保存用の記憶装置です。",
+              "id": "PC05-O1-Q1",
+              "version": 1,
+              "objectiveId": "PC05-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC05-O1-needs-review"
+            },
+            {
+              "prompt": "適切な説明はどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "外付けSSDは必ずインターネット上にある"
+                },
+                {
+                  "id": "c2",
+                  "text": "内蔵と外付けは取り付け方の違い"
+                },
+                {
+                  "id": "c3",
+                  "text": "SSDは文書を編集するアプリの名前"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "外付けはPCの外から接続する方式です。",
+              "id": "PC05-O1-Q2",
+              "version": 1,
+              "objectiveId": "PC05-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC05-O1-needs-review"
+            },
+            {
+              "prompt": "SSDとHDDに共通する説明をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "ファイル保存に使う"
+                },
+                {
+                  "id": "c2",
+                  "text": "通常は電源を切っても記録を保持する"
+                },
+                {
+                  "id": "c3",
+                  "text": "絶対に故障しない"
+                },
+                {
+                  "id": "c4",
+                  "text": "どちらも回転するディスクを使う"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2"
+              ],
+              "explanation": "保存機能は共通しますが、記録方式と故障可能性を区別します。",
+              "id": "PC05-O1-Q3",
+              "version": 1,
+              "objectiveId": "PC05-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC05-O1-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC05-O1",
+          "keyPoint": "SSDとHDDは保存用の装置です。電源を切っても通常は記録が残りますが、故障は起こり得ます。"
+        },
+        {
+          "title": "容量・空き容量・速さ",
+          "body": [
+            "容量は記録できる情報量です。空き容量は、そのうち未使用の領域です。保存できるファイル数は、各ファイルの大きさにもよります。",
+            "GBやTBは情報量を表します。読み書きの速さは別の特性です。容量が2倍だから、読み書きも2倍速いとは言えません。",
+            "保存や更新には空き領域が必要です。空きが少ない場合は、必要な情報を確認し、バックアップなどを考えて整理します。"
+          ],
+          "example": "空きが1GBの保存先に、2GBのファイルをそのまま保存することはできません。どの保存先の空きかも確認します。",
+          "hint": "全体の容量と、今使える量を分けます。",
+          "remediation": "購入時の容量が大きくても、既に使っていれば空きは少なくなります。保存先ごとに確認します。",
+          "questions": [
+            {
+              "prompt": "保存先の容量は500GB、使用済みは480GBです。概算の空きは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "20GB"
+                },
+                {
+                  "id": "c2",
+                  "text": "480GB"
+                },
+                {
+                  "id": "c3",
+                  "text": "980GB"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "全体から使用済みを引いた量が概算の空きです。",
+              "id": "PC05-O2-Q1",
+              "version": 1,
+              "objectiveId": "PC05-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC05-O2-needs-review"
+            },
+            {
+              "prompt": "適切な説明をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "容量と読み書きの速さは別の特性"
+                },
+                {
+                  "id": "c2",
+                  "text": "空き容量は保存先ごとに確認する"
+                },
+                {
+                  "id": "c3",
+                  "text": "2TBなら1TBより必ず2倍速い"
+                },
+                {
+                  "id": "c4",
+                  "text": "保存できる数はファイルの大きさにもよる"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2",
+                "c4"
+              ],
+              "explanation": "量と速さを混同しないことが大切です。",
+              "id": "PC05-O2-Q2",
+              "version": 1,
+              "objectiveId": "PC05-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC05-O2-needs-review"
+            },
+            {
+              "prompt": "保存できないとき、まず確認に役立つ情報は？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "保存先と、その空き容量、ファイルの大きさ"
+                },
+                {
+                  "id": "c2",
+                  "text": "マウスの形だけ"
+                },
+                {
+                  "id": "c3",
+                  "text": "ディスプレイの色だけ"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "保存先の状態と保存する情報量を照合します。",
+              "id": "PC05-O2-Q3",
+              "version": 1,
+              "objectiveId": "PC05-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC05-O2-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC05-O2",
+          "keyPoint": "保存できる量と読み書きの速さは、別の特性です。"
+        },
+        {
+          "title": "保存してあっても失うことがある",
+          "body": [
+            "バックアップは、元の情報を失ったり壊したりした場合に復旧できるよう、別のコピーなどを用意することです。",
+            "同じ装置の別フォルダへのコピーは操作ミスへの備えになる場合がありますが、その装置自体が壊れると両方失う可能性があります。",
+            "バックアップは作っただけでなく、必要なファイルが含まれ、取り出せるかを確認します。実習ではサンプルを使い、元のデータを消さずに練習します。"
+          ],
+          "example": "文書を同じSSD内の二つのフォルダに置くだけでは、そのSSDの故障に備えた別保存先にはなりません。",
+          "hint": "何が壊れたときに、どこから戻せるかを考えます。",
+          "remediation": "コピーの所在と、復旧できることの確認が重要です。「二つある」だけで装置故障への備えとは言えません。",
+          "questions": [
+            {
+              "prompt": "同じSSDの別フォルダにコピーした場合、残るリスクは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "SSD自体の故障で両方失う可能性"
+                },
+                {
+                  "id": "c2",
+                  "text": "元の文書が必ずアプリになる"
+                },
+                {
+                  "id": "c3",
+                  "text": "コピーすると必ず文字化けする"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "コピーが同じ装置に依存しています。",
+              "id": "PC05-O3-Q1",
+              "version": 1,
+              "objectiveId": "PC05-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC05-O3-needs-review"
+            },
+            {
+              "prompt": "バックアップで確認する項目をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "どこに保存しているか"
+                },
+                {
+                  "id": "c2",
+                  "text": "必要な内容が含まれるか"
+                },
+                {
+                  "id": "c3",
+                  "text": "復旧用コピーを取り出せるか"
+                },
+                {
+                  "id": "c4",
+                  "text": "名前にbackupと付けば必ず安全か"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2",
+                "c3"
+              ],
+              "explanation": "名前ではなく、所在・内容・復旧可能性を確認します。",
+              "id": "PC05-O3-Q2",
+              "version": 1,
+              "objectiveId": "PC05-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC05-O3-needs-review"
+            },
+            {
+              "prompt": "バックアップの練習方法として適切なのは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "重要な原本を削除してから試す"
+                },
+                {
+                  "id": "c2",
+                  "text": "サンプルを使い、元を残してコピーを取り出してみる"
+                },
+                {
+                  "id": "c3",
+                  "text": "確認せず完了とする"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "大切な情報を失わずに手順を確認します。",
+              "id": "PC05-O3-Q3",
+              "version": 1,
+              "objectiveId": "PC05-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC05-O3-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC05-O3",
+          "keyPoint": "バックアップは、元を失ったときに取り出して復旧できることが重要です。"
+        }
+      ],
+      "practice": "保存先を一つ挙げ、そこが使えなくなったとき何から復旧できるかを書いてください。未確認なら未確認と記録します。"
+    },
+    {
+      "id": "PC06",
+      "slug": "gpu",
+      "title": "GPU：画像と大量の計算を扱う",
+      "version": 1,
+      "status": "draft",
+      "estimatedMinutes": [
+        10,
+        20
+      ],
+      "goal": "GPUの役割と、手元の処理・外部の処理を区別できる。",
+      "terms": [
+        "GPU",
+        "並列処理",
+        "内蔵GPU",
+        "専用GPU"
+      ],
+      "prerequisites": [
+        "PC05"
+      ],
+      "sources": [
+        "word/textbook_data/01_コンピュータ.json#GPU"
+      ],
+      "objectives": [
+        {
+          "title": "GPUとCPUの分担",
+          "body": [
+            "GPUは画像の描画や、多数の計算を並べて実行する処理に使われる部品です。同時に複数の処理を進めることを並列処理と呼びます。",
+            "CPUも並列処理を行います。GPUは多くの計算を並列に進める構造が得意な一方、どんな作業にも同じ効果があるわけではありません。",
+            "CPUとGPUは連携します。GPUがあればCPUやメモリーが不要になる、という関係ではありません。"
+          ],
+          "example": "対応する画像編集ソフトでは、特定の画像処理をGPUに任せる場合があります。",
+          "hint": "「得意な処理」と「すべてを置き換える」を分けます。",
+          "remediation": "GPUは役割分担する部品です。ソフトウェアがどの処理で使うかも関係します。",
+          "questions": [
+            {
+              "prompt": "GPUについて適切な説明をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "画像描画や大量の計算に使われる"
+                },
+                {
+                  "id": "c2",
+                  "text": "CPUと連携する"
+                },
+                {
+                  "id": "c3",
+                  "text": "CPUが不要になる"
+                },
+                {
+                  "id": "c4",
+                  "text": "すべてのアプリを必ず同じ倍率で速くする"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2"
+              ],
+              "explanation": "GPUは他の部品と役割分担します。",
+              "id": "PC06-O1-Q1",
+              "version": 1,
+              "objectiveId": "PC06-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC06-O1-needs-review"
+            },
+            {
+              "prompt": "並列処理とは何ですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "複数の処理を同時に進めること"
+                },
+                {
+                  "id": "c2",
+                  "text": "ファイルを永久保存すること"
+                },
+                {
+                  "id": "c3",
+                  "text": "モニターを横に並べることだけ"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "作業の進め方を表す言葉です。",
+              "id": "PC06-O1-Q2",
+              "version": 1,
+              "objectiveId": "PC06-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC06-O1-needs-review"
+            },
+            {
+              "prompt": "GPUの効果を考えるとき確認するものは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "使用するソフトウェアと処理がGPUを利用するか"
+                },
+                {
+                  "id": "c2",
+                  "text": "本体の色"
+                },
+                {
+                  "id": "c3",
+                  "text": "ファイル名の長さだけ"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "対応する作業で使われるかが重要です。",
+              "id": "PC06-O1-Q3",
+              "version": 1,
+              "objectiveId": "PC06-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC06-O1-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC06-O1",
+          "keyPoint": "GPUは画像描画や大量の計算に使われます。CPUなどと役割を分担します。"
+        },
+        {
+          "title": "内蔵と専用のGPU",
+          "body": [
+            "GPUには、CPUなどと同じチップに組み込まれたものと、独立した部品として搭載されるものがあります。ここでは前者を内蔵GPU、後者を専用GPUと呼びます。",
+            "内蔵GPUはPCのメモリーを共有する構成が一般的です。専用GPUは専用のメモリーを持つことが多く、グラフィック用メモリーをVRAMと呼ぶ場合があります。",
+            "実際の構成は機種によって異なります。部品が別に見えないからGPUがない、と決めず、仕様を確認します。"
+          ],
+          "example": "ノートPCに大きな拡張カードがなくても、内蔵GPUで表示している場合があります。",
+          "hint": "外から見える形だけで、部品の有無を判断しないようにします。",
+          "remediation": "GPUがどのように組み込まれ、どのメモリーを使うかは仕様で確認します。",
+          "questions": [
+            {
+              "prompt": "内蔵GPUの説明として適切なのは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "CPUなどと同じチップに組み込まれるものがある"
+                },
+                {
+                  "id": "c2",
+                  "text": "必ず別の大きなカードとして見える"
+                },
+                {
+                  "id": "c3",
+                  "text": "GPUではなくモニターの別名"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "構造によって独立したカードに見えない場合があります。",
+              "id": "PC06-O2-Q1",
+              "version": 1,
+              "objectiveId": "PC06-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC06-O2-needs-review"
+            },
+            {
+              "prompt": "適切な確認方法をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "PCの仕様を読む"
+                },
+                {
+                  "id": "c2",
+                  "text": "OSの機器情報を確認する"
+                },
+                {
+                  "id": "c3",
+                  "text": "外からカードが見えないのでGPUなしと断定する"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2"
+              ],
+              "explanation": "構成を情報で確かめます。",
+              "id": "PC06-O2-Q2",
+              "version": 1,
+              "objectiveId": "PC06-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC06-O2-needs-review"
+            },
+            {
+              "prompt": "GPUのメモリーについて適切な説明は？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "内蔵GPUがPCのメモリーを共有する構成がある"
+                },
+                {
+                  "id": "c2",
+                  "text": "GPUはどの構成でも情報を保持する場所を必要としない"
+                },
+                {
+                  "id": "c3",
+                  "text": "PCの保存用SSDと常に同じもの"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "作業用の保持とファイル保存を区別します。",
+              "id": "PC06-O2-Q3",
+              "version": 1,
+              "objectiveId": "PC06-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC06-O2-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC06-O2",
+          "keyPoint": "独立したカードが見えなくても、GPUが組み込まれている場合があります。"
+        },
+        {
+          "title": "AIの処理はどこで行われるか",
+          "body": [
+            "インターネット経由のAIサービスでは、主な生成処理をサービス側のコンピューターで行うものがあります。手元のPCは入力や結果の表示を担当します。",
+            "自分のPC内でAIを動かす方法もあります。この場合、扱うモデルやソフトウェアによって必要なメモリーやGPUなどが変わります。",
+            "AIを使うから必ず高価なGPUが必要、とは言えません。どこで何を処理する方式かを先に確認します。"
+          ],
+          "example": "WebのAIサービスに文章を送る場合と、PC内で画像生成のソフトを動かす場合では、手元に必要な機器の条件が異なります。",
+          "hint": "処理を担当しているのは手元か、サービス側かを確かめます。",
+          "remediation": "同じAI利用でも構成が違います。サービスの方式やソフトウェアの要件を確認してから機器を判断します。",
+          "questions": [
+            {
+              "prompt": "AI用のPCを考える最初の確認として適切なのは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "生成処理をどこで実行する方式か"
+                },
+                {
+                  "id": "c2",
+                  "text": "AIという名前ならGPUを必ず購入する"
+                },
+                {
+                  "id": "c3",
+                  "text": "モニターの台数だけ"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "手元での処理と外部サービスの利用を区別します。",
+              "id": "PC06-O3-Q1",
+              "version": 1,
+              "objectiveId": "PC06-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC06-O3-needs-review"
+            },
+            {
+              "prompt": "適切な説明をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "サービス側が主な生成処理を行う方式がある"
+                },
+                {
+                  "id": "c2",
+                  "text": "PC内でAIを動かす方式もある"
+                },
+                {
+                  "id": "c3",
+                  "text": "すべてのAIサービスは利用者のGPUで生成する"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2"
+              ],
+              "explanation": "処理の所在は利用方法によって異なります。",
+              "id": "PC06-O3-Q2",
+              "version": 1,
+              "objectiveId": "PC06-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC06-O3-needs-review"
+            },
+            {
+              "prompt": "PC内でAIを動かしたいときに確認すべきものは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "使うモデルとソフトウェアが要求する機器条件"
+                },
+                {
+                  "id": "c2",
+                  "text": "インターネット上で最も高価なGPUだけ"
+                },
+                {
+                  "id": "c3",
+                  "text": "ブラウザのアイコンの色"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "用途から必要条件を確認します。",
+              "id": "PC06-O3-Q3",
+              "version": 1,
+              "objectiveId": "PC06-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC06-O3-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC06-O3",
+          "keyPoint": "AIに必要な機器は、処理を手元で行うか、サービス側で行うかによって変わります。"
+        }
+      ],
+      "practice": "使っている、または使いたいAIについて、主な処理場所が分かるかを書いてください。分からない場合は確認事項として残します。"
+    },
+    {
+      "id": "PC07",
+      "slug": "connections",
+      "title": "入力・出力と接続を見分ける",
+      "version": 1,
+      "status": "draft",
+      "estimatedMinutes": [
+        10,
+        20
+      ],
+      "goal": "接続する機器、端子、通信方式を区別し、形だけで対応を決めない。",
+      "terms": [
+        "端子",
+        "ケーブル",
+        "USB",
+        "HDMI",
+        "Bluetooth"
+      ],
+      "prerequisites": [
+        "PC06"
+      ],
+      "sources": [],
+      "objectives": [
+        {
+          "title": "端子とケーブル",
+          "body": [
+            "端子は機器同士を接続する部分です。ケーブルは接続先を結ぶ線で、先端の形と、運べる信号や電力に条件があります。",
+            "USBは周辺機器との接続などに使われ、USB Type-Cは端子の形の名称です。同じ形でも、充電・データ転送・映像出力にどこまで対応するかは機器やケーブルによります。",
+            "HDMIは映像や音声を伝える接続に使われます。形が合いそうでも、無理に差し込まず、用途と対応を確認します。"
+          ],
+          "example": "USB Type-Cのケーブルをつないだだけでは、どのPCでも外部モニターへ映像を出せるとは限りません。",
+          "hint": "形状と機能への対応は、別々に確認します。",
+          "remediation": "端子・機器・ケーブルの組合せで機能が決まります。同じ形という理由だけで判断しません。",
+          "questions": [
+            {
+              "prompt": "USB Type-Cについて適切な説明は？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "端子の形を示し、対応機能は別に確認する"
+                },
+                {
+                  "id": "c2",
+                  "text": "必ずすべての映像出力に対応する"
+                },
+                {
+                  "id": "c3",
+                  "text": "同じ形ならケーブルの違いはない"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "形と機能を区別します。",
+              "id": "PC07-O1-Q1",
+              "version": 1,
+              "objectiveId": "PC07-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC07-O1-needs-review"
+            },
+            {
+              "prompt": "外部モニターを接続するとき確認するものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "PC側の映像出力への対応"
+                },
+                {
+                  "id": "c2",
+                  "text": "モニター側の入力端子"
+                },
+                {
+                  "id": "c3",
+                  "text": "ケーブルの対応"
+                },
+                {
+                  "id": "c4",
+                  "text": "端子の色だけ"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2",
+                "c3"
+              ],
+              "explanation": "接続する両側とケーブルを確認します。",
+              "id": "PC07-O1-Q2",
+              "version": 1,
+              "objectiveId": "PC07-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC07-O1-needs-review"
+            },
+            {
+              "prompt": "HDMIは主に何を伝える接続に使われますか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "映像や音声"
+                },
+                {
+                  "id": "c2",
+                  "text": "紙そのもの"
+                },
+                {
+                  "id": "c3",
+                  "text": "すべてのPCへの充電だけ"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "用途を知って接続を選びます。",
+              "id": "PC07-O1-Q3",
+              "version": 1,
+              "objectiveId": "PC07-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC07-O1-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC07-O1",
+          "keyPoint": "端子の形が同じでも、使える機能まで同じとは限りません。"
+        },
+        {
+          "title": "有線と無線",
+          "body": [
+            "有線はケーブルで接続する方式、無線は電波などで接続する方式です。Bluetoothは、対応する機器同士を近距離で無線接続する方式の一つです。",
+            "Bluetooth機器では、接続相手を登録する操作をペアリングと呼びます。機器の電源・対応・接続先を確認します。",
+            "無線接続でも電源は必要です。充電や電池が必要な機器があります。また、Bluetooth接続とインターネットへの接続は同じことではありません。"
+          ],
+          "example": "Bluetoothマウスは、PCとつながれば操作に使えます。Webサイトにアクセスできることを、その接続だけで保証するわけではありません。",
+          "hint": "どの機器とどの機器を結ぶ接続なのかに注目します。",
+          "remediation": "無線という言葉だけでインターネット接続と同一視しません。電源と登録先も確認します。",
+          "questions": [
+            {
+              "prompt": "Bluetoothマウスが動かないときの確認として適切なものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "電源や電池残量"
+                },
+                {
+                  "id": "c2",
+                  "text": "接続相手の登録状況"
+                },
+                {
+                  "id": "c3",
+                  "text": "機器の対応"
+                },
+                {
+                  "id": "c4",
+                  "text": "ブラウザの履歴だけ"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2",
+                "c3"
+              ],
+              "explanation": "周辺機器の接続に関係する条件です。",
+              "id": "PC07-O2-Q1",
+              "version": 1,
+              "objectiveId": "PC07-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC07-O2-needs-review"
+            },
+            {
+              "prompt": "ペアリングとは何ですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "無線機器の接続相手を登録すること"
+                },
+                {
+                  "id": "c2",
+                  "text": "文書を保存すること"
+                },
+                {
+                  "id": "c3",
+                  "text": "画面を二つ開くこと"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "機器同士を接続するための登録です。",
+              "id": "PC07-O2-Q2",
+              "version": 1,
+              "objectiveId": "PC07-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC07-O2-needs-review"
+            },
+            {
+              "prompt": "適切な説明はどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "無線機器には電源が不要"
+                },
+                {
+                  "id": "c2",
+                  "text": "Bluetoothでマウスがつながっても、インターネット接続とは別"
+                },
+                {
+                  "id": "c3",
+                  "text": "Bluetoothはすべてのケーブルと同じ機能を保証する"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "接続の用途と経路を分けます。",
+              "id": "PC07-O2-Q3",
+              "version": 1,
+              "objectiveId": "PC07-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC07-O2-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC07-O2",
+          "keyPoint": "Bluetoothによる機器の接続と、インターネットへの接続は別です。"
+        },
+        {
+          "title": "接続経路を確認する",
+          "body": [
+            "音や映像が出ないときは、機器・接続・選択されている出力先を順に確認します。PCが別のスピーカーや画面を選んでいる場合もあります。",
+            "一度に多くの設定を変えると、何で変化したのか分かりにくくなります。電源、接続、出力先などを一つずつ確認し、結果を記録します。",
+            "原因が未確認の段階で機器の故障と決めません。仕事で使う設定や機器は、管理者のルールに従って扱います。"
+          ],
+          "example": "会議の音が聞こえないとき、ヘッドホン側へ出力されていないか、音量や接続を確認します。",
+          "hint": "発生源から届け先まで、どこが選ばれているかをたどります。",
+          "remediation": "音が出ないという現象だけでは故障箇所は分かりません。接続先と設定も含めて確認します。",
+          "questions": [
+            {
+              "prompt": "音が出ない場合の適切な確認は？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "選択されている出力先や音量、接続を順に見る"
+                },
+                {
+                  "id": "c2",
+                  "text": "すぐPCを買い替える"
+                },
+                {
+                  "id": "c3",
+                  "text": "無関係な設定をまとめて変える"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "経路を順に確認します。",
+              "id": "PC07-O3-Q1",
+              "version": 1,
+              "objectiveId": "PC07-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC07-O3-needs-review"
+            },
+            {
+              "prompt": "一つずつ確認する理由は？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "どの変更で状態が変わったか分かるようにするため"
+                },
+                {
+                  "id": "c2",
+                  "text": "確認時間を必ず長くするため"
+                },
+                {
+                  "id": "c3",
+                  "text": "記録を残さなくてよくするため"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "原因を切り分けるためです。",
+              "id": "PC07-O3-Q2",
+              "version": 1,
+              "objectiveId": "PC07-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC07-O3-needs-review"
+            },
+            {
+              "prompt": "接続トラブルの記録に必要なものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "機器と接続方法"
+                },
+                {
+                  "id": "c2",
+                  "text": "確認した設定"
+                },
+                {
+                  "id": "c3",
+                  "text": "変更前後の状態"
+                },
+                {
+                  "id": "c4",
+                  "text": "原因が未確認でも故障と断定した結論"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2",
+                "c3"
+              ],
+              "explanation": "事実と確認結果を残します。",
+              "id": "PC07-O3-Q3",
+              "version": 1,
+              "objectiveId": "PC07-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC07-O3-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC07-O3",
+          "keyPoint": "接続の問題は、機器・接続・選択された出力先を一つずつ確認します。"
+        }
+      ],
+      "practice": "自分のPCと周辺機器を一つ選び、接続方法・電源・用途を記録してください。"
+    },
+    {
+      "id": "PC08",
+      "slug": "os",
+      "title": "OS：機器とアプリを管理する",
+      "version": 1,
+      "status": "draft",
+      "estimatedMinutes": [
+        10,
+        20
+      ],
+      "goal": "OSの役割を知り、アプリや機器との対応を確認できる。",
+      "terms": [
+        "OS",
+        "ドライバー",
+        "更新",
+        "対応環境"
+      ],
+      "prerequisites": [
+        "PC07"
+      ],
+      "sources": [
+        "word/textbook_data/01_コンピュータ.json#OS",
+        "word/textbook_data/01_コンピュータ.json#ドライバー"
+      ],
+      "objectives": [
+        {
+          "title": "OSが仲介するもの",
+          "body": [
+            "OSはオペレーティングシステムの略で、PCの機器やアプリの動作を管理するソフトウェアです。Windows、macOS、Linuxなどがあります。",
+            "CPUやメモリーなどの資源をアプリが使えるよう管理し、ファイルを扱う仕組みなどを提供します。アプリはOSの機能を利用して動きます。",
+            "OSとPCの本体は同じものではありません。機種名とOS名を別に確認できると、操作方法や対応アプリを調べるときに役立ちます。"
+          ],
+          "example": "「このPCで使えますか」と聞く際、本体の名前だけでなくOS名とその版を伝えると、確認の手掛かりになります。",
+          "hint": "機器そのものと、機器を管理するソフトウェアを区別します。",
+          "remediation": "OSはアプリと機器の間で働くソフトウェアです。機種名だけでOSの版まで特定できるとは限りません。",
+          "questions": [
+            {
+              "prompt": "OSに当たるものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "Windows"
+                },
+                {
+                  "id": "c2",
+                  "text": "macOS"
+                },
+                {
+                  "id": "c3",
+                  "text": "Excel"
+                },
+                {
+                  "id": "c4",
+                  "text": "SSD"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2"
+              ],
+              "explanation": "WindowsとmacOSはOSです。Excelはアプリ、SSDは機器です。",
+              "id": "PC08-O1-Q1",
+              "version": 1,
+              "objectiveId": "PC08-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC08-O1-needs-review"
+            },
+            {
+              "prompt": "OSの役割として適切なのは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "機器の資源やアプリの動作を管理する"
+                },
+                {
+                  "id": "c2",
+                  "text": "紙を印刷する物理装置"
+                },
+                {
+                  "id": "c3",
+                  "text": "画像ファイルそのもの"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "OSはPCの動作を管理するソフトウェアです。",
+              "id": "PC08-O1-Q2",
+              "version": 1,
+              "objectiveId": "PC08-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC08-O1-needs-review"
+            },
+            {
+              "prompt": "アプリの対応を相談するとき有用な情報を選んでください。",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "OS名と版"
+                },
+                {
+                  "id": "c2",
+                  "text": "本体の色だけ"
+                },
+                {
+                  "id": "c3",
+                  "text": "キーボードに置いた手の位置"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "対応環境を確認する基礎情報です。",
+              "id": "PC08-O1-Q3",
+              "version": 1,
+              "objectiveId": "PC08-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC08-O1-needs-review"
+            }
+          ],
+          "diagram": [
+            "アプリ",
+            "OS：管理・仲介",
+            "機器：CPU・RAM・ストレージなど"
+          ],
+          "id": "PC08-O1",
+          "keyPoint": "OSは、アプリと機器の間で働き、PCの動作を管理するソフトウェアです。"
+        },
+        {
+          "title": "ドライバーと周辺機器",
+          "body": [
+            "ドライバーは、OSが特定の機器を扱うためのソフトウェアです。プリンターなど、機器に合った対応が必要になる場合があります。",
+            "接続するとOSが必要な準備を自動で行うこともあります。常に自分でインストールするとは限りません。",
+            "必要な場合は、機器のメーカーなど信頼できる提供元から、機種とOSに合うものを確認します。似た名前だけで選ばないようにします。"
+          ],
+          "example": "プリンターをつないでも動かない場合、電源・接続だけでなく、OSと機器の対応やドライバーの状態を確認します。",
+          "hint": "どの機器を、どのOSで使うためのものかを確かめます。",
+          "remediation": "ドライバーは物理的な部品ではなく、OSが機器を扱うためのソフトウェアです。",
+          "questions": [
+            {
+              "prompt": "ドライバーの説明はどれですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "OSが機器を扱うためのソフトウェア"
+                },
+                {
+                  "id": "c2",
+                  "text": "PCを運ぶ人だけを指す言葉"
+                },
+                {
+                  "id": "c3",
+                  "text": "文書の保存場所の名前"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "PCの文脈では機器を扱うソフトウェアを指します。",
+              "id": "PC08-O2-Q1",
+              "version": 1,
+              "objectiveId": "PC08-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC08-O2-needs-review"
+            },
+            {
+              "prompt": "ドライバーを入手するとき確認するものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "機器の機種"
+                },
+                {
+                  "id": "c2",
+                  "text": "OSとその対応"
+                },
+                {
+                  "id": "c3",
+                  "text": "提供元"
+                },
+                {
+                  "id": "c4",
+                  "text": "名前が似ているかだけ"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2",
+                "c3"
+              ],
+              "explanation": "機器と環境に合う正しい提供物を選びます。",
+              "id": "PC08-O2-Q2",
+              "version": 1,
+              "objectiveId": "PC08-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC08-O2-needs-review"
+            },
+            {
+              "prompt": "機器をつないだ後の説明として適切なのは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "OSが自動で準備する場合もある"
+                },
+                {
+                  "id": "c2",
+                  "text": "必ず無関係なソフトを買う必要がある"
+                },
+                {
+                  "id": "c3",
+                  "text": "機種に関係なく同じドライバーを使う"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "自動対応の有無は機器とOSによります。",
+              "id": "PC08-O2-Q3",
+              "version": 1,
+              "objectiveId": "PC08-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC08-O2-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC08-O2",
+          "keyPoint": "ドライバーは、OSが特定の機器を扱うためのソフトウェアです。"
+        },
+        {
+          "title": "対応と更新を確認する",
+          "body": [
+            "アプリや機器には対応するOSや版が定められている場合があります。インストール前に対応環境を確認します。",
+            "更新は不具合の修正や機能変更などを含みます。更新によって対応や操作が変わることもあるため、業務環境では管理者の方針を確認します。",
+            "作業を保存し、必要なバックアップを用意して更新します。更新が終わったら、使う機能が動くかを確認します。"
+          ],
+          "example": "会社の業務アプリを使うPCでは、個人の判断だけでOSの大きな更新を行わず、対応状況と社内の手順を確認します。",
+          "hint": "更新の目的と、今使うものへの影響を合わせて考えます。",
+          "remediation": "更新を避け続ける・無条件に実行するという二択ではなく、対応と運用手順を確認します。",
+          "questions": [
+            {
+              "prompt": "アプリ導入前に確認するものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "対応OS"
+                },
+                {
+                  "id": "c2",
+                  "text": "必要な機器条件"
+                },
+                {
+                  "id": "c3",
+                  "text": "会社の利用ルール"
+                },
+                {
+                  "id": "c4",
+                  "text": "アイコンが好きかだけ"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2",
+                "c3"
+              ],
+              "explanation": "利用できる条件を確認します。",
+              "id": "PC08-O3-Q1",
+              "version": 1,
+              "objectiveId": "PC08-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC08-O3-needs-review"
+            },
+            {
+              "prompt": "業務用PCのOS更新で適切な対応は？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "利用アプリの対応と管理者の方針を確認する"
+                },
+                {
+                  "id": "c2",
+                  "text": "作業を保存せず強制終了する"
+                },
+                {
+                  "id": "c3",
+                  "text": "更新後の確認を省く"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "業務への影響と手順を確認して行います。",
+              "id": "PC08-O3-Q2",
+              "version": 1,
+              "objectiveId": "PC08-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC08-O3-needs-review"
+            },
+            {
+              "prompt": "更新後に行うこととして適切なのは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "必要な機能が動くか確認する"
+                },
+                {
+                  "id": "c2",
+                  "text": "完了表示だけで全アプリの動作を断定する"
+                },
+                {
+                  "id": "c3",
+                  "text": "保存場所を記録せず変更する"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "実際の業務で使う機能も確認します。",
+              "id": "PC08-O3-Q3",
+              "version": 1,
+              "objectiveId": "PC08-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC08-O3-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC08-O3",
+          "keyPoint": "導入や更新では、対応環境と運用のルールを確認します。"
+        }
+      ],
+      "practice": "自分のOS名と版を確認し、未確認の項目は推測で埋めずに残してください。"
+    },
+    {
+      "id": "PC09",
+      "slug": "apps",
+      "title": "アプリとブラウザを使い分ける",
+      "version": 1,
+      "status": "draft",
+      "estimatedMinutes": [
+        10,
+        20
+      ],
+      "goal": "アプリ・ブラウザ・検索サービス・Webアプリの関係を説明できる。",
+      "terms": [
+        "アプリ",
+        "ブラウザ",
+        "Webアプリ",
+        "インストール"
+      ],
+      "prerequisites": [
+        "PC08"
+      ],
+      "sources": [],
+      "objectives": [
+        {
+          "title": "アプリと作成した内容",
+          "body": [
+            "アプリは特定の目的の作業をするソフトウェアです。文書作成、表計算、画像編集など用途が異なります。",
+            "アプリを閉じることと、アプリを削除すること、作成したファイルを削除することは別です。終了は使用を終える操作で、削除は取り除く操作です。",
+            "同じ形式のファイルを複数のアプリで開けることがあります。ただし、編集機能や表示の再現は同じとは限りません。"
+          ],
+          "example": "文書作成アプリを閉じても、保存してある文書が必ず削除されるわけではありません。保存前の変更は別に確認します。",
+          "hint": "道具を閉じる、道具を取り除く、内容を消す、を分けます。",
+          "remediation": "終了・アプリ削除・ファイル削除は対象と結果が異なります。未保存の変更を失わないよう保存を確認します。",
+          "questions": [
+            {
+              "prompt": "区別すべき操作をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "アプリを終了する"
+                },
+                {
+                  "id": "c2",
+                  "text": "アプリを削除する"
+                },
+                {
+                  "id": "c3",
+                  "text": "文書ファイルを削除する"
+                },
+                {
+                  "id": "c4",
+                  "text": "終了とアプリ削除は、常に同じ結果になるという扱い"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2",
+                "c3"
+              ],
+              "explanation": "対象と結果が異なる三つの操作です。",
+              "id": "PC09-O1-Q1",
+              "version": 1,
+              "objectiveId": "PC09-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC09-O1-needs-review"
+            },
+            {
+              "prompt": "文書作成アプリを閉じる前に確認することは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "変更内容が保存されているか"
+                },
+                {
+                  "id": "c2",
+                  "text": "必ずPCを分解するか"
+                },
+                {
+                  "id": "c3",
+                  "text": "モニターを買い替えるか"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "終了前に作業の保存を確認します。",
+              "id": "PC09-O1-Q2",
+              "version": 1,
+              "objectiveId": "PC09-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC09-O1-needs-review"
+            },
+            {
+              "prompt": "同じ文書を別のアプリで開いたとき、適切な考え方は？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "表示や編集機能が異なる可能性を確認する"
+                },
+                {
+                  "id": "c2",
+                  "text": "必ず完全に同じ表示になる"
+                },
+                {
+                  "id": "c3",
+                  "text": "別アプリなら元のファイルが必ず削除される"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "対応形式と再現性はアプリごとに確認します。",
+              "id": "PC09-O1-Q3",
+              "version": 1,
+              "objectiveId": "PC09-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC09-O1-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC09-O1",
+          "keyPoint": "アプリの終了・アプリの削除・ファイルの削除は、別の操作です。"
+        },
+        {
+          "title": "ブラウザと検索サービス",
+          "body": [
+            "ブラウザはWebページを表示し、Web上の機能を利用するソフトウェアです。Firefoxなどが該当します。",
+            "検索サービスは、キーワードからWebページなどを探すサービスです。ブラウザの中で利用できますが、ブラウザそのものとは別です。",
+            "URLはアクセス先を表す表記です。ブラウザの入力欄にURLを指定して直接開くことと、キーワードで検索して候補から選ぶことは違います。"
+          ],
+          "example": "Firefoxで検索サービスを開く場合、使っているブラウザの名前と検索サービスの名前は別々に説明できます。",
+          "hint": "見る道具と、探すためのサービスを分けます。",
+          "remediation": "ブラウザで検索もできますが、検索サービスだけがブラウザの用途ではありません。指定URLへ直接移動もできます。",
+          "questions": [
+            {
+              "prompt": "Firefoxは何に当たりますか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "Webページを表示するブラウザ"
+                },
+                {
+                  "id": "c2",
+                  "text": "表示する写真ファイル"
+                },
+                {
+                  "id": "c3",
+                  "text": "保存用SSD"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "Firefoxはブラウザというアプリです。",
+              "id": "PC09-O2-Q1",
+              "version": 1,
+              "objectiveId": "PC09-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC09-O2-needs-review"
+            },
+            {
+              "prompt": "適切な説明をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "ブラウザの中で検索サービスを利用できる"
+                },
+                {
+                  "id": "c2",
+                  "text": "URL指定とキーワード検索は異なる"
+                },
+                {
+                  "id": "c3",
+                  "text": "検索サービスとブラウザは必ず同じもの"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2"
+              ],
+              "explanation": "道具とサービス、アクセス方法を区別します。",
+              "id": "PC09-O2-Q2",
+              "version": 1,
+              "objectiveId": "PC09-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC09-O2-needs-review"
+            },
+            {
+              "prompt": "相手から正しいURLを渡されたとき、直接開く操作は？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "ブラウザの入力欄にURLを指定する"
+                },
+                {
+                  "id": "c2",
+                  "text": "似た言葉だけで検索して最上位を必ず選ぶ"
+                },
+                {
+                  "id": "c3",
+                  "text": "ファイルを削除する"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "指定されたアクセス先へ直接移動します。",
+              "id": "PC09-O2-Q3",
+              "version": 1,
+              "objectiveId": "PC09-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC09-O2-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC09-O2",
+          "keyPoint": "ブラウザはWebを見る道具、検索サービスは情報を探すサービスです。"
+        },
+        {
+          "title": "PCのアプリとWebアプリ",
+          "body": [
+            "PCにインストールして使うアプリと、ブラウザから利用するWebアプリがあります。インストールは、使うためにソフトウェアを端末に配置・準備することです。",
+            "Webアプリの処理はブラウザ側とサービス側で分担されることがあります。保存先やオフライン利用の可否もサービスごとに異なります。",
+            "どちらの方式でも、作った内容の保存先と、利用するアカウントを確認します。アカウントはサービス上の利用者を識別する登録です。"
+          ],
+          "example": "ブラウザで文書を編集している場合、PC内にファイルが保存されているとは限りません。サービスの保存先を確認します。",
+          "hint": "ブラウザで見えていることと、保存先が手元にあることを分けます。",
+          "remediation": "Webアプリは外部保存の場合があります。端末内のアプリもクラウド保存を使う場合があるため、方式だけで所在を断定しません。",
+          "questions": [
+            {
+              "prompt": "ブラウザで編集した文書の保存先はどう判断しますか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "必ずPC内と決める"
+                },
+                {
+                  "id": "c2",
+                  "text": "使うサービスの保存先と状態を確認する"
+                },
+                {
+                  "id": "c3",
+                  "text": "必ず保存されていないと決める"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "利用する仕組みによって異なります。",
+              "id": "PC09-O3-Q1",
+              "version": 1,
+              "objectiveId": "PC09-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC09-O3-needs-review"
+            },
+            {
+              "prompt": "適切な説明をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "Webアプリはブラウザから利用する"
+                },
+                {
+                  "id": "c2",
+                  "text": "インストール型でも外部に保存する場合がある"
+                },
+                {
+                  "id": "c3",
+                  "text": "Webアプリは必ずどれもオフラインで全機能が使える"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2"
+              ],
+              "explanation": "保存や通信の条件は個別に確認します。",
+              "id": "PC09-O3-Q2",
+              "version": 1,
+              "objectiveId": "PC09-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC09-O3-needs-review"
+            },
+            {
+              "prompt": "Webアプリの作業を引き継ぐときに記録する情報は？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "サービス名、利用アカウント、保存先"
+                },
+                {
+                  "id": "c2",
+                  "text": "画面の背景色だけ"
+                },
+                {
+                  "id": "c3",
+                  "text": "PCの重量だけ"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "どこで誰として作業したかが再開に必要です。",
+              "id": "PC09-O3-Q3",
+              "version": 1,
+              "objectiveId": "PC09-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC09-O3-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC09-O3",
+          "keyPoint": "アプリの利用方法だけで保存場所を決めつけず、実際の保存先を確認します。"
+        }
+      ],
+      "practice": "普段使うアプリを一つ選び、利用方法と作成物の保存先を書いてください。保存先が不明なら確認項目にします。"
+    },
+    {
+      "id": "PC10",
+      "slug": "files",
+      "title": "ファイル・フォルダ・保存場所",
+      "version": 1,
+      "status": "draft",
+      "estimatedMinutes": [
+        10,
+        20
+      ],
+      "goal": "名前・形式・所在を区別してファイルを扱える。",
+      "terms": [
+        "ファイル",
+        "フォルダ",
+        "拡張子",
+        "パス"
+      ],
+      "prerequisites": [
+        "PC09"
+      ],
+      "sources": [
+        "word/textbook_data/01_コンピュータ.json#拡張子",
+        "word/textbook_data/01_コンピュータ.json#ファイルシステム"
+      ],
+      "objectives": [
+        {
+          "title": "ファイル名と形式",
+          "body": [
+            "ファイルは情報を保存・管理する単位で、名前を付けて扱います。拡張子は名前の末尾に付く「.txt」「.png」などの部分で、形式を見分ける手掛かりになります。",
+            "形式は情報の記録の仕方です。テキスト、画像、PDFなどで構造や扱えるアプリが異なります。拡張子を書き換えるだけでは中身の形式は変換されません。",
+            "見た目が同じ文書でも、画像として保存したものと文字情報を持つものでは、検索や編集のしやすさが異なります。"
+          ],
+          "example": "「写真.png」を「写真.txt」に名前変更しても、写真が自動的に文字の文章へ変換されるわけではありません。",
+          "hint": "名前の表示と、実際の記録形式を分けます。",
+          "remediation": "形式変換には、それに対応した機能が必要です。拡張子の変更だけでは中身は変わりません。",
+          "questions": [
+            {
+              "prompt": "拡張子だけを変更した場合、適切な説明は？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "中身の形式まで必ず変換される"
+                },
+                {
+                  "id": "c2",
+                  "text": "名前が変わっても中身の形式は自動変換されない"
+                },
+                {
+                  "id": "c3",
+                  "text": "元ファイルが必ず消える"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "名前の変更と形式変換は別です。",
+              "id": "PC10-O1-Q1",
+              "version": 1,
+              "objectiveId": "PC10-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC10-O1-needs-review"
+            },
+            {
+              "prompt": "ファイルについて確認する項目をすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "名前"
+                },
+                {
+                  "id": "c2",
+                  "text": "形式"
+                },
+                {
+                  "id": "c3",
+                  "text": "開くアプリの対応"
+                },
+                {
+                  "id": "c4",
+                  "text": "名前だけで全内容を確定できるか"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2",
+                "c3"
+              ],
+              "explanation": "名前だけでは内容や対応は確定しません。",
+              "id": "PC10-O1-Q2",
+              "version": 1,
+              "objectiveId": "PC10-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC10-O1-needs-review"
+            },
+            {
+              "prompt": "同じ文章を画像とテキストで保存した場合、適切な説明は？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "見た目が同じでも検索・編集の方法が異なり得る"
+                },
+                {
+                  "id": "c2",
+                  "text": "どちらも必ず同じ構造"
+                },
+                {
+                  "id": "c3",
+                  "text": "拡張子を変えれば自由に編集できる"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "情報の記録形式が異なります。",
+              "id": "PC10-O1-Q3",
+              "version": 1,
+              "objectiveId": "PC10-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC10-O1-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC10-O1",
+          "keyPoint": "拡張子を変えるだけでは、ファイルの中身の形式は変換されません。"
+        },
+        {
+          "title": "フォルダとパス",
+          "body": [
+            "フォルダはファイルや別のフォルダをまとめて管理する入れ物です。フォルダの中にフォルダを作ると階層ができます。",
+            "パスは、その階層の中の位置を表すものです。同じファイル名が別の場所にある場合も、パスで区別できます。",
+            "「どこに保存したか」を伝えるには、ファイル名だけでは足りない場合があります。保存場所と名前を合わせて記録します。"
+          ],
+          "example": "「練習/下書き/案内.txt」と「練習/完成/案内.txt」は、同じ名前でも別の所在を表します。ここでは / を区切りとして示しています。",
+          "hint": "名前が同じでも、その上にあるフォルダを見ます。",
+          "remediation": "パスは場所をたどる情報です。OSなどによって表示方法は違っても、所在を特定する目的は共通します。",
+          "questions": [
+            {
+              "prompt": "同名のファイルを区別する手掛かりとして適切なのは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "保存先のパス"
+                },
+                {
+                  "id": "c2",
+                  "text": "名前が同じなら必ず同じファイルとする"
+                },
+                {
+                  "id": "c3",
+                  "text": "モニターの解像度だけ"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "別の場所に同じ名前のファイルが置けます。",
+              "id": "PC10-O2-Q1",
+              "version": 1,
+              "objectiveId": "PC10-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC10-O2-needs-review"
+            },
+            {
+              "prompt": "「練習/完成/案内.txt」で、案内.txtが直接入っているフォルダは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "練習"
+                },
+                {
+                  "id": "c2",
+                  "text": "完成"
+                },
+                {
+                  "id": "c3",
+                  "text": "案内.txt"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "ファイルの一つ手前が、この例で直接の保存先です。",
+              "id": "PC10-O2-Q2",
+              "version": 1,
+              "objectiveId": "PC10-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC10-O2-needs-review"
+            },
+            {
+              "prompt": "他の人にファイルを探してもらう説明として適切なのは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "名前だけ伝えればどんな場合も十分"
+                },
+                {
+                  "id": "c2",
+                  "text": "保存場所と名前を合わせて伝える"
+                },
+                {
+                  "id": "c3",
+                  "text": "更新日時は必ず所在と同じ意味"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "必要なら日時なども補い、対象を特定します。",
+              "id": "PC10-O2-Q3",
+              "version": 1,
+              "objectiveId": "PC10-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC10-O2-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC10-O2",
+          "keyPoint": "同じ名前のファイルでも、保存されている場所が違う場合があります。"
+        },
+        {
+          "title": "コピー・移動・別名保存",
+          "body": [
+            "コピーは別の複製を作ること、移動は所在を変えることです。通常のコピーでは元が残り、移動では元の場所から移ります。",
+            "別名保存は、アプリから別の名前や場所へ保存する操作です。その後どちらを編集中か、アプリの表示を確認します。",
+            "元を残したいときはコピーや別名保存を選びます。上書きは同じ対象を更新するため、変更前に戻す手段があるかも考えます。"
+          ],
+          "example": "配布されたサンプルをそのまま残したいなら、自分用に複製してから編集します。",
+          "hint": "操作後に元が残るかと、編集している対象を確認します。",
+          "remediation": "コピーしても、誤って元を開けば元を編集してしまいます。操作名だけでなく、現在のファイルの所在を確認します。",
+          "questions": [
+            {
+              "prompt": "元のサンプルを残して編集したいとき、適切なものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "コピーして複製側を編集する"
+                },
+                {
+                  "id": "c2",
+                  "text": "別名保存して対象を確認する"
+                },
+                {
+                  "id": "c3",
+                  "text": "元を上書きしてから必ず戻せると思う"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2"
+              ],
+              "explanation": "元を残す操作と、編集対象の確認を組み合わせます。",
+              "id": "PC10-O3-Q1",
+              "version": 1,
+              "objectiveId": "PC10-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC10-O3-needs-review"
+            },
+            {
+              "prompt": "移動した場合の基本的な結果は？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "元の場所と移動先に必ず複製が残る"
+                },
+                {
+                  "id": "c2",
+                  "text": "対象の所在が移動先へ変わる"
+                },
+                {
+                  "id": "c3",
+                  "text": "ファイル形式が必ず変わる"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "コピーと移動の違いです。",
+              "id": "PC10-O3-Q2",
+              "version": 1,
+              "objectiveId": "PC10-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC10-O3-needs-review"
+            },
+            {
+              "prompt": "コピー後に編集を始めるときに確かめることは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "複製側を開いているか"
+                },
+                {
+                  "id": "c2",
+                  "text": "コピーしたので確認は不要か"
+                },
+                {
+                  "id": "c3",
+                  "text": "元も自動で保護されるか"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "複製を作ることと、どちらを編集するかは別です。",
+              "id": "PC10-O3-Q3",
+              "version": 1,
+              "objectiveId": "PC10-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC10-O3-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC10-O3",
+          "keyPoint": "元を残したいときは複製を作り、どちらを編集しているか確認します。"
+        }
+      ],
+      "practice": "練習用フォルダにサンプルの複製を作り、元と複製の名前・場所・編集する方を記録してください。"
+    },
+    {
+      "id": "PC11",
+      "slug": "whole-process",
+      "title": "文書を開いて保存するまで",
+      "version": 1,
+      "status": "draft",
+      "estimatedMinutes": [
+        10,
+        20
+      ],
+      "goal": "部品とソフトウェアを、一連の作業の中で結び付けられる。",
+      "terms": [
+        "読み込み",
+        "編集",
+        "保存",
+        "自動保存"
+      ],
+      "prerequisites": [
+        "PC10"
+      ],
+      "sources": [],
+      "objectives": [
+        {
+          "title": "開くときの流れ",
+          "body": [
+            "保存済みの文書を開くと、アプリがファイルの情報を読み込み、処理に使います。OSは機器やファイルへのアクセスを仲介します。",
+            "ストレージは保存元、メモリーは作業中の情報を保持する場所、CPUは命令を実行する部品です。細かな処理は環境によって違いますが、役割を結び付けることが大切です。",
+            "ファイルを開いたからといって、保存元が消えてすべてメモリーに移動するわけではありません。読み込みと移動は異なります。"
+          ],
+          "example": "保存した案内文をアプリで開いても、元の保存ファイルは通常その場所に残ります。",
+          "hint": "情報を読み込むことと、ファイルの所在を移すことを分けます。",
+          "remediation": "開く操作は処理のための読み込みを伴います。ファイルの移動とは別です。",
+          "questions": [
+            {
+              "prompt": "ファイルを開くときの役割として適切なのは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "保存元はストレージ、作業中の保持はメモリー"
+                },
+                {
+                  "id": "c2",
+                  "text": "保存元はマウス、作業中の保持はモニター"
+                },
+                {
+                  "id": "c3",
+                  "text": "すべてCPUの永久保存領域で行う"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "各部品の役割を結び付けます。",
+              "id": "PC11-O1-Q1",
+              "version": 1,
+              "objectiveId": "PC11-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC11-O1-needs-review"
+            },
+            {
+              "prompt": "ファイルを開くことについて適切な説明は？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "必ず保存元から削除される"
+                },
+                {
+                  "id": "c2",
+                  "text": "読み込みとファイル移動は別の操作"
+                },
+                {
+                  "id": "c3",
+                  "text": "拡張子が必ず変更される"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "情報の読み込みと所在の移動を区別します。",
+              "id": "PC11-O1-Q2",
+              "version": 1,
+              "objectiveId": "PC11-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC11-O1-needs-review"
+            },
+            {
+              "prompt": "この作業でOSが担うことは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "アプリと機器・ファイルへのアクセスを仲介する"
+                },
+                {
+                  "id": "c2",
+                  "text": "紙の上に直接文字を描く部品になる"
+                },
+                {
+                  "id": "c3",
+                  "text": "文書の内容を自動で正しいと認定する"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "OSは動作や資源の管理を担います。",
+              "id": "PC11-O1-Q3",
+              "version": 1,
+              "objectiveId": "PC11-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC11-O1-needs-review"
+            }
+          ],
+          "diagram": [
+            "ストレージ：保存済み文書",
+            "アプリ・OS・CPU：読み込みと処理",
+            "メモリー：作業中の保持",
+            "画面：結果の表示"
+          ],
+          "id": "PC11-O1",
+          "keyPoint": "ファイルを開いて読み込むことと、ファイルの所在を移すことは別です。"
+        },
+        {
+          "title": "編集と保存のタイミング",
+          "body": [
+            "文章を書き換えると、画面には変更後の内容が出ます。保存先の内容が更新されたかは、保存方式と状態を確認する必要があります。",
+            "自動保存では、通信状況などによって外部の保存先への反映を待つ場合もあります。「編集中」「保存中」「保存済み」など、サービスの表示を確認します。",
+            "共有文書では、編集が他の人にも反映される場合があります。練習は複製や練習用ファイルで行います。"
+          ],
+          "example": "「保存中」と表示されているときに、保存済みと決めつけて画面を閉じないようにします。",
+          "hint": "自分に見える内容と、保存先に反映された内容を分けます。",
+          "remediation": "自動保存でも完了状態を確認します。編集する対象が共有物かも確認します。",
+          "questions": [
+            {
+              "prompt": "自動保存の文書で確認するものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "保存完了の状態"
+                },
+                {
+                  "id": "c2",
+                  "text": "保存先"
+                },
+                {
+                  "id": "c3",
+                  "text": "共有されている対象か"
+                },
+                {
+                  "id": "c4",
+                  "text": "画面に出ればすべて保存済みとする"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2",
+                "c3"
+              ],
+              "explanation": "見えていることだけで保存と共有の状態は確定しません。",
+              "id": "PC11-O2-Q1",
+              "version": 1,
+              "objectiveId": "PC11-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC11-O2-needs-review"
+            },
+            {
+              "prompt": "共有の原本で練習を始める前に行うことは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "練習用に複製できるか確認する"
+                },
+                {
+                  "id": "c2",
+                  "text": "他の人への反映を無視して変更する"
+                },
+                {
+                  "id": "c3",
+                  "text": "保存先を見ない"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "共有物への影響を確認します。",
+              "id": "PC11-O2-Q2",
+              "version": 1,
+              "objectiveId": "PC11-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC11-O2-needs-review"
+            },
+            {
+              "prompt": "「保存中」という表示の解釈として適切なのは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "必ず保存が完了している"
+                },
+                {
+                  "id": "c2",
+                  "text": "保存の完了状態をさらに確認する必要がある"
+                },
+                {
+                  "id": "c3",
+                  "text": "文書が必ず破損した"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "処理の途中と完了を区別します。",
+              "id": "PC11-O2-Q3",
+              "version": 1,
+              "objectiveId": "PC11-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC11-O2-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC11-O2",
+          "keyPoint": "編集後の表示と、保存先への反映は別に確認します。"
+        },
+        {
+          "title": "開き直して確かめる",
+          "body": [
+            "保存した内容を確かめるには、保存先とファイル名を確認し、サンプルを開き直して変更内容を確認します。",
+            "似た名前の古い版を開けば、保存していないように見えることがあります。所在や更新日時なども手掛かりにします。",
+            "結果だけでなく、何を編集しどこに保存したかを記録すると、後から他の人やAIへ状況を説明できます。"
+          ],
+          "example": "「案内_下書き」と「案内_完成」を取り違えないよう、ファイル名と保存先をセットで確認します。",
+          "hint": "開いているものが、本当に確認したい対象かを確かめます。",
+          "remediation": "内容が違うときは、保存失敗だけでなく別ファイルの可能性も確認します。",
+          "questions": [
+            {
+              "prompt": "開き直した文書が古い内容でした。まず確認する情報は？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "開いたファイル名と保存先"
+                },
+                {
+                  "id": "c2",
+                  "text": "CPUの購入価格だけ"
+                },
+                {
+                  "id": "c3",
+                  "text": "モニターのサイズだけ"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "別ファイルや別の版を開いていないか確かめます。",
+              "id": "PC11-O3-Q1",
+              "version": 1,
+              "objectiveId": "PC11-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC11-O3-needs-review"
+            },
+            {
+              "prompt": "作業記録に残すものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "編集した内容"
+                },
+                {
+                  "id": "c2",
+                  "text": "保存先とファイル名"
+                },
+                {
+                  "id": "c3",
+                  "text": "保存後に確認した結果"
+                },
+                {
+                  "id": "c4",
+                  "text": "未確認の点も完了扱いにした説明"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2",
+                "c3"
+              ],
+              "explanation": "確認した事実を記録します。",
+              "id": "PC11-O3-Q2",
+              "version": 1,
+              "objectiveId": "PC11-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC11-O3-needs-review"
+            },
+            {
+              "prompt": "保存確認の練習に適切な方法は？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "サンプルを変更・保存し、対象を確かめて開き直す"
+                },
+                {
+                  "id": "c2",
+                  "text": "大切な原本を削除して試す"
+                },
+                {
+                  "id": "c3",
+                  "text": "画面が閉じれば必ず成功とする"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "対象と内容を実際に照合します。",
+              "id": "PC11-O3-Q3",
+              "version": 1,
+              "objectiveId": "PC11-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC11-O3-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC11-O3",
+          "keyPoint": "保存を確かめるときは、開き直したファイルの所在と内容を照合します。"
+        }
+      ],
+      "practice": "サンプル文書を開く→一箇所編集→別名保存→開き直す、を行い、各段階で働く機器・ソフトウェアと結果を記録してください。"
+    },
+    {
+      "id": "PC12",
+      "slug": "my-environment",
+      "title": "自分のPCを説明する",
+      "version": 1,
+      "status": "draft",
+      "estimatedMinutes": [
+        10,
+        20
+      ],
+      "goal": "環境を事実に基づいて記録し、未確認を区別して相談できる。",
+      "terms": [
+        "仕様",
+        "バージョン",
+        "環境",
+        "確認済み"
+      ],
+      "prerequisites": [
+        "PC11"
+      ],
+      "sources": [],
+      "objectives": [
+        {
+          "title": "機器の仕様を確認する",
+          "body": [
+            "仕様は機器の構成や機能などの情報です。メーカー・機種、CPU、RAM容量、ストレージなどを確認すると、相手へ環境を伝えられます。",
+            "PCの設定画面やメーカーの資料などで確認します。同じシリーズでも構成が異なる場合があるため、似た名前の別製品の情報で埋めないようにします。",
+            "分からない項目は「未確認」と書きます。確認できていない数値を推測で記入すると、適切でない案内につながります。"
+          ],
+          "example": "「ノートPCです」だけでなく「機種は確認済み、RAM容量は未確認」と分けて伝えられます。",
+          "hint": "手元の機器そのものについて確認した情報かを見ます。",
+          "remediation": "一般的な製品紹介と、自分の構成は一致しない場合があります。未確認は未確認として記録します。",
+          "questions": [
+            {
+              "prompt": "仕様を記録するとき適切なものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "手元の機種を確かめる"
+                },
+                {
+                  "id": "c2",
+                  "text": "似た製品のRAM容量で空欄を埋める"
+                },
+                {
+                  "id": "c3",
+                  "text": "確認できない項目は未確認とする"
+                },
+                {
+                  "id": "c4",
+                  "text": "確認元を残す"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c3",
+                "c4"
+              ],
+              "explanation": "推測と確認済みの情報を混ぜません。",
+              "id": "PC12-O1-Q1",
+              "version": 1,
+              "objectiveId": "PC12-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC12-O1-needs-review"
+            },
+            {
+              "prompt": "同じ製品シリーズなら構成は必ず同じですか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "必ず同じ"
+                },
+                {
+                  "id": "c2",
+                  "text": "構成が異なる場合があるので確認する"
+                },
+                {
+                  "id": "c3",
+                  "text": "機種名の確認は不要"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "構成の違う製品があるためです。",
+              "id": "PC12-O1-Q2",
+              "version": 1,
+              "objectiveId": "PC12-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC12-O1-needs-review"
+            },
+            {
+              "prompt": "PCの状況を伝える情報として適切なのは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "機種、OS、RAMなど確認した構成"
+                },
+                {
+                  "id": "c2",
+                  "text": "できるだけ高そうな数値を推測する"
+                },
+                {
+                  "id": "c3",
+                  "text": "本体の色だけで性能を決める"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "問題の判断に使える具体的情報を伝えます。",
+              "id": "PC12-O1-Q3",
+              "version": 1,
+              "objectiveId": "PC12-O1",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC12-O1-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC12-O1",
+          "keyPoint": "自分の機器について確認した情報を記録し、未確認を推測で埋めません。"
+        },
+        {
+          "title": "ソフトウェアと保存先を記録する",
+          "body": [
+            "バージョンはソフトウェアの版を示します。同じ名前でも版によって機能や画面が異なる場合があります。OSと使用アプリを別々に記録します。",
+            "Webアプリでは、サービス名・利用方法・保存先などを確認します。表示されない版番号を無理に推測する必要はありません。",
+            "相談のためにパスワードやログインコードを渡す必要はありません。スクリーンショットにも個人情報や秘密の情報が写っていないか確認します。"
+          ],
+          "example": "「文書を編集できない」という相談では、アプリ名、利用方法、対象の保存先、見えているメッセージが手掛かりになります。",
+          "hint": "説明に必要な情報と、渡してはいけない秘密を分けます。",
+          "remediation": "環境説明にログインコードは不要です。相手へ渡す前に記録内容を見直します。",
+          "questions": [
+            {
+              "prompt": "相談文に含める情報として適切なものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "アプリ名と確認できた版"
+                },
+                {
+                  "id": "c2",
+                  "text": "エラーの文面から秘密情報を除いたもの"
+                },
+                {
+                  "id": "c3",
+                  "text": "メールのログインコード"
+                },
+                {
+                  "id": "c4",
+                  "text": "作業対象の種類と保存場所の説明"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2",
+                "c4"
+              ],
+              "explanation": "必要な状況は伝え、認証情報は渡しません。",
+              "id": "PC12-O2-Q1",
+              "version": 1,
+              "objectiveId": "PC12-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC12-O2-needs-review"
+            },
+            {
+              "prompt": "バージョンが分からないWebアプリではどうしますか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "適当な版番号を書く"
+                },
+                {
+                  "id": "c2",
+                  "text": "サービス名など確認できた情報を記録し、版は未確認とする"
+                },
+                {
+                  "id": "c3",
+                  "text": "別アプリの版を使う"
+                }
+              ],
+              "correctChoiceIds": [
+                "c2"
+              ],
+              "explanation": "確認できたことと不明なことを分けます。",
+              "id": "PC12-O2-Q2",
+              "version": 1,
+              "objectiveId": "PC12-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC12-O2-needs-review"
+            },
+            {
+              "prompt": "画面写真を送る前の確認として適切なのは？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "個人情報や認証情報が写っていないか確認する"
+                },
+                {
+                  "id": "c2",
+                  "text": "画面写真なら情報漏れは起きないと考える"
+                },
+                {
+                  "id": "c3",
+                  "text": "ログインコードも必ず添える"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "画像にも秘密の情報が含まれることがあります。",
+              "id": "PC12-O2-Q3",
+              "version": 1,
+              "objectiveId": "PC12-O2",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC12-O2-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC12-O2",
+          "keyPoint": "相談には環境の情報を伝えます。パスワードやログインコードは渡しません。"
+        },
+        {
+          "title": "現象・確認・推測を分けて伝える",
+          "body": [
+            "現象は実際に起きたこと、確認は行った操作と結果、推測はまだ確かめていない原因の候補です。これらを分けると、次に調べる場所を相談できます。",
+            "「PCが壊れた」だけでなく、「アプリを開くとこのメッセージが出る。別のアプリは開く」と伝えると、状況が具体的になります。",
+            "同じ操作を試す場合も、データを失うような操作は行わず、学校や職場のルールに従います。分からない操作は意味を確認してから進めます。"
+          ],
+          "example": "「保存できない。保存先の空きは確認済み。原因はまだ不明」のように、事実と未確認を分けます。",
+          "hint": "見たこと・試したこと・まだ考えているだけのことを分けます。",
+          "remediation": "原因を先に決めなくても相談できます。確認した事実があれば次の調査につながります。",
+          "questions": [
+            {
+              "prompt": "「アプリを開くとエラーが出る」は、どれに当たりますか？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "観察した現象"
+                },
+                {
+                  "id": "c2",
+                  "text": "CPU故障の確定"
+                },
+                {
+                  "id": "c3",
+                  "text": "未実施の対処"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "現象だけでは原因は確定しません。",
+              "id": "PC12-O3-Q1",
+              "version": 1,
+              "objectiveId": "PC12-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC12-O3-needs-review"
+            },
+            {
+              "prompt": "相談文に含めるとよいものをすべて選んでください。",
+              "type": "multiple_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "起きる操作と表示"
+                },
+                {
+                  "id": "c2",
+                  "text": "確認したこととその結果"
+                },
+                {
+                  "id": "c3",
+                  "text": "まだ分からないこと"
+                },
+                {
+                  "id": "c4",
+                  "text": "裏付けなく決めた原因だけ"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1",
+                "c2",
+                "c3"
+              ],
+              "explanation": "次に確認する場所が分かる情報を残します。",
+              "id": "PC12-O3-Q2",
+              "version": 1,
+              "objectiveId": "PC12-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC12-O3-needs-review"
+            },
+            {
+              "prompt": "意味の分からない削除操作をAIから提案されたら？",
+              "type": "single_choice",
+              "choices": [
+                {
+                  "id": "c1",
+                  "text": "対象と影響を確認してから判断する"
+                },
+                {
+                  "id": "c2",
+                  "text": "分からなくても即実行する"
+                },
+                {
+                  "id": "c3",
+                  "text": "成功したことにして報告する"
+                }
+              ],
+              "correctChoiceIds": [
+                "c1"
+              ],
+              "explanation": "指示の対象と影響を理解して進めます。",
+              "id": "PC12-O3-Q3",
+              "version": 1,
+              "objectiveId": "PC12-O3",
+              "difficulty": "foundation",
+              "usage": "lesson",
+              "misconceptionTag": "PC12-O3-needs-review"
+            }
+          ],
+          "diagram": [],
+          "id": "PC12-O3",
+          "keyPoint": "起きた現象・確認した結果・まだ推測している原因を分けて伝えます。"
+        }
+      ],
+      "practice": "自分のPC説明書を作成：機種／OS／CPU／RAM／保存先／よく使うアプリ／確認元／未確認事項。最後に架空の困りごとを「現象・確認済み・未確認」に分けて記述してください。"
+    }
+  ]
+}

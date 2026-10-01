@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "PC06",
+  "lessonVersion": 1,
+  "questions": [
+    {
+      "prompt": "GPUについて適切な説明をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "画像描画や大量の計算に使われる"
+        },
+        {
+          "id": "c2",
+          "text": "CPUと連携する"
+        },
+        {
+          "id": "c3",
+          "text": "CPUが不要になる"
+        },
+        {
+          "id": "c4",
+          "text": "すべてのアプリを必ず同じ倍率で速くする"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2"
+      ],
+      "explanation": "GPUは他の部品と役割分担します。",
+      "id": "PC06-O1-Q1",
+      "version": 1,
+      "objectiveId": "PC06-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC06-O1-needs-review",
+      "objectiveTitle": "GPUとCPUの分担",
+      "hint": "「得意な処理」と「すべてを置き換える」を分けます。",
+      "remediation": "GPUは役割分担する部品です。ソフトウェアがどの処理で使うかも関係します。",
+      "example": "対応する画像編集ソフトでは、特定の画像処理をGPUに任せる場合があります。"
+    },
+    {
+      "prompt": "並列処理とは何ですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "複数の処理を同時に進めること"
+        },
+        {
+          "id": "c2",
+          "text": "ファイルを永久保存すること"
+        },
+        {
+          "id": "c3",
+          "text": "モニターを横に並べることだけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "作業の進め方を表す言葉です。",
+      "id": "PC06-O1-Q2",
+      "version": 1,
+      "objectiveId": "PC06-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC06-O1-needs-review",
+      "objectiveTitle": "GPUとCPUの分担",
+      "hint": "「得意な処理」と「すべてを置き換える」を分けます。",
+      "remediation": "GPUは役割分担する部品です。ソフトウェアがどの処理で使うかも関係します。",
+      "example": "対応する画像編集ソフトでは、特定の画像処理をGPUに任せる場合があります。"
+    },
+    {
+      "prompt": "GPUの効果を考えるとき確認するものは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "使用するソフトウェアと処理がGPUを利用するか"
+        },
+        {
+          "id": "c2",
+          "text": "本体の色"
+        },
+        {
+          "id": "c3",
+          "text": "ファイル名の長さだけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "対応する作業で使われるかが重要です。",
+      "id": "PC06-O1-Q3",
+      "version": 1,
+      "objectiveId": "PC06-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC06-O1-needs-review",
+      "objectiveTitle": "GPUとCPUの分担",
+      "hint": "「得意な処理」と「すべてを置き換える」を分けます。",
+      "remediation": "GPUは役割分担する部品です。ソフトウェアがどの処理で使うかも関係します。",
+      "example": "対応する画像編集ソフトでは、特定の画像処理をGPUに任せる場合があります。"
+    },
+    {
+      "prompt": "内蔵GPUの説明として適切なのは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "CPUなどと同じチップに組み込まれるものがある"
+        },
+        {
+          "id": "c2",
+          "text": "必ず別の大きなカードとして見える"
+        },
+        {
+          "id": "c3",
+          "text": "GPUではなくモニターの別名"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "構造によって独立したカードに見えない場合があります。",
+      "id": "PC06-O2-Q1",
+      "version": 1,
+      "objectiveId": "PC06-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC06-O2-needs-review",
+      "objectiveTitle": "内蔵と専用のGPU",
+      "hint": "外から見える形だけで、部品の有無を判断しないようにします。",
+      "remediation": "GPUがどのように組み込まれ、どのメモリーを使うかは仕様で確認します。",
+      "example": "ノートPCに大きな拡張カードがなくても、内蔵GPUで表示している場合があります。"
+    },
+    {
+      "prompt": "適切な確認方法をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "PCの仕様を読む"
+        },
+        {
+          "id": "c2",
+          "text": "OSの機器情報を確認する"
+        },
+        {
+          "id": "c3",
+          "text": "外からカードが見えないのでGPUなしと断定する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2"
+      ],
+      "explanation": "構成を情報で確かめます。",
+      "id": "PC06-O2-Q2",
+      "version": 1,
+      "objectiveId": "PC06-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC06-O2-needs-review",
+      "objectiveTitle": "内蔵と専用のGPU",
+      "hint": "外から見える形だけで、部品の有無を判断しないようにします。",
+      "remediation": "GPUがどのように組み込まれ、どのメモリーを使うかは仕様で確認します。",
+      "example": "ノートPCに大きな拡張カードがなくても、内蔵GPUで表示している場合があります。"
+    },
+    {
+      "prompt": "GPUのメモリーについて適切な説明は？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "内蔵GPUがPCのメモリーを共有する構成がある"
+        },
+        {
+          "id": "c2",
+          "text": "GPUはどの構成でも情報を保持する場所を必要としない"
+        },
+        {
+          "id": "c3",
+          "text": "PCの保存用SSDと常に同じもの"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "作業用の保持とファイル保存を区別します。",
+      "id": "PC06-O2-Q3",
+      "version": 1,
+      "objectiveId": "PC06-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC06-O2-needs-review",
+      "objectiveTitle": "内蔵と専用のGPU",
+      "hint": "外から見える形だけで、部品の有無を判断しないようにします。",
+      "remediation": "GPUがどのように組み込まれ、どのメモリーを使うかは仕様で確認します。",
+      "example": "ノートPCに大きな拡張カードがなくても、内蔵GPUで表示している場合があります。"
+    },
+    {
+      "prompt": "AI用のPCを考える最初の確認として適切なのは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "生成処理をどこで実行する方式か"
+        },
+        {
+          "id": "c2",
+          "text": "AIという名前ならGPUを必ず購入する"
+        },
+        {
+          "id": "c3",
+          "text": "モニターの台数だけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "手元での処理と外部サービスの利用を区別します。",
+      "id": "PC06-O3-Q1",
+      "version": 1,
+      "objectiveId": "PC06-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC06-O3-needs-review",
+      "objectiveTitle": "AIの処理はどこで行われるか",
+      "hint": "処理を担当しているのは手元か、サービス側かを確かめます。",
+      "remediation": "同じAI利用でも構成が違います。サービスの方式やソフトウェアの要件を確認してから機器を判断します。",
+      "example": "WebのAIサービスに文章を送る場合と、PC内で画像生成のソフトを動かす場合では、手元に必要な機器の条件が異なります。"
+    },
+    {
+      "prompt": "適切な説明をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "サービス側が主な生成処理を行う方式がある"
+        },
+        {
+          "id": "c2",
+          "text": "PC内でAIを動かす方式もある"
+        },
+        {
+          "id": "c3",
+          "text": "すべてのAIサービスは利用者のGPUで生成する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2"
+      ],
+      "explanation": "処理の所在は利用方法によって異なります。",
+      "id": "PC06-O3-Q2",
+      "version": 1,
+      "objectiveId": "PC06-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC06-O3-needs-review",
+      "objectiveTitle": "AIの処理はどこで行われるか",
+      "hint": "処理を担当しているのは手元か、サービス側かを確かめます。",
+      "remediation": "同じAI利用でも構成が違います。サービスの方式やソフトウェアの要件を確認してから機器を判断します。",
+      "example": "WebのAIサービスに文章を送る場合と、PC内で画像生成のソフトを動かす場合では、手元に必要な機器の条件が異なります。"
+    },
+    {
+      "prompt": "PC内でAIを動かしたいときに確認すべきものは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "使うモデルとソフトウェアが要求する機器条件"
+        },
+        {
+          "id": "c2",
+          "text": "インターネット上で最も高価なGPUだけ"
+        },
+        {
+          "id": "c3",
+          "text": "ブラウザのアイコンの色"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "用途から必要条件を確認します。",
+      "id": "PC06-O3-Q3",
+      "version": 1,
+      "objectiveId": "PC06-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC06-O3-needs-review",
+      "objectiveTitle": "AIの処理はどこで行われるか",
+      "hint": "処理を担当しているのは手元か、サービス側かを確かめます。",
+      "remediation": "同じAI利用でも構成が違います。サービスの方式やソフトウェアの要件を確認してから機器を判断します。",
+      "example": "WebのAIサービスに文章を送る場合と、PC内で画像生成のソフトを動かす場合では、手元に必要な機器の条件が異なります。"
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "PC01",
+  "lessonVersion": 1,
+  "questions": [
+    {
+      "prompt": "文字や写真を目に見える形で表示する機器はどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "キーボード"
+        },
+        {
+          "id": "c2",
+          "text": "ディスプレイ"
+        },
+        {
+          "id": "c3",
+          "text": "マイク"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "ディスプレイは文字や画像を表示する機器です。",
+      "id": "PC01-O1-Q1",
+      "version": 1,
+      "objectiveId": "PC01-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC01-O1-needs-review",
+      "objectiveTitle": "機器の名前と役割",
+      "hint": "何を取り込み、何を表示・出力する部分なのかを考えましょう。",
+      "remediation": "マイク→PCは音の入力、PC→スピーカーは音の出力です。画面は表示、キーボードは文字入力を担当します。一体型でもこの役割は変わりません。",
+      "example": "Web会議では、相手の声をスピーカーで聞き、自分の声をマイクから取り込みます。音を扱う機器でも、情報の向きが違います。"
+    },
+    {
+      "prompt": "「表示する・位置を指して選ぶ・音を取り込む」の順で、正しく機器を並べたものはどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "モニター・マウス・マイク"
+        },
+        {
+          "id": "c2",
+          "text": "モニター・キーボード・スピーカー"
+        },
+        {
+          "id": "c3",
+          "text": "マウス・モニター・マイク"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "マウスの位置指定とキーボードの文字入力、マイクの入力とスピーカーの出力を区別します。",
+      "id": "PC01-O1-Q2",
+      "version": 1,
+      "objectiveId": "PC01-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC01-O1-needs-review",
+      "objectiveTitle": "機器の名前と役割",
+      "hint": "何を取り込み、何を表示・出力する部分なのかを考えましょう。",
+      "remediation": "マイク→PCは音の入力、PC→スピーカーは音の出力です。画面は表示、キーボードは文字入力を担当します。一体型でもこの役割は変わりません。",
+      "example": "Web会議では、相手の声をスピーカーで聞き、自分の声をマイクから取り込みます。音を扱う機器でも、情報の向きが違います。"
+    },
+    {
+      "prompt": "Web会議で「相手の声を聞く・自分の声を取り込む・文章を入力する」の順に使う機器はどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "マイク・スピーカー・キーボード"
+        },
+        {
+          "id": "c2",
+          "text": "スピーカー・マイク・キーボード"
+        },
+        {
+          "id": "c3",
+          "text": "スピーカー・キーボード・マイク"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "音の入力と出力、文字の入力は別の役割です。",
+      "id": "PC01-O1-Q3",
+      "version": 1,
+      "objectiveId": "PC01-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC01-O1-needs-review",
+      "objectiveTitle": "機器の名前と役割",
+      "hint": "何を取り込み、何を表示・出力する部分なのかを考えましょう。",
+      "remediation": "マイク→PCは音の入力、PC→スピーカーは音の出力です。画面は表示、キーボードは文字入力を担当します。一体型でもこの役割は変わりません。",
+      "example": "Web会議では、相手の声をスピーカーで聞き、自分の声をマイクから取り込みます。音を扱う機器でも、情報の向きが違います。"
+    },
+    {
+      "prompt": "ハードウェアをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "モニター"
+        },
+        {
+          "id": "c2",
+          "text": "マウス"
+        },
+        {
+          "id": "c3",
+          "text": "Excel"
+        },
+        {
+          "id": "c4",
+          "text": "GPU"
+        },
+        {
+          "id": "c5",
+          "text": "Firefox"
+        },
+        {
+          "id": "c6",
+          "text": "メモリー（RAM）"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2",
+        "c4",
+        "c6"
+      ],
+      "explanation": "外付け機器と内部部品の両方がハードウェアです。",
+      "id": "PC01-O2-Q1",
+      "version": 1,
+      "objectiveId": "PC01-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC01-O2-needs-review",
+      "objectiveTitle": "ハードウェアとソフトウェア",
+      "hint": "製品名が、物理的な機器・部品と、その上で動くもののどちらを指すか確認します。",
+      "remediation": "モニター・マウス・GPU・RAM・SSDは物理的なものです。Excel・Firefox・Windowsはソフトウェアです。OSもソフトウェアに含まれます。",
+      "example": "同じPCでExcelを閉じてFirefoxを開いても、マウスやモニターを取り替える必要はありません。使うソフトウェアが変わっています。"
+    },
+    {
+      "prompt": "ソフトウェアをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Windows"
+        },
+        {
+          "id": "c2",
+          "text": "SSD"
+        },
+        {
+          "id": "c3",
+          "text": "Firefox"
+        },
+        {
+          "id": "c4",
+          "text": "キーボード"
+        },
+        {
+          "id": "c5",
+          "text": "Excel"
+        },
+        {
+          "id": "c6",
+          "text": "GPU"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c3",
+        "c5"
+      ],
+      "explanation": "WindowsはOS、FirefoxとExcelはアプリで、いずれもソフトウェアです。",
+      "id": "PC01-O2-Q2",
+      "version": 1,
+      "objectiveId": "PC01-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC01-O2-needs-review",
+      "objectiveTitle": "ハードウェアとソフトウェア",
+      "hint": "製品名が、物理的な機器・部品と、その上で動くもののどちらを指すか確認します。",
+      "remediation": "モニター・マウス・GPU・RAM・SSDは物理的なものです。Excel・Firefox・Windowsはソフトウェアです。OSもソフトウェアに含まれます。",
+      "example": "同じPCでExcelを閉じてFirefoxを開いても、マウスやモニターを取り替える必要はありません。使うソフトウェアが変わっています。"
+    },
+    {
+      "prompt": "導入予定一覧から、物理的な機器・部品をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "モニター"
+        },
+        {
+          "id": "c2",
+          "text": "Windows"
+        },
+        {
+          "id": "c3",
+          "text": "メモリー（RAM）"
+        },
+        {
+          "id": "c4",
+          "text": "Excel"
+        },
+        {
+          "id": "c5",
+          "text": "SSD"
+        },
+        {
+          "id": "c6",
+          "text": "Firefox"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c3",
+        "c5"
+      ],
+      "explanation": "ソフトウェアの導入と、機器や部品の追加を区別します。",
+      "id": "PC01-O2-Q3",
+      "version": 1,
+      "objectiveId": "PC01-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC01-O2-needs-review",
+      "objectiveTitle": "ハードウェアとソフトウェア",
+      "hint": "製品名が、物理的な機器・部品と、その上で動くもののどちらを指すか確認します。",
+      "remediation": "モニター・マウス・GPU・RAM・SSDは物理的なものです。Excel・Firefox・Windowsはソフトウェアです。OSもソフトウェアに含まれます。",
+      "example": "同じPCでExcelを閉じてFirefoxを開いても、マウスやモニターを取り替える必要はありません。使うソフトウェアが変わっています。"
+    },
+    {
+      "prompt": "データについて適切な説明をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "文章・写真・音声も含まれる"
+        },
+        {
+          "id": "c2",
+          "text": "入力中の文章は保存するまでデータではない"
+        },
+        {
+          "id": "c3",
+          "text": "写真はクラウドへ移すとデータではなくなる"
+        },
+        {
+          "id": "c4",
+          "text": "ファイルとして保存された情報もデータとして扱う"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c4"
+      ],
+      "explanation": "データかどうかは、保存済みか、どこにあるかだけで決まりません。",
+      "id": "PC01-O3-Q1",
+      "version": 1,
+      "objectiveId": "PC01-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC01-O3-needs-review",
+      "objectiveTitle": "データとファイルの関係",
+      "hint": "何を使って作業しているか、何を編集しているか、どう保存しているかを分けます。",
+      "remediation": "入力した文章は保存前もデータです。保存するとファイルとして管理できます。「データかファイルか」という二択ではなく、情報を見る観点が違います。",
+      "example": "写真をPCからクラウドという外部の保存先へ移しても、保存先が変わったのであって、写真がデータでなくなるわけではありません。"
+    },
+    {
+      "prompt": "Excelで金額と商品名を編集しています。適切な説明はどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Excelはソフトウェアで、金額と商品名は扱うデータ"
+        },
+        {
+          "id": "c2",
+          "text": "データは金額だけで、商品名は含まれない"
+        },
+        {
+          "id": "c3",
+          "text": "保存した売上表のファイル自体がExcelになる"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "道具と内容を区別します。文字も数値もデータです。",
+      "id": "PC01-O3-Q2",
+      "version": 1,
+      "objectiveId": "PC01-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC01-O3-needs-review",
+      "objectiveTitle": "データとファイルの関係",
+      "hint": "何を使って作業しているか、何を編集しているか、どう保存しているかを分けます。",
+      "remediation": "入力した文章は保存前もデータです。保存するとファイルとして管理できます。「データかファイルか」という二択ではなく、情報を見る観点が違います。",
+      "example": "写真をPCからクラウドという外部の保存先へ移しても、保存先が変わったのであって、写真がデータでなくなるわけではありません。"
+    },
+    {
+      "prompt": "文章を「案内文.txt」として保存しました。適切な説明をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "ファイルは情報を保存・管理する単位"
+        },
+        {
+          "id": "c2",
+          "text": "保存した瞬間に初めて文章がデータになる"
+        },
+        {
+          "id": "c3",
+          "text": "保存前の文章も保存した内容もデータとして扱う"
+        },
+        {
+          "id": "c4",
+          "text": "txtという名前にしたので文章がソフトウェアに変わる"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c3"
+      ],
+      "explanation": "保存は情報をファイルとして残す操作であり、データを初めて生み出す境界ではありません。",
+      "id": "PC01-O3-Q3",
+      "version": 1,
+      "objectiveId": "PC01-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC01-O3-needs-review",
+      "objectiveTitle": "データとファイルの関係",
+      "hint": "何を使って作業しているか、何を編集しているか、どう保存しているかを分けます。",
+      "remediation": "入力した文章は保存前もデータです。保存するとファイルとして管理できます。「データかファイルか」という二択ではなく、情報を見る観点が違います。",
+      "example": "写真をPCからクラウドという外部の保存先へ移しても、保存先が変わったのであって、写真がデータでなくなるわけではありません。"
+    }
+  ]
+}

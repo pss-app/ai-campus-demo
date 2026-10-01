@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "PC03",
+  "lessonVersion": 1,
+  "questions": [
+    {
+      "prompt": "CPUの主な役割として適切なものはどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "プログラムの命令を実行する"
+        },
+        {
+          "id": "c2",
+          "text": "電源を切った後も文書を保管する"
+        },
+        {
+          "id": "c3",
+          "text": "画面の大きさを決める"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "CPUは命令を解釈して実行する部品です。",
+      "id": "PC03-O1-Q1",
+      "version": 1,
+      "objectiveId": "PC03-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC03-O1-needs-review",
+      "objectiveTitle": "CPUとプログラムの関係",
+      "hint": "命令を記述するものと、それを実行する部品を分けます。",
+      "remediation": "CPUは実行、ストレージは保存、メモリーは作業中の保持です。それぞれが連携してアプリが動きます。",
+      "example": "計算アプリで入力した数値に、プログラムの命令に従って計算を行い、結果を表示します。"
+    },
+    {
+      "prompt": "適切な説明をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "CPUはほかの部品と連携する"
+        },
+        {
+          "id": "c2",
+          "text": "CPUがあれば情報を保存する部品は不要"
+        },
+        {
+          "id": "c3",
+          "text": "プログラムは実行する手順や命令を記述する"
+        },
+        {
+          "id": "c4",
+          "text": "CPUは依頼者の目的を自分で決める"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c3"
+      ],
+      "explanation": "CPUだけで保存などの役割をすべて担うわけではありません。",
+      "id": "PC03-O1-Q2",
+      "version": 1,
+      "objectiveId": "PC03-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC03-O1-needs-review",
+      "objectiveTitle": "CPUとプログラムの関係",
+      "hint": "命令を記述するものと、それを実行する部品を分けます。",
+      "remediation": "CPUは実行、ストレージは保存、メモリーは作業中の保持です。それぞれが連携してアプリが動きます。",
+      "example": "計算アプリで入力した数値に、プログラムの命令に従って計算を行い、結果を表示します。"
+    },
+    {
+      "prompt": "計算に使うプログラムとCPUの関係はどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "プログラムが命令を記述し、CPUが実行する"
+        },
+        {
+          "id": "c2",
+          "text": "CPUが文書を永久保存し、プログラムが画面になる"
+        },
+        {
+          "id": "c3",
+          "text": "どちらも同じ部品の別名"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "ソフトウェアと、それを実行するハードウェアの関係です。",
+      "id": "PC03-O1-Q3",
+      "version": 1,
+      "objectiveId": "PC03-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC03-O1-needs-review",
+      "objectiveTitle": "CPUとプログラムの関係",
+      "hint": "命令を記述するものと、それを実行する部品を分けます。",
+      "remediation": "CPUは実行、ストレージは保存、メモリーは作業中の保持です。それぞれが連携してアプリが動きます。",
+      "example": "計算アプリで入力した数値に、プログラムの命令に従って計算を行い、結果を表示します。"
+    },
+    {
+      "prompt": "適切な説明をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "コア数はCPU内の処理単位の数を示す"
+        },
+        {
+          "id": "c2",
+          "text": "8コアならどの作業も4コアの2倍速い"
+        },
+        {
+          "id": "c3",
+          "text": "GHzだけで異なるCPUの総合性能が決まる"
+        },
+        {
+          "id": "c4",
+          "text": "複数コアを活用できる程度は作業によって違う"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c4"
+      ],
+      "explanation": "数値の意味を理解して、性能の断定と分けます。",
+      "id": "PC03-O2-Q1",
+      "version": 1,
+      "objectiveId": "PC03-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC03-O2-needs-review",
+      "objectiveTitle": "コアとクロック周波数",
+      "hint": "数値が示すものと、実際の仕事の速さを区別します。",
+      "remediation": "コア数は処理単位の数、周波数はサイクルの頻度です。どれだけ速く終わるかは、作業や設計にも依存します。",
+      "example": "8コアだから、4コアに比べてすべての作業が必ず2倍速く終わる、とは言えません。"
+    },
+    {
+      "prompt": "クロック周波数が表すのはどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "1秒あたりの動作サイクル数"
+        },
+        {
+          "id": "c2",
+          "text": "保存できるファイル数"
+        },
+        {
+          "id": "c3",
+          "text": "CPU内のコア数"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "周波数はサイクルの頻度を表します。",
+      "id": "PC03-O2-Q2",
+      "version": 1,
+      "objectiveId": "PC03-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC03-O2-needs-review",
+      "objectiveTitle": "コアとクロック周波数",
+      "hint": "数値が示すものと、実際の仕事の速さを区別します。",
+      "remediation": "コア数は処理単位の数、周波数はサイクルの頻度です。どれだけ速く終わるかは、作業や設計にも依存します。",
+      "example": "8コアだから、4コアに比べてすべての作業が必ず2倍速く終わる、とは言えません。"
+    },
+    {
+      "prompt": "CPUを比較するとき、適切な見方はどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "周波数の高い方を常に最速とする"
+        },
+        {
+          "id": "c2",
+          "text": "使う作業と、設計やコア数など複数の条件を見る"
+        },
+        {
+          "id": "c3",
+          "text": "コア数だけでアプリの対応も判断する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "目的の作業でどう働くかを考えます。",
+      "id": "PC03-O2-Q3",
+      "version": 1,
+      "objectiveId": "PC03-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC03-O2-needs-review",
+      "objectiveTitle": "コアとクロック周波数",
+      "hint": "数値が示すものと、実際の仕事の速さを区別します。",
+      "remediation": "コア数は処理単位の数、周波数はサイクルの頻度です。どれだけ速く終わるかは、作業や設計にも依存します。",
+      "example": "8コアだから、4コアに比べてすべての作業が必ず2倍速く終わる、とは言えません。"
+    },
+    {
+      "prompt": "CPU使用率が高いとき、適切な対応はどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "直ちにCPUの故障と判断する"
+        },
+        {
+          "id": "c2",
+          "text": "実行中の作業と、どのアプリが使っているかを確認する"
+        },
+        {
+          "id": "c3",
+          "text": "保存したファイルをすべて削除する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "負荷の高い作業中かを確認してから判断します。",
+      "id": "PC03-O3-Q1",
+      "version": 1,
+      "objectiveId": "PC03-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC03-O3-needs-review",
+      "objectiveTitle": "CPUの忙しさとPC全体の遅さ",
+      "hint": "一つの表示だけで原因を決めず、何の作業中かを確かめます。",
+      "remediation": "高い使用率は仕事をしている状態でも起こります。遅さの原因はCPU以外にもあります。",
+      "example": "Webページの表示待ちでCPU使用率が低いとき、CPUを交換すれば必ず直ると決めず、通信なども確認します。"
+    },
+    {
+      "prompt": "CPU使用率が低いのにページ表示が遅いとき、適切な説明はどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "CPUだけが原因だと確定できる"
+        },
+        {
+          "id": "c2",
+          "text": "通信など他の工程を待っている可能性もある"
+        },
+        {
+          "id": "c3",
+          "text": "低使用率は必ず故障を意味する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "処理の待ちには他の要素も関係します。",
+      "id": "PC03-O3-Q2",
+      "version": 1,
+      "objectiveId": "PC03-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC03-O3-needs-review",
+      "objectiveTitle": "CPUの忙しさとPC全体の遅さ",
+      "hint": "一つの表示だけで原因を決めず、何の作業中かを確かめます。",
+      "remediation": "高い使用率は仕事をしている状態でも起こります。遅さの原因はCPU以外にもあります。",
+      "example": "Webページの表示待ちでCPU使用率が低いとき、CPUを交換すれば必ず直ると決めず、通信なども確認します。"
+    },
+    {
+      "prompt": "遅さを調べる記録として役立つものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "そのとき行っていた作業"
+        },
+        {
+          "id": "c2",
+          "text": "CPU使用率の変化"
+        },
+        {
+          "id": "c3",
+          "text": "いつから起きているか"
+        },
+        {
+          "id": "c4",
+          "text": "本体の色だけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "explanation": "状況と数値を合わせて見るための記録です。",
+      "id": "PC03-O3-Q3",
+      "version": 1,
+      "objectiveId": "PC03-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC03-O3-needs-review",
+      "objectiveTitle": "CPUの忙しさとPC全体の遅さ",
+      "hint": "一つの表示だけで原因を決めず、何の作業中かを確かめます。",
+      "remediation": "高い使用率は仕事をしている状態でも起こります。遅さの原因はCPU以外にもあります。",
+      "example": "Webページの表示待ちでCPU使用率が低いとき、CPUを交換すれば必ず直ると決めず、通信なども確認します。"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const root=path.join(__dirname,'..');
+const course=JSON.parse(fs.readFileSync(path.join(root,'content/foundation/course.json'),'utf8'));
+const css=fs.readFileSync(path.join(root,'content/foundation/preview.css'),'utf8');
+const engine=fs.readFileSync(path.join(__dirname,'learning-engine.cjs'),'utf8');
+const js=fs.readFileSync(path.join(root,'content/foundation/preview.js'),'utf8');
+const data=JSON.stringify(course).replace(/</g,'\\u003c');
+const html=`<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>PCの基礎を学ぶ | AI CAMPUS 教材プレビュー</title><style>${css}</style></head><body><header class="header"><a href="index.html" class="brand"><span>✳</span> AI CAMPUS</a><div class="header-label">PC基礎コース · 教材確認用</div><label class="review-switch"><input id="review-switch" type="checkbox"> 講師確認モード</label></header><div class="notice">ローカル教材プレビュー · 進捗はこのブラウザに保存 · 本番の認証・サーバー採点は未接続</div><div class="layout"><aside id="sidebar" aria-label="コースのレッスン"></aside><main id="main" tabindex="-1"></main></div><div id="announce" role="status" class="sr-only"></div><script id="course-data" type="application/json">${data}</script><script>${engine}\n${js}</script></body></html>`;
+fs.writeFileSync(path.join(root,'foundation-preview.html'),html);
+console.log('Built foundation-preview.html (standalone, no dependencies).');

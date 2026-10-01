@@ -1,0 +1,49 @@
+const {chromium,expect}=require('@playwright/test');
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const base=(process.env.PAGES_TEST_URL??'http://127.0.0.1:4175/ai-campus-demo').replace(/\/$/,'');
+const root=path.resolve(__dirname,'..');
+const read=(course,file)=>JSON.parse(fs.readFileSync(path.join(root,'content/courses',course,file),'utf8'));
+(async()=>{
+ const browser=await chromium.launch({channel:'chrome',headless:true});
+ try{
+  const page=await browser.newPage();const failures=[];
+  page.on('pageerror',e=>failures.push(e.message));
+  page.on('response',r=>{if(r.status()>=400)failures.push(`${r.status()} ${r.url()}`);});
+  await page.goto(base+'/');await expect(page.getByRole('heading',{level:1})).toContainText('言葉を知る');
+  await expect(page.getByText(/公開デモ：ログイン/)).toBeVisible();
+  await page.getByRole('link',{name:'コースを選ぶ',exact:true}).click();await expect(page.locator('.course-card')).toHaveCount(2);
+  for(const courseId of ['pc-foundations','file-data']){
+   const course=read(courseId,'course.json'),first=course.lessons[0],bank=read(courseId,`assessments/${first.slug}.json`);
+   const route=`${base}/courses/${courseId}/lessons/${first.slug}/`;
+   await page.goto(route);await expect(page.getByRole('heading',{name:'今回覚えること'})).toBeVisible();
+   await page.getByLabel('学習メモ',{exact:true}).fill('公開デモの動作確認');await page.getByRole('button',{name:'メモを保存',exact:true}).click();await expect(page.getByText('メモを保存しました。',{exact:true})).toBeVisible();
+   await page.getByRole('link',{name:'理解した・確認へ進む'}).click();await page.getByRole('button',{name:'確認問題を始める'}).click();await expect(page.locator('.question-card fieldset')).toHaveCount(3);
+   const initial=await page.locator('.question-card legend').allTextContents();
+   async function answer(wrong){
+    for(const [i,card] of (await page.locator('.question-card').all()).entries()){
+     const prompt=await card.locator('legend').innerText(),question=bank.questions.find(q=>q.prompt===prompt);
+     const ids=wrong&&i===0?[question.choices.find(c=>!question.correctChoiceIds.includes(c.id)).id]:question.correctChoiceIds;
+     for(const id of ids){const input=card.getByRole(question.type==='multiple_choice'?'checkbox':'radio',{name:question.choices.find(c=>c.id===id).text,exact:true});await expect(input).toBeEnabled();await input.click();await expect(input).toBeChecked();}
+    }
+   }
+   await answer(true);await page.reload();await expect(page.locator('.question-card fieldset')).toHaveCount(3);
+   await expect(page.locator('.choice input:checked')).not.toHaveCount(0);
+   await page.getByRole('button',{name:'回答を確認する',exact:true}).click();await expect(page.getByRole('heading',{name:'ここをもう一度、確認しましょう。'})).toBeVisible();
+   await page.getByRole('button',{name:'補足を確認した・別の問題で試す'}).click();await expect(page.locator('.question-card fieldset')).toHaveCount(1);
+   assert(!initial.includes(await page.locator('.question-card legend').innerText()));
+   await page.getByRole('button',{name:'ヒントを見る'}).click();await expect(page.locator('.hint')).toBeVisible();await answer(false);
+   await page.getByRole('button',{name:'回答を確認する',exact:true}).click();await expect(page.getByRole('heading',{name:'確認できました。次の一歩へ。'})).toBeVisible();
+   await page.getByRole('link',{name:'次のレッスンへ',exact:true}).click();await expect(page).toHaveURL(`${base}/courses/${courseId}/lessons/${course.lessons[1].slug}/`);
+   await page.reload();await expect(page.getByRole('heading',{name:'今回覚えること'})).toBeVisible();
+   await page.goto(base+'/learning-records/');await expect(page.locator(`#records-${courseId} .record-card`).first()).toContainText('回答 4件');
+   await page.goto(route);await expect(page.getByLabel('学習メモ',{exact:true})).toHaveValue('公開デモの動作確認');
+   const toggle=page.getByRole('checkbox',{name:'教材確認モード',exact:true});if(!await toggle.isChecked())await toggle.click();await expect(toggle).toBeChecked();
+   for(const lesson of course.lessons){await page.goto(`${base}/courses/${courseId}/lessons/${lesson.slug}/`);await expect(page.getByRole('heading',{name:lesson.title,exact:true,level:1})).toBeVisible();await expect(page.locator('.objective-section')).toHaveCount(3);}
+   console.log(`${courseId}: all lessons, retry, hints, resume, progression, records passed`);
+  }
+  await page.getByRole('button',{name:'特大',exact:true}).click();await page.setViewportSize({width:320,height:900});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  await page.getByRole('link',{name:'AI CAMPUS ホーム'}).click();await expect(page).toHaveURL(base+'/');
+  assert.deepEqual(failures,[]);console.log(`PASS: ${base} — 20 lesson pages, two course learning flows, home link, mobile layout, no asset or JS errors`);
+ }finally{await browser.close();}
+})().catch(error=>{console.error(error);process.exitCode=1;});
+

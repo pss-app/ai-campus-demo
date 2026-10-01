@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "file-data",
+  "title": "ファイルとデータの基礎",
+  "description": "保存場所と形式を自分で確かめ、原本を残して編集し、AIに渡す資料を準備できるようになる。",
+  "audience": "PC基礎の用語を学び、ファイルの保存・受け渡しを自分で説明したい方",
+  "version": 1,
+  "status": "draft",
+  "finalTask": {
+    "title": "資料を渡すための準備メモ",
+    "description": "架空の店舗資料を例に、目的・対象読者・原本名と版・保存先・形式・渡す範囲・共有権限・出力の確認点を整理してください。実在する顧客情報は使わず、確認済みと未確認を分けます。"
+  },
+  "lessons": [
+    {
+      "id": "FD01",
+      "slug": "data-vocabulary",
+      "title": "最初に覚える：ファイルを扱う言葉",
+      "order": 1,
+      "goal": "データ・ファイル・形式・拡張子・フォルダー・パスを区別して説明できる。",
+      "objectiveIds": [
+        "FD01-O1",
+        "FD01-O2",
+        "FD01-O3"
+      ]
+    },
+    {
+      "id": "FD02",
+      "slug": "data-locations",
+      "title": "保存場所を自分で確認する",
+      "order": 2,
+      "goal": "ローカル・クラウド・ダウンロード先を区別し、目的のファイルの場所を確かめられる。",
+      "objectiveIds": [
+        "FD02-O1",
+        "FD02-O2",
+        "FD02-O3"
+      ]
+    },
+    {
+      "id": "FD03",
+      "slug": "data-formats",
+      "title": "形式を選び、変換後を確かめる",
+      "order": 3,
+      "goal": "拡張子の変更と変換を区別し、用途に合う形式と文字の読み方を確認できる。",
+      "objectiveIds": [
+        "FD03-O1",
+        "FD03-O2",
+        "FD03-O3"
+      ]
+    },
+    {
+      "id": "FD04",
+      "slug": "data-versions",
+      "title": "コピー・移動・保存と版の管理",
+      "order": 4,
+      "goal": "原本を残した作業と、変更したファイルの特定ができる。",
+      "objectiveIds": [
+        "FD04-O1",
+        "FD04-O2",
+        "FD04-O3"
+      ]
+    },
+    {
+      "id": "FD05",
+      "slug": "data-tables",
+      "title": "表とCSV：見た目より中身を確かめる",
+      "order": 5,
+      "goal": "行・列・値の意味と、CSVにしたときの変化を説明できる。",
+      "objectiveIds": [
+        "FD05-O1",
+        "FD05-O2",
+        "FD05-O3"
+      ]
+    },
+    {
+      "id": "FD06",
+      "slug": "data-documents",
+      "title": "画像とPDF：見えることと読めること",
+      "order": 6,
+      "goal": "画像の大きさ・容量、PDFの中身、OCRの確認点を区別できる。",
+      "objectiveIds": [
+        "FD06-O1",
+        "FD06-O2",
+        "FD06-O3"
+      ]
+    },
+    {
+      "id": "FD07",
+      "slug": "data-protection",
+      "title": "同期・バックアップ・共有を分ける",
+      "order": 7,
+      "goal": "変更の伝わり方と復元方法、共有範囲を確認できる。",
+      "objectiveIds": [
+        "FD07-O1",
+        "FD07-O2",
+        "FD07-O3"
+      ]
+    },
+    {
+      "id": "FD08",
+      "slug": "data-ai-handoff",
+      "title": "AIに渡す資料を自分で準備する",
+      "order": 8,
+      "goal": "目的に合う資料を選び、背景を添え、受け渡しと結果を検証できる。",
+      "objectiveIds": [
+        "FD08-O1",
+        "FD08-O2",
+        "FD08-O3"
+      ]
+    }
+  ]
+}

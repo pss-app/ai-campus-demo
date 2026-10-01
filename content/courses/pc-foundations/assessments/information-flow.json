@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "PC02",
+  "lessonVersion": 1,
+  "questions": [
+    {
+      "prompt": "PCへの入力に当たる操作をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "キーボードで数量を打つ"
+        },
+        {
+          "id": "c2",
+          "text": "スピーカーから通知音が鳴る"
+        },
+        {
+          "id": "c3",
+          "text": "マイクで声を取り込む"
+        },
+        {
+          "id": "c4",
+          "text": "画面に計算結果を表示する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c3"
+      ],
+      "explanation": "数量と声は取り込む情報です。通知音と画面表示は出力です。",
+      "id": "PC02-O1-Q1",
+      "version": 1,
+      "objectiveId": "PC02-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC02-O1-needs-review",
+      "objectiveTitle": "入力と出力の向き",
+      "hint": "情報がPCに入るのか、PCから出るのかを考えましょう。",
+      "remediation": "機器名だけで入力専用・出力専用と決めつけず、その場面の働きを見ます。タッチパネルは両方を担います。",
+      "example": "画面上のボタンに触れるのは入力、触れた結果として確認メッセージが出るのは出力です。"
+    },
+    {
+      "prompt": "タッチパネルについて適切な説明はどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "文字や画像を表示し、触れた位置も入力できる"
+        },
+        {
+          "id": "c2",
+          "text": "表示機器なので入力はできない"
+        },
+        {
+          "id": "c3",
+          "text": "入力機器なので表示は別の装置が必要"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "一つの機器が入力と出力を兼ねることがあります。",
+      "id": "PC02-O1-Q2",
+      "version": 1,
+      "objectiveId": "PC02-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC02-O1-needs-review",
+      "objectiveTitle": "入力と出力の向き",
+      "hint": "情報がPCに入るのか、PCから出るのかを考えましょう。",
+      "remediation": "機器名だけで入力専用・出力専用と決めつけず、その場面の働きを見ます。タッチパネルは両方を担います。",
+      "example": "画面上のボタンに触れるのは入力、触れた結果として確認メッセージが出るのは出力です。"
+    },
+    {
+      "prompt": "出力に当たるものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "文章を紙に印刷する"
+        },
+        {
+          "id": "c2",
+          "text": "PCが読み上げた音声を聞く"
+        },
+        {
+          "id": "c3",
+          "text": "マウスで項目を選ぶ"
+        },
+        {
+          "id": "c4",
+          "text": "マイクで録音する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2"
+      ],
+      "explanation": "印刷と音声の再生は外に結果を出す働きです。",
+      "id": "PC02-O1-Q3",
+      "version": 1,
+      "objectiveId": "PC02-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC02-O1-needs-review",
+      "objectiveTitle": "入力と出力の向き",
+      "hint": "情報がPCに入るのか、PCから出るのかを考えましょう。",
+      "remediation": "機器名だけで入力専用・出力専用と決めつけず、その場面の働きを見ます。タッチパネルは両方を担います。",
+      "example": "画面上のボタンに触れるのは入力、触れた結果として確認メッセージが出るのは出力です。"
+    },
+    {
+      "prompt": "処理に当たるものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "入力された単価と数量を掛ける"
+        },
+        {
+          "id": "c2",
+          "text": "名簿を名前順に並べ替える"
+        },
+        {
+          "id": "c3",
+          "text": "完成した金額を紙で受け取る"
+        },
+        {
+          "id": "c4",
+          "text": "キーを押して数量を入力する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2"
+      ],
+      "explanation": "計算や並べ替えが処理に当たります。",
+      "id": "PC02-O2-Q1",
+      "version": 1,
+      "objectiveId": "PC02-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC02-O2-needs-review",
+      "objectiveTitle": "処理は何をすることか",
+      "hint": "材料と結果の間で、何をしているかに注目します。",
+      "remediation": "金額を入力するのは入力、掛け算は処理、結果を表示するのは出力です。情報の並べ替えも処理です。",
+      "example": "単価500円・数量3個を入力し、掛け算を行い、1500円を画面に表示する。入力・処理・出力を分けてみます。"
+    },
+    {
+      "prompt": "500と3から1500を得る例で「処理」に当たるのはどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "500と3を打ち込む"
+        },
+        {
+          "id": "c2",
+          "text": "二つの数値を掛け算する"
+        },
+        {
+          "id": "c3",
+          "text": "1500を画面に表示する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "入力された情報に計算を行う段階です。",
+      "id": "PC02-O2-Q2",
+      "version": 1,
+      "objectiveId": "PC02-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC02-O2-needs-review",
+      "objectiveTitle": "処理は何をすることか",
+      "hint": "材料と結果の間で、何をしているかに注目します。",
+      "remediation": "金額を入力するのは入力、掛け算は処理、結果を表示するのは出力です。情報の並べ替えも処理です。",
+      "example": "単価500円・数量3個を入力し、掛け算を行い、1500円を画面に表示する。入力・処理・出力を分けてみます。"
+    },
+    {
+      "prompt": "写真の幅を指定し、縮小した写真を表示しました。処理はどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "幅を指定する操作"
+        },
+        {
+          "id": "c2",
+          "text": "指定された幅に画像を変換する働き"
+        },
+        {
+          "id": "c3",
+          "text": "変換後の画像を見ること"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "指定に応じて情報を変換する働きが処理です。",
+      "id": "PC02-O2-Q3",
+      "version": 1,
+      "objectiveId": "PC02-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC02-O2-needs-review",
+      "objectiveTitle": "処理は何をすることか",
+      "hint": "材料と結果の間で、何をしているかに注目します。",
+      "remediation": "金額を入力するのは入力、掛け算は処理、結果を表示するのは出力です。情報の並べ替えも処理です。",
+      "example": "単価500円・数量3個を入力し、掛け算を行い、1500円を画面に表示する。入力・処理・出力を分けてみます。"
+    },
+    {
+      "prompt": "保存の確認として適切なものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "保存先を確認する"
+        },
+        {
+          "id": "c2",
+          "text": "文章が画面に見えれば保存済みとする"
+        },
+        {
+          "id": "c3",
+          "text": "保存したファイルを開き直して内容を確かめる"
+        },
+        {
+          "id": "c4",
+          "text": "アプリの保存状態を確認する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c3",
+        "c4"
+      ],
+      "explanation": "表示だけで判断せず、保存先・状態・内容を確認します。",
+      "id": "PC02-O3-Q1",
+      "version": 1,
+      "objectiveId": "PC02-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC02-O3-needs-review",
+      "objectiveTitle": "表示と保存を分ける",
+      "hint": "画面で確認できることと、後から取り出せることを分けましょう。",
+      "remediation": "自動保存の有無はアプリ次第です。画面に出たから保存されたと決めず、保存先と状態を確認します。",
+      "example": "文章が画面に見えるだけでは保存完了の証拠になりません。保存状態を確認してから、保存したファイルを開き直して内容を確かめます。"
+    },
+    {
+      "prompt": "自動保存について適切な説明はどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "どのアプリでも必ず自動保存される"
+        },
+        {
+          "id": "c2",
+          "text": "アプリの仕組みと保存状態を確認する必要がある"
+        },
+        {
+          "id": "c3",
+          "text": "自動保存なら保存先は存在しない"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "保存の方式や場所はアプリによって異なります。",
+      "id": "PC02-O3-Q2",
+      "version": 1,
+      "objectiveId": "PC02-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC02-O3-needs-review",
+      "objectiveTitle": "表示と保存を分ける",
+      "hint": "画面で確認できることと、後から取り出せることを分けましょう。",
+      "remediation": "自動保存の有無はアプリ次第です。画面に出たから保存されたと決めず、保存先と状態を確認します。",
+      "example": "文章が画面に見えるだけでは保存完了の証拠になりません。保存状態を確認してから、保存したファイルを開き直して内容を確かめます。"
+    },
+    {
+      "prompt": "入力・計算・画面表示ができました。後日同じ内容を使うため、次に確認するものはどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "結果が保存されている場所と状態"
+        },
+        {
+          "id": "c2",
+          "text": "モニターの大きさ"
+        },
+        {
+          "id": "c3",
+          "text": "キーボードの色"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "結果の表示とは別に、残すための保存を確認します。",
+      "id": "PC02-O3-Q3",
+      "version": 1,
+      "objectiveId": "PC02-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC02-O3-needs-review",
+      "objectiveTitle": "表示と保存を分ける",
+      "hint": "画面で確認できることと、後から取り出せることを分けましょう。",
+      "remediation": "自動保存の有無はアプリ次第です。画面に出たから保存されたと決めず、保存先と状態を確認します。",
+      "example": "文章が画面に見えるだけでは保存完了の証拠になりません。保存状態を確認してから、保存したファイルを開き直して内容を確かめます。"
+    }
+  ]
+}

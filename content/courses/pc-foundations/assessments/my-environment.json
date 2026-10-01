@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "PC12",
+  "lessonVersion": 1,
+  "questions": [
+    {
+      "prompt": "仕様を記録するとき適切なものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "手元の機種を確かめる"
+        },
+        {
+          "id": "c2",
+          "text": "似た製品のRAM容量で空欄を埋める"
+        },
+        {
+          "id": "c3",
+          "text": "確認できない項目は未確認とする"
+        },
+        {
+          "id": "c4",
+          "text": "確認元を残す"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c3",
+        "c4"
+      ],
+      "explanation": "推測と確認済みの情報を混ぜません。",
+      "id": "PC12-O1-Q1",
+      "version": 1,
+      "objectiveId": "PC12-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC12-O1-needs-review",
+      "objectiveTitle": "機器の仕様を確認する",
+      "hint": "手元の機器そのものについて確認した情報かを見ます。",
+      "remediation": "一般的な製品紹介と、自分の構成は一致しない場合があります。未確認は未確認として記録します。",
+      "example": "「ノートPCです」だけでなく「機種は確認済み、RAM容量は未確認」と分けて伝えられます。"
+    },
+    {
+      "prompt": "同じ製品シリーズなら構成は必ず同じですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "必ず同じ"
+        },
+        {
+          "id": "c2",
+          "text": "構成が異なる場合があるので確認する"
+        },
+        {
+          "id": "c3",
+          "text": "機種名の確認は不要"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "構成の違う製品があるためです。",
+      "id": "PC12-O1-Q2",
+      "version": 1,
+      "objectiveId": "PC12-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC12-O1-needs-review",
+      "objectiveTitle": "機器の仕様を確認する",
+      "hint": "手元の機器そのものについて確認した情報かを見ます。",
+      "remediation": "一般的な製品紹介と、自分の構成は一致しない場合があります。未確認は未確認として記録します。",
+      "example": "「ノートPCです」だけでなく「機種は確認済み、RAM容量は未確認」と分けて伝えられます。"
+    },
+    {
+      "prompt": "PCの状況を伝える情報として適切なのは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "機種、OS、RAMなど確認した構成"
+        },
+        {
+          "id": "c2",
+          "text": "できるだけ高そうな数値を推測する"
+        },
+        {
+          "id": "c3",
+          "text": "本体の色だけで性能を決める"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "問題の判断に使える具体的情報を伝えます。",
+      "id": "PC12-O1-Q3",
+      "version": 1,
+      "objectiveId": "PC12-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC12-O1-needs-review",
+      "objectiveTitle": "機器の仕様を確認する",
+      "hint": "手元の機器そのものについて確認した情報かを見ます。",
+      "remediation": "一般的な製品紹介と、自分の構成は一致しない場合があります。未確認は未確認として記録します。",
+      "example": "「ノートPCです」だけでなく「機種は確認済み、RAM容量は未確認」と分けて伝えられます。"
+    },
+    {
+      "prompt": "相談文に含める情報として適切なものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "アプリ名と確認できた版"
+        },
+        {
+          "id": "c2",
+          "text": "エラーの文面から秘密情報を除いたもの"
+        },
+        {
+          "id": "c3",
+          "text": "メールのログインコード"
+        },
+        {
+          "id": "c4",
+          "text": "作業対象の種類と保存場所の説明"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2",
+        "c4"
+      ],
+      "explanation": "必要な状況は伝え、認証情報は渡しません。",
+      "id": "PC12-O2-Q1",
+      "version": 1,
+      "objectiveId": "PC12-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC12-O2-needs-review",
+      "objectiveTitle": "ソフトウェアと保存先を記録する",
+      "hint": "説明に必要な情報と、渡してはいけない秘密を分けます。",
+      "remediation": "環境説明にログインコードは不要です。相手へ渡す前に記録内容を見直します。",
+      "example": "「文書を編集できない」という相談では、アプリ名、利用方法、対象の保存先、見えているメッセージが手掛かりになります。"
+    },
+    {
+      "prompt": "バージョンが分からないWebアプリではどうしますか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "適当な版番号を書く"
+        },
+        {
+          "id": "c2",
+          "text": "サービス名など確認できた情報を記録し、版は未確認とする"
+        },
+        {
+          "id": "c3",
+          "text": "別アプリの版を使う"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "確認できたことと不明なことを分けます。",
+      "id": "PC12-O2-Q2",
+      "version": 1,
+      "objectiveId": "PC12-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC12-O2-needs-review",
+      "objectiveTitle": "ソフトウェアと保存先を記録する",
+      "hint": "説明に必要な情報と、渡してはいけない秘密を分けます。",
+      "remediation": "環境説明にログインコードは不要です。相手へ渡す前に記録内容を見直します。",
+      "example": "「文書を編集できない」という相談では、アプリ名、利用方法、対象の保存先、見えているメッセージが手掛かりになります。"
+    },
+    {
+      "prompt": "画面写真を送る前の確認として適切なのは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "個人情報や認証情報が写っていないか確認する"
+        },
+        {
+          "id": "c2",
+          "text": "画面写真なら情報漏れは起きないと考える"
+        },
+        {
+          "id": "c3",
+          "text": "ログインコードも必ず添える"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "画像にも秘密の情報が含まれることがあります。",
+      "id": "PC12-O2-Q3",
+      "version": 1,
+      "objectiveId": "PC12-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC12-O2-needs-review",
+      "objectiveTitle": "ソフトウェアと保存先を記録する",
+      "hint": "説明に必要な情報と、渡してはいけない秘密を分けます。",
+      "remediation": "環境説明にログインコードは不要です。相手へ渡す前に記録内容を見直します。",
+      "example": "「文書を編集できない」という相談では、アプリ名、利用方法、対象の保存先、見えているメッセージが手掛かりになります。"
+    },
+    {
+      "prompt": "「アプリを開くとエラーが出る」は、どれに当たりますか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "観察した現象"
+        },
+        {
+          "id": "c2",
+          "text": "CPU故障の確定"
+        },
+        {
+          "id": "c3",
+          "text": "未実施の対処"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "現象だけでは原因は確定しません。",
+      "id": "PC12-O3-Q1",
+      "version": 1,
+      "objectiveId": "PC12-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC12-O3-needs-review",
+      "objectiveTitle": "現象・確認・推測を分けて伝える",
+      "hint": "見たこと・試したこと・まだ考えているだけのことを分けます。",
+      "remediation": "原因を先に決めなくても相談できます。確認した事実があれば次の調査につながります。",
+      "example": "「保存できない。保存先の空きは確認済み。原因はまだ不明」のように、事実と未確認を分けます。"
+    },
+    {
+      "prompt": "相談文に含めるとよいものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "起きる操作と表示"
+        },
+        {
+          "id": "c2",
+          "text": "確認したこととその結果"
+        },
+        {
+          "id": "c3",
+          "text": "まだ分からないこと"
+        },
+        {
+          "id": "c4",
+          "text": "裏付けなく決めた原因だけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "explanation": "次に確認する場所が分かる情報を残します。",
+      "id": "PC12-O3-Q2",
+      "version": 1,
+      "objectiveId": "PC12-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC12-O3-needs-review",
+      "objectiveTitle": "現象・確認・推測を分けて伝える",
+      "hint": "見たこと・試したこと・まだ考えているだけのことを分けます。",
+      "remediation": "原因を先に決めなくても相談できます。確認した事実があれば次の調査につながります。",
+      "example": "「保存できない。保存先の空きは確認済み。原因はまだ不明」のように、事実と未確認を分けます。"
+    },
+    {
+      "prompt": "意味の分からない削除操作をAIから提案されたら？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "対象と影響を確認してから判断する"
+        },
+        {
+          "id": "c2",
+          "text": "分からなくても即実行する"
+        },
+        {
+          "id": "c3",
+          "text": "成功したことにして報告する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "指示の対象と影響を理解して進めます。",
+      "id": "PC12-O3-Q3",
+      "version": 1,
+      "objectiveId": "PC12-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC12-O3-needs-review",
+      "objectiveTitle": "現象・確認・推測を分けて伝える",
+      "hint": "見たこと・試したこと・まだ考えているだけのことを分けます。",
+      "remediation": "原因を先に決めなくても相談できます。確認した事実があれば次の調査につながります。",
+      "example": "「保存できない。保存先の空きは確認済み。原因はまだ不明」のように、事実と未確認を分けます。"
+    }
+  ]
+}

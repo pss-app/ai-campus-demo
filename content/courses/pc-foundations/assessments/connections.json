@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "PC07",
+  "lessonVersion": 1,
+  "questions": [
+    {
+      "prompt": "USB Type-Cについて適切な説明は？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "端子の形を示し、対応機能は別に確認する"
+        },
+        {
+          "id": "c2",
+          "text": "必ずすべての映像出力に対応する"
+        },
+        {
+          "id": "c3",
+          "text": "同じ形ならケーブルの違いはない"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "形と機能を区別します。",
+      "id": "PC07-O1-Q1",
+      "version": 1,
+      "objectiveId": "PC07-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC07-O1-needs-review",
+      "objectiveTitle": "端子とケーブル",
+      "hint": "形状と機能への対応は、別々に確認します。",
+      "remediation": "端子・機器・ケーブルの組合せで機能が決まります。同じ形という理由だけで判断しません。",
+      "example": "USB Type-Cのケーブルをつないだだけでは、どのPCでも外部モニターへ映像を出せるとは限りません。"
+    },
+    {
+      "prompt": "外部モニターを接続するとき確認するものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "PC側の映像出力への対応"
+        },
+        {
+          "id": "c2",
+          "text": "モニター側の入力端子"
+        },
+        {
+          "id": "c3",
+          "text": "ケーブルの対応"
+        },
+        {
+          "id": "c4",
+          "text": "端子の色だけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "explanation": "接続する両側とケーブルを確認します。",
+      "id": "PC07-O1-Q2",
+      "version": 1,
+      "objectiveId": "PC07-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC07-O1-needs-review",
+      "objectiveTitle": "端子とケーブル",
+      "hint": "形状と機能への対応は、別々に確認します。",
+      "remediation": "端子・機器・ケーブルの組合せで機能が決まります。同じ形という理由だけで判断しません。",
+      "example": "USB Type-Cのケーブルをつないだだけでは、どのPCでも外部モニターへ映像を出せるとは限りません。"
+    },
+    {
+      "prompt": "HDMIは主に何を伝える接続に使われますか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "映像や音声"
+        },
+        {
+          "id": "c2",
+          "text": "紙そのもの"
+        },
+        {
+          "id": "c3",
+          "text": "すべてのPCへの充電だけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "用途を知って接続を選びます。",
+      "id": "PC07-O1-Q3",
+      "version": 1,
+      "objectiveId": "PC07-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC07-O1-needs-review",
+      "objectiveTitle": "端子とケーブル",
+      "hint": "形状と機能への対応は、別々に確認します。",
+      "remediation": "端子・機器・ケーブルの組合せで機能が決まります。同じ形という理由だけで判断しません。",
+      "example": "USB Type-Cのケーブルをつないだだけでは、どのPCでも外部モニターへ映像を出せるとは限りません。"
+    },
+    {
+      "prompt": "Bluetoothマウスが動かないときの確認として適切なものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "電源や電池残量"
+        },
+        {
+          "id": "c2",
+          "text": "接続相手の登録状況"
+        },
+        {
+          "id": "c3",
+          "text": "機器の対応"
+        },
+        {
+          "id": "c4",
+          "text": "ブラウザの履歴だけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "explanation": "周辺機器の接続に関係する条件です。",
+      "id": "PC07-O2-Q1",
+      "version": 1,
+      "objectiveId": "PC07-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC07-O2-needs-review",
+      "objectiveTitle": "有線と無線",
+      "hint": "どの機器とどの機器を結ぶ接続なのかに注目します。",
+      "remediation": "無線という言葉だけでインターネット接続と同一視しません。電源と登録先も確認します。",
+      "example": "Bluetoothマウスは、PCとつながれば操作に使えます。Webサイトにアクセスできることを、その接続だけで保証するわけではありません。"
+    },
+    {
+      "prompt": "ペアリングとは何ですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "無線機器の接続相手を登録すること"
+        },
+        {
+          "id": "c2",
+          "text": "文書を保存すること"
+        },
+        {
+          "id": "c3",
+          "text": "画面を二つ開くこと"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "機器同士を接続するための登録です。",
+      "id": "PC07-O2-Q2",
+      "version": 1,
+      "objectiveId": "PC07-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC07-O2-needs-review",
+      "objectiveTitle": "有線と無線",
+      "hint": "どの機器とどの機器を結ぶ接続なのかに注目します。",
+      "remediation": "無線という言葉だけでインターネット接続と同一視しません。電源と登録先も確認します。",
+      "example": "Bluetoothマウスは、PCとつながれば操作に使えます。Webサイトにアクセスできることを、その接続だけで保証するわけではありません。"
+    },
+    {
+      "prompt": "適切な説明はどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "無線機器には電源が不要"
+        },
+        {
+          "id": "c2",
+          "text": "Bluetoothでマウスがつながっても、インターネット接続とは別"
+        },
+        {
+          "id": "c3",
+          "text": "Bluetoothはすべてのケーブルと同じ機能を保証する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "接続の用途と経路を分けます。",
+      "id": "PC07-O2-Q3",
+      "version": 1,
+      "objectiveId": "PC07-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC07-O2-needs-review",
+      "objectiveTitle": "有線と無線",
+      "hint": "どの機器とどの機器を結ぶ接続なのかに注目します。",
+      "remediation": "無線という言葉だけでインターネット接続と同一視しません。電源と登録先も確認します。",
+      "example": "Bluetoothマウスは、PCとつながれば操作に使えます。Webサイトにアクセスできることを、その接続だけで保証するわけではありません。"
+    },
+    {
+      "prompt": "音が出ない場合の適切な確認は？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "選択されている出力先や音量、接続を順に見る"
+        },
+        {
+          "id": "c2",
+          "text": "すぐPCを買い替える"
+        },
+        {
+          "id": "c3",
+          "text": "無関係な設定をまとめて変える"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "経路を順に確認します。",
+      "id": "PC07-O3-Q1",
+      "version": 1,
+      "objectiveId": "PC07-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC07-O3-needs-review",
+      "objectiveTitle": "接続経路を確認する",
+      "hint": "発生源から届け先まで、どこが選ばれているかをたどります。",
+      "remediation": "音が出ないという現象だけでは故障箇所は分かりません。接続先と設定も含めて確認します。",
+      "example": "会議の音が聞こえないとき、ヘッドホン側へ出力されていないか、音量や接続を確認します。"
+    },
+    {
+      "prompt": "一つずつ確認する理由は？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "どの変更で状態が変わったか分かるようにするため"
+        },
+        {
+          "id": "c2",
+          "text": "確認時間を必ず長くするため"
+        },
+        {
+          "id": "c3",
+          "text": "記録を残さなくてよくするため"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "原因を切り分けるためです。",
+      "id": "PC07-O3-Q2",
+      "version": 1,
+      "objectiveId": "PC07-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC07-O3-needs-review",
+      "objectiveTitle": "接続経路を確認する",
+      "hint": "発生源から届け先まで、どこが選ばれているかをたどります。",
+      "remediation": "音が出ないという現象だけでは故障箇所は分かりません。接続先と設定も含めて確認します。",
+      "example": "会議の音が聞こえないとき、ヘッドホン側へ出力されていないか、音量や接続を確認します。"
+    },
+    {
+      "prompt": "接続トラブルの記録に必要なものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "機器と接続方法"
+        },
+        {
+          "id": "c2",
+          "text": "確認した設定"
+        },
+        {
+          "id": "c3",
+          "text": "変更前後の状態"
+        },
+        {
+          "id": "c4",
+          "text": "原因が未確認でも故障と断定した結論"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "explanation": "事実と確認結果を残します。",
+      "id": "PC07-O3-Q3",
+      "version": 1,
+      "objectiveId": "PC07-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC07-O3-needs-review",
+      "objectiveTitle": "接続経路を確認する",
+      "hint": "発生源から届け先まで、どこが選ばれているかをたどります。",
+      "remediation": "音が出ないという現象だけでは故障箇所は分かりません。接続先と設定も含めて確認します。",
+      "example": "会議の音が聞こえないとき、ヘッドホン側へ出力されていないか、音量や接続を確認します。"
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "PC04",
+  "lessonVersion": 1,
+  "questions": [
+    {
+      "prompt": "RAMについて適切な説明をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "作業中の情報を保持する"
+        },
+        {
+          "id": "c2",
+          "text": "通常、電源供給がなくなると内容を失う"
+        },
+        {
+          "id": "c3",
+          "text": "文書の長期保存専用の部品"
+        },
+        {
+          "id": "c4",
+          "text": "保存状態の確認が不要になる部品"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2"
+      ],
+      "explanation": "RAMは作業用の保持で、ファイル保存を代わりに保証しません。",
+      "id": "PC04-O1-Q1",
+      "version": 1,
+      "objectiveId": "PC04-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC04-O1-needs-review",
+      "objectiveTitle": "作業中の保持と保存",
+      "hint": "電源がなくなったときの性質と、アプリによる保存を分けます。",
+      "remediation": "RAMの保持とファイル保存は別です。自動保存や復元の有無はアプリにもよるため、保存状態を確かめます。",
+      "example": "作成中の文書を失わないためには、RAMの容量だけでなく、保存先と保存状態を確認します。"
+    },
+    {
+      "prompt": "「揮発性」がここで意味するのはどれですか？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "通常、電源を失うと保持内容が失われる性質"
+        },
+        {
+          "id": "c2",
+          "text": "空気中へ部品が蒸発する性質"
+        },
+        {
+          "id": "c3",
+          "text": "保存先が自動でクラウドになる性質"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "記憶装置の電源と保持の関係を指します。",
+      "id": "PC04-O1-Q2",
+      "version": 1,
+      "objectiveId": "PC04-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC04-O1-needs-review",
+      "objectiveTitle": "作業中の保持と保存",
+      "hint": "電源がなくなったときの性質と、アプリによる保存を分けます。",
+      "remediation": "RAMの保持とファイル保存は別です。自動保存や復元の有無はアプリにもよるため、保存状態を確かめます。",
+      "example": "作成中の文書を失わないためには、RAMの容量だけでなく、保存先と保存状態を確認します。"
+    },
+    {
+      "prompt": "入力中の文章が残るか確かめるには？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "RAMが大きければ必ず残ると判断する"
+        },
+        {
+          "id": "c2",
+          "text": "アプリの保存先と保存状態を確認する"
+        },
+        {
+          "id": "c3",
+          "text": "画面にある限り保存確認を省く"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "RAMの容量と保存完了は別の事項です。",
+      "id": "PC04-O1-Q3",
+      "version": 1,
+      "objectiveId": "PC04-O1",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC04-O1-needs-review",
+      "objectiveTitle": "作業中の保持と保存",
+      "hint": "電源がなくなったときの性質と、アプリによる保存を分けます。",
+      "remediation": "RAMの保持とファイル保存は別です。自動保存や復元の有無はアプリにもよるため、保存状態を確かめます。",
+      "example": "作成中の文書を失わないためには、RAMの容量だけでなく、保存先と保存状態を確認します。"
+    },
+    {
+      "prompt": "「RAM 16GB／SSD 512GB」の正しい読み方は？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "作業用メモリーと保存用ストレージの容量"
+        },
+        {
+          "id": "c2",
+          "text": "二つを足すとRAMが528GBになる"
+        },
+        {
+          "id": "c3",
+          "text": "512GBの方が必ず処理が速い"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "単位が同じでも役割の異なる容量です。",
+      "id": "PC04-O2-Q1",
+      "version": 1,
+      "objectiveId": "PC04-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC04-O2-needs-review",
+      "objectiveTitle": "容量と作業量の関係",
+      "hint": "GBという単位だけでなく、何の容量かを読みます。",
+      "remediation": "RAMは作業用、SSDは保存用です。保存場所の空きと作業用メモリーの余裕を混同しないようにします。",
+      "example": "「RAM 16GB、SSD 512GB」という表示は、同じ一つの容量を二通りに示しているのではありません。"
+    },
+    {
+      "prompt": "適切な説明をすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "同時に開くアプリによってメモリー使用量が変わる"
+        },
+        {
+          "id": "c2",
+          "text": "RAMを増やせば通信待ちも必ずなくなる"
+        },
+        {
+          "id": "c3",
+          "text": "必要なメモリー容量は作業によって違う"
+        },
+        {
+          "id": "c4",
+          "text": "SSDの空き容量はRAMの空き容量と同じ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c3"
+      ],
+      "explanation": "容量不足なのか、別の工程なのかを分けて考えます。",
+      "id": "PC04-O2-Q2",
+      "version": 1,
+      "objectiveId": "PC04-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC04-O2-needs-review",
+      "objectiveTitle": "容量と作業量の関係",
+      "hint": "GBという単位だけでなく、何の容量かを読みます。",
+      "remediation": "RAMは作業用、SSDは保存用です。保存場所の空きと作業用メモリーの余裕を混同しないようにします。",
+      "example": "「RAM 16GB、SSD 512GB」という表示は、同じ一つの容量を二通りに示しているのではありません。"
+    },
+    {
+      "prompt": "メモリー増設を考える前に確認するものは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "使用中のメモリー量と作業内容"
+        },
+        {
+          "id": "c2",
+          "text": "写真のファイル名だけ"
+        },
+        {
+          "id": "c3",
+          "text": "画面の明るさだけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "使い方に対して不足しているかが出発点です。",
+      "id": "PC04-O2-Q3",
+      "version": 1,
+      "objectiveId": "PC04-O2",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC04-O2-needs-review",
+      "objectiveTitle": "容量と作業量の関係",
+      "hint": "GBという単位だけでなく、何の容量かを読みます。",
+      "remediation": "RAMは作業用、SSDは保存用です。保存場所の空きと作業用メモリーの余裕を混同しないようにします。",
+      "example": "「RAM 16GB、SSD 512GB」という表示は、同じ一つの容量を二通りに示しているのではありません。"
+    },
+    {
+      "prompt": "メモリーが不足し、ストレージとのやり取りが増えたときに起こり得ることは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "読み書きの待ち時間が増える"
+        },
+        {
+          "id": "c2",
+          "text": "必ず通信料金が増える"
+        },
+        {
+          "id": "c3",
+          "text": "保存済み文書が必ず消える"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "RAMとストレージではアクセスの特性が異なります。",
+      "id": "PC04-O3-Q1",
+      "version": 1,
+      "objectiveId": "PC04-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC04-O3-needs-review",
+      "objectiveTitle": "不足したときの仕組み",
+      "hint": "不足した情報の置き場所と、その読み書きの負担に注目します。",
+      "remediation": "ストレージを使った退避には待ち時間が伴うことがあります。作業を保存し、使用状況を見ながら一つずつ確認します。",
+      "example": "多数のアプリを開いたときだけ動きが重くなり、メモリー使用量も高い場合、保存して不要なアプリを閉じ、変化を確認します。"
+    },
+    {
+      "prompt": "対処として適切なものをすべて選んでください。",
+      "type": "multiple_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "作業を保存して不要なアプリを閉じる"
+        },
+        {
+          "id": "c2",
+          "text": "メモリー使用状況を見る"
+        },
+        {
+          "id": "c3",
+          "text": "原因確認なしに保存文書を全部削除する"
+        },
+        {
+          "id": "c4",
+          "text": "状況を記録して変化を確認する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2",
+        "c4"
+      ],
+      "explanation": "保存と確認を伴う段階的な対処を行います。",
+      "id": "PC04-O3-Q2",
+      "version": 1,
+      "objectiveId": "PC04-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC04-O3-needs-review",
+      "objectiveTitle": "不足したときの仕組み",
+      "hint": "不足した情報の置き場所と、その読み書きの負担に注目します。",
+      "remediation": "ストレージを使った退避には待ち時間が伴うことがあります。作業を保存し、使用状況を見ながら一つずつ確認します。",
+      "example": "多数のアプリを開いたときだけ動きが重くなり、メモリー使用量も高い場合、保存して不要なアプリを閉じ、変化を確認します。"
+    },
+    {
+      "prompt": "「PCが遅い」という情報だけから言えることは？",
+      "type": "single_choice",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "メモリー故障が確定した"
+        },
+        {
+          "id": "c2",
+          "text": "作業内容や使用状況などを追加で確認する必要がある"
+        },
+        {
+          "id": "c3",
+          "text": "RAMを交換すれば必ず直る"
+        }
+      ],
+      "correctChoiceIds": [
+        "c2"
+      ],
+      "explanation": "症状だけでは原因を特定できません。",
+      "id": "PC04-O3-Q3",
+      "version": 1,
+      "objectiveId": "PC04-O3",
+      "difficulty": "foundation",
+      "usage": "lesson",
+      "misconceptionTag": "PC04-O3-needs-review",
+      "objectiveTitle": "不足したときの仕組み",
+      "hint": "不足した情報の置き場所と、その読み書きの負担に注目します。",
+      "remediation": "ストレージを使った退避には待ち時間が伴うことがあります。作業を保存し、使用状況を見ながら一つずつ確認します。",
+      "example": "多数のアプリを開いたときだけ動きが重くなり、メモリー使用量も高い場合、保存して不要なアプリを閉じ、変化を確認します。"
+    }
+  ]
+}

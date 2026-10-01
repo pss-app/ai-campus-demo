@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "pc-foundations",
+  "title": "PCを構成するものと言葉",
+  "description": "身近な機器から、部品の役割と情報の流れを学び、自分の環境を説明できるようになる。",
+  "audience": "PCを普段使っているが、仕組みと用語を体系的に学びたい成人の初学者",
+  "version": 1,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "PC01",
+      "slug": "components",
+      "title": "PCを構成するもの",
+      "order": 1,
+      "goal": "機器・ソフトウェア・扱う情報の役割を区別できる。",
+      "objectiveIds": [
+        "PC01-O1",
+        "PC01-O2",
+        "PC01-O3"
+      ]
+    },
+    {
+      "id": "PC02",
+      "slug": "information-flow",
+      "title": "入力・処理・出力・保存",
+      "order": 2,
+      "goal": "一つの操作を、情報の流れに分けて説明できる。",
+      "objectiveIds": [
+        "PC02-O1",
+        "PC02-O2",
+        "PC02-O3"
+      ]
+    },
+    {
+      "id": "PC03",
+      "slug": "cpu",
+      "title": "CPU：命令を実行する部品",
+      "order": 3,
+      "goal": "CPUの役割と、性能を一つの数値だけで決められないことを説明できる。",
+      "objectiveIds": [
+        "PC03-O1",
+        "PC03-O2",
+        "PC03-O3"
+      ]
+    },
+    {
+      "id": "PC04",
+      "slug": "memory",
+      "title": "メモリー：作業中の情報を保持する",
+      "order": 4,
+      "goal": "RAMとストレージの違い、容量不足時の働きを説明できる。",
+      "objectiveIds": [
+        "PC04-O1",
+        "PC04-O2",
+        "PC04-O3"
+      ]
+    },
+    {
+      "id": "PC05",
+      "slug": "storage",
+      "title": "ストレージ：情報を保存する",
+      "order": 5,
+      "goal": "保存用部品、容量、バックアップの役割を区別できる。",
+      "objectiveIds": [
+        "PC05-O1",
+        "PC05-O2",
+        "PC05-O3"
+      ]
+    },
+    {
+      "id": "PC06",
+      "slug": "gpu",
+      "title": "GPU：画像と大量の計算を扱う",
+      "order": 6,
+      "goal": "GPUの役割と、手元の処理・外部の処理を区別できる。",
+      "objectiveIds": [
+        "PC06-O1",
+        "PC06-O2",
+        "PC06-O3"
+      ]
+    },
+    {
+      "id": "PC07",
+      "slug": "connections",
+      "title": "入力・出力と接続を見分ける",
+      "order": 7,
+      "goal": "接続する機器、端子、通信方式を区別し、形だけで対応を決めない。",
+      "objectiveIds": [
+        "PC07-O1",
+        "PC07-O2",
+        "PC07-O3"
+      ]
+    },
+    {
+      "id": "PC08",
+      "slug": "os",
+      "title": "OS：機器とアプリを管理する",
+      "order": 8,
+      "goal": "OSの役割を知り、アプリや機器との対応を確認できる。",
+      "objectiveIds": [
+        "PC08-O1",
+        "PC08-O2",
+        "PC08-O3"
+      ]
+    },
+    {
+      "id": "PC09",
+      "slug": "apps",
+      "title": "アプリとブラウザを使い分ける",
+      "order": 9,
+      "goal": "アプリ・ブラウザ・検索サービス・Webアプリの関係を説明できる。",
+      "objectiveIds": [
+        "PC09-O1",
+        "PC09-O2",
+        "PC09-O3"
+      ]
+    },
+    {
+      "id": "PC10",
+      "slug": "files",
+      "title": "ファイル・フォルダ・保存場所",
+      "order": 10,
+      "goal": "名前・形式・所在を区別してファイルを扱える。",
+      "objectiveIds": [
+        "PC10-O1",
+        "PC10-O2",
+        "PC10-O3"
+      ]
+    },
+    {
+      "id": "PC11",
+      "slug": "whole-process",
+      "title": "文書を開いて保存するまで",
+      "order": 11,
+      "goal": "部品とソフトウェアを、一連の作業の中で結び付けられる。",
+      "objectiveIds": [
+        "PC11-O1",
+        "PC11-O2",
+        "PC11-O3"
+      ]
+    },
+    {
+      "id": "PC12",
+      "slug": "my-environment",
+      "title": "自分のPCを説明する",
+      "order": 12,
+      "goal": "環境を事実に基づいて記録し、未確認を区別して相談できる。",
+      "objectiveIds": [
+        "PC12-O1",
+        "PC12-O2",
+        "PC12-O3"
+      ]
+    }
+  ]
+}
