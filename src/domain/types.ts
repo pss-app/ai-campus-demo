@@ -1,6 +1,6 @@
 export interface LessonSummary { id: string; slug: string; title: string; order: number; goal: string; objectiveIds: string[] }
 export interface Course { schemaVersion: number; id: string; title: string; description: string; audience: string; version: number; status: string; finalTask?: {title:string;description:string}; lessons: LessonSummary[] }
-export interface Objective { id: string; title: string; keyPoint: string; body: string[]; example: string; diagram: string[] }
+export interface Objective { id: string; title: string; keyPoint: string; body: string[]; example: string; diagram: string[]; codeExample?: {label:string;code:string}; demo?: 'box-model' }
 export interface Lesson { schemaVersion: number; id: string; slug: string; title: string; version: number; goal: string; terms: string[]; practice: string; sources: string[]; objectives: Objective[] }
 export interface Choice { id: string; text: string }
 export interface Question { id: string; version: number; objectiveId: string; objectiveTitle: string; type: 'single_choice' | 'multiple_choice'; prompt: string; choices: Choice[]; correctChoiceIds: string[]; explanation: string; hint: string; remediation: string; example: string }

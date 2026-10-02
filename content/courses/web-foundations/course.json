@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "web-foundations",
+  "title": "Web・HTMLの基礎",
+  "description": "画面を構成する部品と用語を知り、AIに変更を具体的に伝え、表示と動作を自分で確かめられるようになる。",
+  "audience": "ファイルと保存場所を理解し、AIが作ったWeb画面を説明・修正したい方",
+  "version": 1,
+  "status": "draft",
+  "finalTask": {
+    "title": "店舗案内ページの修正依頼と検証メモ",
+    "description": "架空の店舗案内を例に、対象ページ・再現条件・現在の状態・期待する状態・変更範囲・維持する部分を整理してください。修正後は画面幅、文字拡大、リンク、ボタン、保存先の確認方法と未確認事項を記録します。"
+  },
+  "lessons": [
+    {
+      "id": "WB01",
+      "slug": "web-vocabulary",
+      "title": "最初に覚える：Webを作る言葉",
+      "order": 1,
+      "goal": "HTML・CSS・JavaScriptと、ページ・サイト・ブラウザの役割を区別できる。",
+      "objectiveIds": [
+        "WB01-O1",
+        "WB01-O2",
+        "WB01-O3"
+      ]
+    },
+    {
+      "id": "WB02",
+      "slug": "web-structure",
+      "title": "要素・属性・親子関係を読む",
+      "order": 2,
+      "goal": "要素と属性、見出しの役割、divとspanの使い分けを大まかに読み取れる。",
+      "objectiveIds": [
+        "WB02-O1",
+        "WB02-O2",
+        "WB02-O3"
+      ]
+    },
+    {
+      "id": "WB03",
+      "slug": "web-css",
+      "title": "CSSの指示と変更範囲を読む",
+      "order": 3,
+      "goal": "セレクター・プロパティ・値を区別し、共通の変更が他の場所へ及ぶことを理解できる。",
+      "objectiveIds": [
+        "WB03-O1",
+        "WB03-O2",
+        "WB03-O3"
+      ]
+    },
+    {
+      "id": "WB04",
+      "slug": "web-spacing",
+      "title": "余白と大きさ：margin・padding・gap",
+      "order": 4,
+      "goal": "外側の余白・内側の余白・部品間の間隔を区別し、変更したい場所を指示できる。",
+      "objectiveIds": [
+        "WB04-O1",
+        "WB04-O2",
+        "WB04-O3"
+      ]
+    },
+    {
+      "id": "WB05",
+      "slug": "web-reading",
+      "title": "文字と色：読みやすさを調整する",
+      "order": 5,
+      "goal": "文字サイズ・行間・行の長さ・色の役割を分け、読む条件を変えて確認できる。",
+      "objectiveIds": [
+        "WB05-O1",
+        "WB05-O2",
+        "WB05-O3"
+      ]
+    },
+    {
+      "id": "WB06",
+      "slug": "web-responsive",
+      "title": "配置とスマホ表示を考える",
+      "order": 6,
+      "goal": "親と子の配置、画面幅に応じた変化、拡大時の収まりを説明できる。",
+      "objectiveIds": [
+        "WB06-O1",
+        "WB06-O2",
+        "WB06-O3"
+      ]
+    },
+    {
+      "id": "WB07",
+      "slug": "web-resources",
+      "title": "リンク・画像・ボタンの仕組みを分ける",
+      "order": 7,
+      "goal": "参照先と読み込み、移動と処理、見た目と保存機能を切り分けて確認できる。",
+      "objectiveIds": [
+        "WB07-O1",
+        "WB07-O2",
+        "WB07-O3"
+      ]
+    },
+    {
+      "id": "WB08",
+      "slug": "web-verification",
+      "title": "AIに修正を頼み、結果を確かめる",
+      "order": 8,
+      "goal": "再現条件・期待する状態・変更範囲・確認結果を整理して修正を進められる。",
+      "objectiveIds": [
+        "WB08-O1",
+        "WB08-O2",
+        "WB08-O3"
+      ]
+    }
+  ]
+}

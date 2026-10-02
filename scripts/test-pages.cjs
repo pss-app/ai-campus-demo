@@ -6,13 +6,13 @@ const read=(course,file)=>JSON.parse(fs.readFileSync(path.join(root,'content/cou
 (async()=>{
  const browser=await chromium.launch({channel:'chrome',headless:true});
  try{
-  const page=await browser.newPage();const failures=[];
+  const context=await browser.newContext();const page=await context.newPage();const failures=[];
   page.on('pageerror',e=>failures.push(e.message));
   page.on('response',r=>{if(r.status()>=400)failures.push(`${r.status()} ${r.url()}`);});
   await page.goto(base+'/');await expect(page.getByRole('heading',{level:1})).toContainText('言葉を知る');
   await expect(page.getByText(/公開デモ：ログイン/)).toBeVisible();
-  await page.getByRole('link',{name:'コースを選ぶ',exact:true}).click();await expect(page.locator('.course-card')).toHaveCount(2);
-  for(const courseId of ['pc-foundations','file-data']){
+  await page.getByRole('link',{name:'コースを選ぶ',exact:true}).click();await expect(page.locator('.course-card')).toHaveCount(3);
+  for(const courseId of ['pc-foundations','file-data','web-foundations']){
    const course=read(courseId,'course.json'),first=course.lessons[0],bank=read(courseId,`assessments/${first.slug}.json`);
    const route=`${base}/courses/${courseId}/lessons/${first.slug}/`;
    await page.goto(route);await expect(page.getByRole('heading',{name:'今回覚えること'})).toBeVisible();
@@ -41,9 +41,25 @@ const read=(course,file)=>JSON.parse(fs.readFileSync(path.join(root,'content/cou
    for(const lesson of course.lessons){await page.goto(`${base}/courses/${courseId}/lessons/${lesson.slug}/`);await expect(page.getByRole('heading',{name:lesson.title,exact:true,level:1})).toBeVisible();await expect(page.locator('.objective-section')).toHaveCount(3);}
    console.log(`${courseId}: all lessons, retry, hints, resume, progression, records passed`);
   }
+  await page.goto(base+'/courses/web-foundations/lessons/web-structure/');
+  await expect(page.locator('.code-example').first()).toContainText('<a href="fees.html">料金を見る</a>');
+  await expect(page.locator('.code-example a')).toHaveCount(0);
+  await page.goto(base+'/courses/web-foundations/lessons/web-spacing/');
+  const padding=page.getByRole('slider',{name:/内側の余白/}),margin=page.getByRole('slider',{name:/外側の余白/});
+  await padding.focus();await page.keyboard.press('End');await expect(padding).toHaveValue('24');
+  await expect(page.locator('.box-card').last()).toHaveCSS('padding','24px');
+  await expect(page.locator('.box-card').first()).toHaveCSS('padding','8px');
+  await margin.focus();await page.keyboard.press('End');await expect(margin).toHaveValue('24');
+  await expect(page.locator('.box-card').last()).toHaveCSS('margin','24px');
   await page.getByRole('button',{name:'特大',exact:true}).click();await page.setViewportSize({width:320,height:900});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  const AxeBuilder=require('@axe-core/playwright').default;
+  assert.deepEqual((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze()).violations,[]);
+  fs.mkdirSync(path.join(root,'test-results'),{recursive:true});
+  await page.locator('.box-demo').screenshot({path:path.join(root,'test-results/web-spacing-mobile.png')});
+  await page.getByRole('button',{name:'余白を初期値に戻す'}).click();await expect(padding).toHaveValue('8');await expect(margin).toHaveValue('8');
   await page.getByRole('link',{name:'AI CAMPUS ホーム'}).click();await expect(page).toHaveURL(base+'/');
-  assert.deepEqual(failures,[]);console.log(`PASS: ${base} — 20 lesson pages, two course learning flows, home link, mobile layout, no asset or JS errors`);
+  assert.deepEqual(failures,[]);console.log(`PASS: ${base} — 28 lesson pages, three course learning flows, home link, mobile layout, no asset or JS errors`);
  }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});
+
 

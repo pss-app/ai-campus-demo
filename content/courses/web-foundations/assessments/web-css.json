@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "WB03",
+  "lessonVersion": 1,
+  "questions": [
+    {
+      "id": "WB03-O1-Q1",
+      "version": 1,
+      "objectiveId": "WB03-O1",
+      "objectiveTitle": "対象・項目・値",
+      "type": "single_choice",
+      "prompt": ".notice { color: navy; } のcolorは何ですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "変更する項目を表すプロパティ"
+        },
+        {
+          "id": "c2",
+          "text": "対象の要素を選ぶセレクター"
+        },
+        {
+          "id": "c3",
+          "text": "適用する値"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "対象・項目・値を別々に読みます。",
+      "hint": "CSSは、どこに・何を・どの値で適用するかを読み分けます。",
+      "remediation": "セレクターは、CSSを適用する要素を選ぶ指定です。プロパティは変更する項目、値はその設定内容です。たとえば font-size: 20px は文字サイズを20 CSSピクセルにする指定です。",
+      "example": "全ての段落を対象にする指定と、料金カード内の段落だけを対象にする指定では、変更範囲が異なります。"
+    },
+    {
+      "id": "WB03-O1-Q2",
+      "version": 1,
+      "objectiveId": "WB03-O1",
+      "objectiveTitle": "対象・項目・値",
+      "type": "single_choice",
+      "prompt": "文字サイズの値を変えても対象が変わりません。確認することはどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "セレクターが目的の要素を選んでいるか"
+        },
+        {
+          "id": "c2",
+          "text": "数値を無条件に何倍にも増やす"
+        },
+        {
+          "id": "c3",
+          "text": "本文の意味を全て変更する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "まず指定が対象に届いているかを確認します。",
+      "hint": "CSSは、どこに・何を・どの値で適用するかを読み分けます。",
+      "remediation": "セレクターは、CSSを適用する要素を選ぶ指定です。プロパティは変更する項目、値はその設定内容です。たとえば font-size: 20px は文字サイズを20 CSSピクセルにする指定です。",
+      "example": "全ての段落を対象にする指定と、料金カード内の段落だけを対象にする指定では、変更範囲が異なります。"
+    },
+    {
+      "id": "WB03-O1-Q3",
+      "version": 1,
+      "objectiveId": "WB03-O1",
+      "objectiveTitle": "対象・項目・値",
+      "type": "single_choice",
+      "prompt": "「どこに・何を・どの値で」に対応する組み合わせはどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "セレクター・プロパティ・値"
+        },
+        {
+          "id": "c2",
+          "text": "値・セレクター・プロパティ"
+        },
+        {
+          "id": "c3",
+          "text": "ファイル名・本文・保存先"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "CSSの指定を役割で分解すると相談しやすくなります。",
+      "hint": "CSSは、どこに・何を・どの値で適用するかを読み分けます。",
+      "remediation": "セレクターは、CSSを適用する要素を選ぶ指定です。プロパティは変更する項目、値はその設定内容です。たとえば font-size: 20px は文字サイズを20 CSSピクセルにする指定です。",
+      "example": "全ての段落を対象にする指定と、料金カード内の段落だけを対象にする指定では、変更範囲が異なります。"
+    },
+    {
+      "id": "WB03-O2-Q1",
+      "version": 1,
+      "objectiveId": "WB03-O2",
+      "objectiveTitle": "classとid",
+      "type": "single_choice",
+      "prompt": "3枚の料金カードへ共通の見た目を適用する候補はどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "共通のclassを付けて指定する"
+        },
+        {
+          "id": "c2",
+          "text": "同じidを3枚に重複させる"
+        },
+        {
+          "id": "c3",
+          "text": "カードの文章を全て同じにする"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "繰り返し使う分類にはclassを利用できます。",
+      "hint": "共通に扱う分類と、一つの文書内で一意にする識別子を区別します。",
+      "remediation": "classは複数の要素に共通の名前を付けられます。料金カード全てにprice-cardを付ければ、同じCSSをまとめて適用できます。一つの要素に複数のclassを付けることもできます。",
+      "example": "3枚のカードを共通のclassで揃え、予約案内の位置を一つのidで示す、と役割を分けられます。"
+    },
+    {
+      "id": "WB03-O2-Q2",
+      "version": 1,
+      "objectiveId": "WB03-O2",
+      "objectiveTitle": "classとid",
+      "type": "single_choice",
+      "prompt": "同じ文書内のidについて適切なのはどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "重複しない識別子にする"
+        },
+        {
+          "id": "c2",
+          "text": "共通デザインなら必ず同じidを複数に付ける"
+        },
+        {
+          "id": "c3",
+          "text": "画面で見えなければ何個重複しても問題ない"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "idは文書内で一意に扱います。",
+      "hint": "共通に扱う分類と、一つの文書内で一意にする識別子を区別します。",
+      "remediation": "classは複数の要素に共通の名前を付けられます。料金カード全てにprice-cardを付ければ、同じCSSをまとめて適用できます。一つの要素に複数のclassを付けることもできます。",
+      "example": "3枚のカードを共通のclassで揃え、予約案内の位置を一つのidで示す、と役割を分けられます。"
+    },
+    {
+      "id": "WB03-O2-Q3",
+      "version": 1,
+      "objectiveId": "WB03-O2",
+      "objectiveTitle": "classとid",
+      "type": "single_choice",
+      "prompt": ".price-card と #booking は、それぞれ何を選びますか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "classとid"
+        },
+        {
+          "id": "c2",
+          "text": "idとclass"
+        },
+        {
+          "id": "c3",
+          "text": "ファイル名と拡張子"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "先頭の記号によって対象の指定方法が異なります。",
+      "hint": "共通に扱う分類と、一つの文書内で一意にする識別子を区別します。",
+      "remediation": "classは複数の要素に共通の名前を付けられます。料金カード全てにprice-cardを付ければ、同じCSSをまとめて適用できます。一つの要素に複数のclassを付けることもできます。",
+      "example": "3枚のカードを共通のclassで揃え、予約案内の位置を一つのidで示す、と役割を分けられます。"
+    },
+    {
+      "id": "WB03-O3-Q1",
+      "version": 1,
+      "objectiveId": "WB03-O3",
+      "objectiveTitle": "共通指定と継承",
+      "type": "single_choice",
+      "prompt": "共通ボタンのCSSを変更した後、必要なのはどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "同じ指定を使う他の画面も確認する"
+        },
+        {
+          "id": "c2",
+          "text": "変更した画面だけ見れば必ず十分である"
+        },
+        {
+          "id": "c3",
+          "text": "class名が同じでも他の要素には影響しないと判断する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "共通指定は複数箇所へ影響します。",
+      "hint": "一か所の変更が複数の要素に及ぶことがあります。効いている指定を確認します。",
+      "remediation": "同じclassに適用するCSSを変えると、そのclassを持つ複数の場所が変わる場合があります。共通部品を直すときは、対象ページ以外も確認します。",
+      "example": "全ページ共通のbuttonクラスを修正したら、予約画面だけでなく学習画面のボタンにも影響が出る可能性があります。"
+    },
+    {
+      "id": "WB03-O3-Q2",
+      "version": 1,
+      "objectiveId": "WB03-O3",
+      "objectiveTitle": "共通指定と継承",
+      "type": "single_choice",
+      "prompt": "親の文字色が子にも適用されています。この仕組みの候補はどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "継承"
+        },
+        {
+          "id": "c2",
+          "text": "ファイルのダウンロード"
+        },
+        {
+          "id": "c3",
+          "text": "HTMLの名前変更"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "プロパティによって親の値が引き継がれます。",
+      "hint": "一か所の変更が複数の要素に及ぶことがあります。効いている指定を確認します。",
+      "remediation": "同じclassに適用するCSSを変えると、そのclassを持つ複数の場所が変わる場合があります。共通部品を直すときは、対象ページ以外も確認します。",
+      "example": "全ページ共通のbuttonクラスを修正したら、予約画面だけでなく学習画面のボタンにも影響が出る可能性があります。"
+    },
+    {
+      "id": "WB03-O3-Q3",
+      "version": 1,
+      "objectiveId": "WB03-O3",
+      "objectiveTitle": "共通指定と継承",
+      "type": "single_choice",
+      "prompt": "CSSを書き足しても効きません。適切な対応はどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "読み込み・対象・適用中の指定を確認する"
+        },
+        {
+          "id": "c2",
+          "text": "最後に書いたので必ず適用済みと考える"
+        },
+        {
+          "id": "c3",
+          "text": "違う数値を繰り返し足して原因確認を省く"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "記述順だけで判断せず、実際の適用状態を調べます。",
+      "hint": "一か所の変更が複数の要素に及ぶことがあります。効いている指定を確認します。",
+      "remediation": "同じclassに適用するCSSを変えると、そのclassを持つ複数の場所が変わる場合があります。共通部品を直すときは、対象ページ以外も確認します。",
+      "example": "全ページ共通のbuttonクラスを修正したら、予約画面だけでなく学習画面のボタンにも影響が出る可能性があります。"
+    }
+  ]
+}

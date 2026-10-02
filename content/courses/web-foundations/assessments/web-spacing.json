@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "WB04",
+  "lessonVersion": 1,
+  "questions": [
+    {
+      "id": "WB04-O1-Q1",
+      "version": 1,
+      "objectiveId": "WB04-O1",
+      "objectiveTitle": "内容・内側・枠・外側",
+      "type": "single_choice",
+      "prompt": "カードの枠と文章が近すぎます。主に見直す余白はどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "padding"
+        },
+        {
+          "id": "c2",
+          "text": "marginだけ"
+        },
+        {
+          "id": "c3",
+          "text": "本文の内容だけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "内容と枠の間は内側の余白です。",
+      "hint": "要素を箱として見ると、どこの余白を変えたいかを分けられます。",
+      "remediation": "画面の多くの要素は、内容とその周囲の領域を持つ箱として考えられます。内容には文章や画像が入り、その周囲に内側の余白、境界線、外側の余白があります。",
+      "example": "カードの文章が枠に近すぎるなら内側、カード同士が近すぎるなら外側や配置の間隔を見ます。"
+    },
+    {
+      "id": "WB04-O1-Q2",
+      "version": 1,
+      "objectiveId": "WB04-O1",
+      "objectiveTitle": "内容・内側・枠・外側",
+      "type": "single_choice",
+      "prompt": "marginが表す領域はどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "枠の外側の余白"
+        },
+        {
+          "id": "c2",
+          "text": "内容と枠の間の内側"
+        },
+        {
+          "id": "c3",
+          "text": "境界線そのものの太さ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "枠を基準に外側と内側を分けます。",
+      "hint": "要素を箱として見ると、どこの余白を変えたいかを分けられます。",
+      "remediation": "画面の多くの要素は、内容とその周囲の領域を持つ箱として考えられます。内容には文章や画像が入り、その周囲に内側の余白、境界線、外側の余白があります。",
+      "example": "カードの文章が枠に近すぎるなら内側、カード同士が近すぎるなら外側や配置の間隔を見ます。"
+    },
+    {
+      "id": "WB04-O1-Q3",
+      "version": 1,
+      "objectiveId": "WB04-O1",
+      "objectiveTitle": "内容・内側・枠・外側",
+      "type": "single_choice",
+      "prompt": "borderは、この文脈では何ですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "要素の境界線"
+        },
+        {
+          "id": "c2",
+          "text": "別ページへの移動先"
+        },
+        {
+          "id": "c3",
+          "text": "文字をまとめるspan要素"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "箱の枠線と余白の指定は別です。",
+      "hint": "要素を箱として見ると、どこの余白を変えたいかを分けられます。",
+      "remediation": "画面の多くの要素は、内容とその周囲の領域を持つ箱として考えられます。内容には文章や画像が入り、その周囲に内側の余白、境界線、外側の余白があります。",
+      "example": "カードの文章が枠に近すぎるなら内側、カード同士が近すぎるなら外側や配置の間隔を見ます。"
+    },
+    {
+      "id": "WB04-O2-Q1",
+      "version": 1,
+      "objectiveId": "WB04-O2",
+      "objectiveTitle": "部品間のgap",
+      "type": "single_choice",
+      "prompt": "Gridで並べたカード同士の間を広くしたいとき、候補になる指定はどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "親のgap"
+        },
+        {
+          "id": "c2",
+          "text": "各カードの文字色"
+        },
+        {
+          "id": "c3",
+          "text": "見出しの階層だけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "並べる項目間の間隔をgapで指定できます。",
+      "hint": "部品の間隔と、部品の中の余白は別に指定します。",
+      "remediation": "gapは、FlexboxやGridなどで並べる項目の間の間隔を指定するときに使います。カードを並べる親の設定として使う場面があります。",
+      "example": "「カード内の文字はそのまま、カードとカードの間を広くする」と伝えると、内側の余白を変える指示と区別できます。"
+    },
+    {
+      "id": "WB04-O2-Q2",
+      "version": 1,
+      "objectiveId": "WB04-O2",
+      "objectiveTitle": "部品間のgap",
+      "type": "single_choice",
+      "prompt": "内側の余白を保ち、カード間だけ広くしたいときの指示はどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "カード間の間隔を増やし、paddingは維持する"
+        },
+        {
+          "id": "c2",
+          "text": "全てのpaddingを増やす"
+        },
+        {
+          "id": "c3",
+          "text": "文字の間に空白を入力する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "どの領域を変え、どこを保つかを分けて伝えます。",
+      "hint": "部品の間隔と、部品の中の余白は別に指定します。",
+      "remediation": "gapは、FlexboxやGridなどで並べる項目の間の間隔を指定するときに使います。カードを並べる親の設定として使う場面があります。",
+      "example": "「カード内の文字はそのまま、カードとカードの間を広くする」と伝えると、内側の余白を変える指示と区別できます。"
+    },
+    {
+      "id": "WB04-O2-Q3",
+      "version": 1,
+      "objectiveId": "WB04-O2",
+      "objectiveTitle": "部品間のgap",
+      "type": "single_choice",
+      "prompt": "上下のmarginを足した値と表示の間隔が違います。適切な対応はどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "配置方法やmarginの相殺などを確認する"
+        },
+        {
+          "id": "c2",
+          "text": "数値は必ず合計されるのでブラウザの故障と決める"
+        },
+        {
+          "id": "c3",
+          "text": "表示が違っても計算値だけで完了とする"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "余白の動作は配置条件によって変わります。",
+      "hint": "部品の間隔と、部品の中の余白は別に指定します。",
+      "remediation": "gapは、FlexboxやGridなどで並べる項目の間の間隔を指定するときに使います。カードを並べる親の設定として使う場面があります。",
+      "example": "「カード内の文字はそのまま、カードとカードの間を広くする」と伝えると、内側の余白を変える指示と区別できます。"
+    },
+    {
+      "id": "WB04-O3-Q1",
+      "version": 1,
+      "objectiveId": "WB04-O3",
+      "objectiveTitle": "幅・高さと収まり",
+      "type": "single_choice",
+      "prompt": "content-boxでwidth:300px、左右padding:20px、枠なしの箱の外側の幅はどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "340px"
+        },
+        {
+          "id": "c2",
+          "text": "300px"
+        },
+        {
+          "id": "c3",
+          "text": "260px"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "内容の幅300pxに左右の内側余白40pxが加わります。",
+      "hint": "指定した幅に何を含めるかで、実際の大きさが変わります。",
+      "remediation": "widthは幅、heightは高さです。標準的なcontent-boxの指定では、幅とは別にpaddingやborderが加わります。box-sizing: border-boxなら、指定幅に内側の余白と枠を含めます。",
+      "example": "幅300pxの箱に左右20pxのpaddingを付けるとき、幅に内側の余白を含める設定かどうかを確認します。"
+    },
+    {
+      "id": "WB04-O3-Q2",
+      "version": 1,
+      "objectiveId": "WB04-O3",
+      "objectiveTitle": "幅・高さと収まり",
+      "type": "single_choice",
+      "prompt": "高さを固定したカードに長い文章を入れました。確認すべきことはどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "内容のはみ出しや欠落"
+        },
+        {
+          "id": "c2",
+          "text": "文字数に関係なく必ず収まるという前提"
+        },
+        {
+          "id": "c3",
+          "text": "ファイル名の長さだけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "固定した高さと内容量の関係を確認します。",
+      "hint": "指定した幅に何を含めるかで、実際の大きさが変わります。",
+      "remediation": "widthは幅、heightは高さです。標準的なcontent-boxの指定では、幅とは別にpaddingやborderが加わります。box-sizing: border-boxなら、指定幅に内側の余白と枠を含めます。",
+      "example": "幅300pxの箱に左右20pxのpaddingを付けるとき、幅に内側の余白を含める設定かどうかを確認します。"
+    },
+    {
+      "id": "WB04-O3-Q3",
+      "version": 1,
+      "objectiveId": "WB04-O3",
+      "objectiveTitle": "幅・高さと収まり",
+      "type": "single_choice",
+      "prompt": "border-boxについて適切な説明はどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "指定幅にpaddingとborderを含める"
+        },
+        {
+          "id": "c2",
+          "text": "指定幅に必ずmarginまで含める"
+        },
+        {
+          "id": "c3",
+          "text": "文字の大きさを自動で統一する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "border-boxでも外側のmarginは指定幅の外です。",
+      "hint": "指定した幅に何を含めるかで、実際の大きさが変わります。",
+      "remediation": "widthは幅、heightは高さです。標準的なcontent-boxの指定では、幅とは別にpaddingやborderが加わります。box-sizing: border-boxなら、指定幅に内側の余白と枠を含めます。",
+      "example": "幅300pxの箱に左右20pxのpaddingを付けるとき、幅に内側の余白を含める設定かどうかを確認します。"
+    }
+  ]
+}
