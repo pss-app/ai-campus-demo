@@ -11,8 +11,8 @@ const read=(course,file)=>JSON.parse(fs.readFileSync(path.join(root,'content/cou
   page.on('response',r=>{if(r.status()>=400)failures.push(`${r.status()} ${r.url()}`);});
   await page.goto(base+'/');await expect(page.getByRole('heading',{level:1})).toContainText('言葉を知る');
   await expect(page.getByText(/公開デモ：ログイン/)).toBeVisible();
-  await page.getByRole('link',{name:'コースを選ぶ',exact:true}).click();await expect(page.locator('.course-card')).toHaveCount(3);
-  for(const courseId of ['pc-foundations','file-data','web-foundations']){
+  await page.getByRole('link',{name:'コースを選ぶ',exact:true}).click();await expect(page.locator('.course-card')).toHaveCount(4);
+  for(const courseId of ['pc-foundations','file-data','web-foundations','internet-foundations']){
    const course=read(courseId,'course.json'),first=course.lessons[0],bank=read(courseId,`assessments/${first.slug}.json`);
    const route=`${base}/courses/${courseId}/lessons/${first.slug}/`;
    await page.goto(route);await expect(page.getByRole('heading',{name:'今回覚えること'})).toBeVisible();
@@ -57,9 +57,25 @@ const read=(course,file)=>JSON.parse(fs.readFileSync(path.join(root,'content/cou
   fs.mkdirSync(path.join(root,'test-results'),{recursive:true});
   await page.locator('.box-demo').screenshot({path:path.join(root,'test-results/web-spacing-mobile.png')});
   await page.getByRole('button',{name:'余白を初期値に戻す'}).click();await expect(padding).toHaveValue('8');await expect(margin).toHaveValue('8');
+  await page.goto(base+'/courses/internet-foundations/lessons/net-url/');
+  await expect(page.locator('.url-whole')).toHaveText('https://shop.example/menu/cut?day=sat#price');
+  await expect(page.locator('.url-result dl')).toContainText('shop.example');
+  await expect(page.locator('.url-result dl')).toContainText('#price');
+  await expect(page.getByText('通常のHTTP要求の対象：/menu/cut?day=sat',{exact:true})).toBeVisible();
+  await page.getByRole('radio',{name:'料金ページの例',exact:true}).focus();await page.keyboard.press('ArrowDown');
+  await expect(page.getByRole('radio',{name:'ポート番号のある例',exact:true})).toBeChecked();
+  await expect(page.locator('.url-result dd').nth(2)).toHaveText('8443');
+  await page.getByRole('radio',{name:'別のホスト名の例',exact:true}).check();
+  await expect(page.locator('.url-result dd').nth(1)).toHaveText('help.shop.example');
+  await expect(page.locator('.url-result dd').nth(4)).toHaveText('?from=top');
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  assert.deepEqual((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze()).violations,[]);
+  await page.getByRole('radio',{name:'別のホスト名の例',exact:true}).focus();
+  await page.locator('.url-demo').screenshot({path:path.join(root,'test-results/internet-url-mobile.png')});
   await page.getByRole('link',{name:'AI CAMPUS ホーム'}).click();await expect(page).toHaveURL(base+'/');
-  assert.deepEqual(failures,[]);console.log(`PASS: ${base} — 28 lesson pages, three course learning flows, home link, mobile layout, no asset or JS errors`);
+  assert.deepEqual(failures,[]);console.log(`PASS: ${base} — 36 lesson pages, four course learning flows, home link, mobile layout, no asset or JS errors`);
  }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});
+
 
 

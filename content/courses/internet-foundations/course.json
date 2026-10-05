@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "internet-foundations",
+  "title": "インターネットの仕組み",
+  "description": "名前から接続・応答・公開・計測までのつながりを学び、サイトの公開先と動く範囲を自分で説明できるようになる。",
+  "audience": "Web画面の部品を学び、公開や接続、アクセス計測の仕組みを理解したい方",
+  "version": 1,
+  "status": "draft",
+  "finalTask": {
+    "title": "店舗サイトの公開・運用メモ",
+    "description": "架空の店舗サイトの公開URL、ドメイン・DNS・ホスティングの管理先、管理者、更新期限、ソースの場所、公開手順、保存先、計測の定義、復旧方法を整理します。実装済み・未接続・未確認を分け、秘密の値は記載しません。"
+  },
+  "lessons": [
+    {
+      "id": "NT01",
+      "slug": "net-vocabulary",
+      "title": "最初に覚える：インターネットの言葉",
+      "order": 1,
+      "goal": "ネットワーク・インターネット・Web、クライアントとサーバーの役割を区別できる。",
+      "objectiveIds": [
+        "NT01-O1",
+        "NT01-O2",
+        "NT01-O3"
+      ]
+    },
+    {
+      "id": "NT02",
+      "slug": "net-url",
+      "title": "URLを部品に分けて読む",
+      "order": 2,
+      "goal": "通信方法・ホスト名・パス・クエリー・フラグメントを区別できる。",
+      "objectiveIds": [
+        "NT02-O1",
+        "NT02-O2",
+        "NT02-O3"
+      ]
+    },
+    {
+      "id": "NT03",
+      "slug": "net-domain-dns",
+      "title": "ドメイン・DNS・IPアドレス",
+      "order": 3,
+      "goal": "名前の登録、接続先を調べる仕組み、公開する場所が別の役割だと説明できる。",
+      "objectiveIds": [
+        "NT03-O1",
+        "NT03-O2",
+        "NT03-O3"
+      ]
+    },
+    {
+      "id": "NT04",
+      "slug": "net-hosting",
+      "title": "サーバーに置くことと公開すること",
+      "order": 4,
+      "goal": "制作元・ビルド・配信先を分け、静的ページとサーバー処理の違いを理解できる。",
+      "objectiveIds": [
+        "NT04-O1",
+        "NT04-O2",
+        "NT04-O3"
+      ]
+    },
+    {
+      "id": "NT05",
+      "slug": "net-http",
+      "title": "要求と応答：HTTP・HTTPS",
+      "order": 5,
+      "goal": "要求・応答・ステータスコード・暗号化・認証を混同せず説明できる。",
+      "objectiveIds": [
+        "NT05-O1",
+        "NT05-O2",
+        "NT05-O3"
+      ]
+    },
+    {
+      "id": "NT06",
+      "slug": "net-troubleshooting",
+      "title": "開かない・古い・保存されないを切り分ける",
+      "order": 6,
+      "goal": "症状を分類し、観察した事実と推測を分けて確認できる。",
+      "objectiveIds": [
+        "NT06-O1",
+        "NT06-O2",
+        "NT06-O3"
+      ]
+    },
+    {
+      "id": "NT07",
+      "slug": "net-measurement",
+      "title": "アクセス・インプレッション・成果を分ける",
+      "order": 7,
+      "goal": "検索表示・クリック・閲覧・問い合わせを区別し、数値の条件と測定範囲を確認できる。",
+      "objectiveIds": [
+        "NT07-O1",
+        "NT07-O2",
+        "NT07-O3"
+      ]
+    },
+    {
+      "id": "NT08",
+      "slug": "net-ownership",
+      "title": "公開サイトを説明し、引き継ぐ",
+      "order": 8,
+      "goal": "管理先・更新・障害対応・公開範囲を整理し、AI任せにしない運用メモを作れる。",
+      "objectiveIds": [
+        "NT08-O1",
+        "NT08-O2",
+        "NT08-O3"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "NT02",
+  "lessonVersion": 1,
+  "questions": [
+    {
+      "id": "NT02-O1-Q1",
+      "version": 1,
+      "objectiveId": "NT02-O1",
+      "objectiveTitle": "通信方法と接続先",
+      "type": "single_choice",
+      "prompt": "https://shop.example/menu/ のホスト名はどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "shop.example"
+        },
+        {
+          "id": "c2",
+          "text": "https"
+        },
+        {
+          "id": "c3",
+          "text": "/menu/"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "接続先の名前と通信方法、パスを分けます。",
+      "hint": "URL全体と、接続先の名前を区別します。",
+      "remediation": "URLはWeb上の情報などの場所とアクセス方法を示す表現です。https://shop.example/menu/ では、httpsが通信方法を示すスキーム、shop.exampleがホスト名、/menu/がパスです。",
+      "example": "長いURLをそのまま覚えるより、通信方法、ホスト名、その後のパスに分けると、どこが変わったか比較できます。"
+    },
+    {
+      "id": "NT02-O1-Q2",
+      "version": 1,
+      "objectiveId": "NT02-O1",
+      "objectiveTitle": "通信方法と接続先",
+      "type": "single_choice",
+      "prompt": "https://shop.example:8443/ の8443は何ですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "ポート番号"
+        },
+        {
+          "id": "c2",
+          "text": "文書のページ数"
+        },
+        {
+          "id": "c3",
+          "text": "登録した利用者の人数"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "接続先の通信の入口を区別する情報です。",
+      "hint": "URL全体と、接続先の名前を区別します。",
+      "remediation": "URLはWeb上の情報などの場所とアクセス方法を示す表現です。https://shop.example/menu/ では、httpsが通信方法を示すスキーム、shop.exampleがホスト名、/menu/がパスです。",
+      "example": "長いURLをそのまま覚えるより、通信方法、ホスト名、その後のパスに分けると、どこが変わったか比較できます。"
+    },
+    {
+      "id": "NT02-O1-Q3",
+      "version": 1,
+      "objectiveId": "NT02-O1",
+      "objectiveTitle": "通信方法と接続先",
+      "type": "single_choice",
+      "prompt": "shop.example と help.shop.example の比較として適切なのはどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "異なるホスト名として扱う"
+        },
+        {
+          "id": "c2",
+          "text": "文字が一部同じなので必ず全設定が同じ"
+        },
+        {
+          "id": "c3",
+          "text": "後半が同じなので同じファイルを指す"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "似ている名前でも対象を正確に確認します。",
+      "hint": "URL全体と、接続先の名前を区別します。",
+      "remediation": "URLはWeb上の情報などの場所とアクセス方法を示す表現です。https://shop.example/menu/ では、httpsが通信方法を示すスキーム、shop.exampleがホスト名、/menu/がパスです。",
+      "example": "長いURLをそのまま覚えるより、通信方法、ホスト名、その後のパスに分けると、どこが変わったか比較できます。"
+    },
+    {
+      "id": "NT02-O2-Q1",
+      "version": 1,
+      "objectiveId": "NT02-O2",
+      "objectiveTitle": "パスとクエリー",
+      "type": "single_choice",
+      "prompt": "/menu/?day=sat と /menu/?day=sun で異なる部分はどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "クエリーの値"
+        },
+        {
+          "id": "c2",
+          "text": "必ずホスト名"
+        },
+        {
+          "id": "c3",
+          "text": "通信方法"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "?以降の条件が変わっています。",
+      "hint": "ページや機能を示す部分と、追加の条件を区別します。",
+      "remediation": "パスは、接続先でどの情報や機能を求めるかを示す部分です。/menu/cut のように階層に見えても、サーバー内の実際のフォルダーと一対一に対応するとは限りません。",
+      "example": "/menu/?day=sat と /menu/?day=sun なら、ページのパスは同じで、渡す条件が違います。"
+    },
+    {
+      "id": "NT02-O2-Q2",
+      "version": 1,
+      "objectiveId": "NT02-O2",
+      "objectiveTitle": "パスとクエリー",
+      "type": "single_choice",
+      "prompt": "URLのパスについて適切なのはどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "実際のサーバー内フォルダーと一致するとは限らない"
+        },
+        {
+          "id": "c2",
+          "text": "全て実在するフォルダー名そのものである"
+        },
+        {
+          "id": "c3",
+          "text": "パスを知れば必ず編集権限も得られる"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "サービス側がパスと機能を対応付ける場合があります。",
+      "hint": "ページや機能を示す部分と、追加の条件を区別します。",
+      "remediation": "パスは、接続先でどの情報や機能を求めるかを示す部分です。/menu/cut のように階層に見えても、サーバー内の実際のフォルダーと一対一に対応するとは限りません。",
+      "example": "/menu/?day=sat と /menu/?day=sun なら、ページのパスは同じで、渡す条件が違います。"
+    },
+    {
+      "id": "NT02-O2-Q3",
+      "version": 1,
+      "objectiveId": "NT02-O2",
+      "objectiveTitle": "パスとクエリー",
+      "type": "multiple_choice",
+      "prompt": "クエリーについて確認すべきものをすべて選んでください。",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "サービス上でその条件が何を意味するか"
+        },
+        {
+          "id": "c2",
+          "text": "共有してよい値か"
+        },
+        {
+          "id": "c3",
+          "text": "?があれば必ず不正なURLであると判断する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1",
+        "c2"
+      ],
+      "explanation": "条件の意味と含まれる情報を確認します。",
+      "hint": "ページや機能を示す部分と、追加の条件を区別します。",
+      "remediation": "パスは、接続先でどの情報や機能を求めるかを示す部分です。/menu/cut のように階層に見えても、サーバー内の実際のフォルダーと一対一に対応するとは限りません。",
+      "example": "/menu/?day=sat と /menu/?day=sun なら、ページのパスは同じで、渡す条件が違います。"
+    },
+    {
+      "id": "NT02-O3-Q1",
+      "version": 1,
+      "objectiveId": "NT02-O3",
+      "objectiveTitle": "フラグメントとURLの共有",
+      "type": "single_choice",
+      "prompt": "https://shop.example/menu/#price の#priceの通常の扱いはどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "ブラウザ側で扱い、通常のHTTP要求には含めない"
+        },
+        {
+          "id": "c2",
+          "text": "ホスト名の一部としてDNSへ送る"
+        },
+        {
+          "id": "c3",
+          "text": "サーバーの保存フォルダーを必ず作成する"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "フラグメントとサーバーへの要求を区別します。",
+      "hint": "ページ内の位置を示す部分と、サーバーへ送る要求を区別します。",
+      "remediation": "#の後ろはフラグメントと呼び、ページ内の見出しなどの位置を示す用途があります。通常のHTTP要求では、この部分はサーバーへ送られず、ブラウザ側で扱われます。",
+      "example": "料金ページの#priceを共有すれば、対応する位置へ移動する設計にできます。対象のidがなければ期待した場所へ移動しないことがあります。"
+    },
+    {
+      "id": "NT02-O3-Q2",
+      "version": 1,
+      "objectiveId": "NT02-O3",
+      "objectiveTitle": "フラグメントとURLの共有",
+      "type": "single_choice",
+      "prompt": "ページ内リンクが目的の場所へ移動しません。確認する対象はどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "指定した位置に対応する要素のidなど"
+        },
+        {
+          "id": "c2",
+          "text": "画像の容量だけ"
+        },
+        {
+          "id": "c3",
+          "text": "DNSの名前だけ"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "フラグメントと移動先の対応を確認します。",
+      "hint": "ページ内の位置を示す部分と、サーバーへ送る要求を区別します。",
+      "remediation": "#の後ろはフラグメントと呼び、ページ内の見出しなどの位置を示す用途があります。通常のHTTP要求では、この部分はサーバーへ送られず、ブラウザ側で扱われます。",
+      "example": "料金ページの#priceを共有すれば、対応する位置へ移動する設計にできます。対象のidがなければ期待した場所へ移動しないことがあります。"
+    },
+    {
+      "id": "NT02-O3-Q3",
+      "version": 1,
+      "objectiveId": "NT02-O3",
+      "objectiveTitle": "フラグメントとURLの共有",
+      "type": "single_choice",
+      "prompt": "長いURLを共有する前に適切な確認はどれですか？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "目的の内容を開けるかと、秘密の値を含まないか"
+        },
+        {
+          "id": "c2",
+          "text": "短くするため?以降を無条件に全て消す"
+        },
+        {
+          "id": "c3",
+          "text": "ページが表示されたので何が含まれていてもよいとする"
+        }
+      ],
+      "correctChoiceIds": [
+        "c1"
+      ],
+      "explanation": "必要な条件を保ち、共有範囲も確かめます。",
+      "hint": "ページ内の位置を示す部分と、サーバーへ送る要求を区別します。",
+      "remediation": "#の後ろはフラグメントと呼び、ページ内の見出しなどの位置を示す用途があります。通常のHTTP要求では、この部分はサーバーへ送られず、ブラウザ側で扱われます。",
+      "example": "料金ページの#priceを共有すれば、対応する位置へ移動する設計にできます。対象のidがなければ期待した場所へ移動しないことがあります。"
+    }
+  ]
+}
