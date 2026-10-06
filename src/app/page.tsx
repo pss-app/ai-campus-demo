@@ -1,5 +1,10 @@
-import Link from 'next/link';
-import { courseCatalog } from '@/lib/course-catalog';
-import { CourseCards } from '@/components/content/course-cards';
+import { HomeHero } from '@/components/home/home-hero';
+import { HomeSections } from '@/components/home/home-sections';
+import styles from '@/components/home/home.module.css';
 
-export default function Home(){return <main id="main-content" className="home-page" tabIndex={-1}><section className="home-intro"><p className="eyebrow">AI CAMPUSで、基礎から学ぶ</p><h1>言葉を知る。<br/>仕組みを理解する。<br/>自分で確かめられるようになる。</h1><p className="intro-text">AIが作ったものを、自分でも説明できるように。PCの部品や用語から、学びを一つずつ積み重ねます。</p><div className="button-row"><Link className="button" href="/courses">コースを選ぶ</Link><a className="button secondary" href="#how-to-learn">学び方を見る</a></div></section><section id="how-to-learn" className="home-section"><h2>学習の進め方</h2><ol className="how-list"><li><h3>解説を読んで、具体例で確かめる</h3><p>要点、説明、図、具体例の順に学びます。文字サイズはいつでも変更できます。</p></li><li><h3>短い確認問題に取り組む</h3><p>用語や仕組みを理解できたかを確認します。時間制限はありません。</p></li><li><h3>つまずいたところだけ復習する</h3><p>補足やヒントを使い、別の問題で確認します。正解した項目はやり直さずに進めます。</p></li></ol></section><section className="home-section" aria-label="基礎から積み重ねるコース"><CourseCards courses={courseCatalog}/></section></main>;}
+export default function Home() {
+  return <main id="main-content" className={styles.home} tabIndex={-1}>
+    <HomeHero />
+    <HomeSections />
+  </main>;
+}

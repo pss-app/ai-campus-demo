@@ -9,6 +9,7 @@ fs.rmSync(stage,{recursive:true,force:true});fs.mkdirSync(stage);
 for(const file of ['package.json','package-lock.json','tsconfig.json','next-env.d.ts'])fs.copyFileSync(path.join(root,file),path.join(stage,file));
 fs.cpSync(path.join(root,'src'),path.join(stage,'src'),{recursive:true,filter:source=>source!==path.join(root,'src/app/api')});
 fs.cpSync(path.join(root,'content/courses'),path.join(stage,'content/courses'),{recursive:true});
+if(fs.existsSync(path.join(root,'public')))fs.cpSync(path.join(root,'public'),path.join(stage,'public'),{recursive:true});
 const courses=fs.readdirSync(path.join(stage,'content/courses')).map(id=>JSON.parse(fs.readFileSync(path.join(stage,'content/courses',id,'course.json'),'utf8')));
 const materials={};
 for(const course of courses)for(const lesson of course.lessons){
@@ -26,7 +27,7 @@ for(const route of ['page.tsx','quiz/page.tsx'])fs.appendFileSync(path.join(stag
 const basePath=process.env.PAGES_BASE_PATH??'/ai-campus-demo';
 if(!/^\/[a-zA-Z0-9-]+$/.test(basePath))throw Error('Invalid Pages base path');
 fs.writeFileSync(path.join(stage,'next.config.ts'),`import type {NextConfig} from 'next';\nconst config:NextConfig={output:'export',basePath:${JSON.stringify(basePath)},trailingSlash:true,poweredByHeader:false};\nexport default config;\n`);
-const result=spawnSync(process.execPath,[path.join(root,'node_modules/next/dist/bin/next'),'build'],{cwd:stage,stdio:'inherit',env:{...process.env,NEXT_PUBLIC_PAGES_DEMO:'true'}});
+const result=spawnSync(process.execPath,[path.join(root,'node_modules/next/dist/bin/next'),'build'],{cwd:stage,stdio:'inherit',env:{...process.env,NEXT_PUBLIC_PAGES_DEMO:'true',NEXT_PUBLIC_PAGES_BASE_PATH:basePath}});
 if(result.status!==0)process.exit(result.status??1);
 // Some Next exports emit segment payloads as nested folders, while the client
 // requests dot-separated names. Keep both layouts for plain static hosting.

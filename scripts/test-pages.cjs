@@ -9,7 +9,7 @@ const read=(course,file)=>JSON.parse(fs.readFileSync(path.join(root,'content/cou
   const context=await browser.newContext();const page=await context.newPage();const failures=[];
   page.on('pageerror',e=>failures.push(e.message));
   page.on('response',r=>{if(r.status()>=400)failures.push(`${r.status()} ${r.url()}`);});
-  await page.goto(base+'/');await expect(page.getByRole('heading',{level:1})).toContainText('言葉を知る');
+  await page.goto(base+'/');await expect(page.getByRole('heading',{level:1})).toContainText('AIを学ぶ');
   await expect(page.getByText(/公開デモ：ログイン/)).toBeVisible();
   await page.getByRole('link',{name:'コースを選ぶ',exact:true}).click();await expect(page.locator('.course-card')).toHaveCount(4);
   for(const courseId of ['pc-foundations','file-data','web-foundations','internet-foundations']){
