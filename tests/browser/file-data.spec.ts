@@ -6,7 +6,7 @@ const course=JSON.parse(readFileSync('content/courses/file-data/course.json','ut
 const bank=JSON.parse(readFileSync('content/courses/file-data/assessments/data-vocabulary.json','utf8')) as Assessment;
 const base='/courses/file-data';
 test('新コースの入口・回答・次のレッスン・記録がPC基礎と分かれる',async({page})=>{
- await page.goto('/courses');await page.getByRole('link',{name:'ファイルとデータの基礎のカリキュラムを見る',exact:true}).click();
+ await page.goto('/courses');await page.getByRole('link',{name:/^カリキュラムを見る\s*：ファイルとデータの基礎$/}).click();
  await expect(page).toHaveURL(base);await page.getByRole('link',{name:'最初のレッスンへ',exact:true}).click();
  await expect(page).toHaveURL(base+'/lessons/data-vocabulary');
  await page.getByLabel('学習メモ',{exact:true}).fill('形式と拡張子の違いを説明する。');

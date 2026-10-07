@@ -11,8 +11,9 @@ const read=(course,file)=>JSON.parse(fs.readFileSync(path.join(root,'content/cou
   page.on('response',r=>{if(r.status()>=400)failures.push(`${r.status()} ${r.url()}`);});
   await page.goto(base+'/');await expect(page.getByRole('heading',{level:1})).toContainText('AIを学ぶ');
   await expect(page.getByText(/公開デモ：ログイン/)).toBeVisible();
-  await page.getByRole('link',{name:'コースを選ぶ',exact:true}).click();await expect(page.locator('.course-card')).toHaveCount(4);
-  for(const courseId of ['pc-foundations','file-data','web-foundations','internet-foundations']){
+  const courseIds=fs.readdirSync(path.join(root,'content/courses'));
+  await page.getByRole('link',{name:'コースを選ぶ',exact:true}).click();await expect(page.locator('.course-card')).toHaveCount(courseIds.length);
+  for(const courseId of courseIds){
    const course=read(courseId,'course.json'),first=course.lessons[0],bank=read(courseId,`assessments/${first.slug}.json`);
    const route=`${base}/courses/${courseId}/lessons/${first.slug}/`;
    await page.goto(route);await expect(page.getByRole('heading',{name:'今回覚えること'})).toBeVisible();
@@ -73,7 +74,7 @@ const read=(course,file)=>JSON.parse(fs.readFileSync(path.join(root,'content/cou
   await page.getByRole('radio',{name:'別のホスト名の例',exact:true}).focus();
   await page.locator('.url-demo').screenshot({path:path.join(root,'test-results/internet-url-mobile.png')});
   await page.getByRole('link',{name:'AI CAMPUS ホーム'}).click();await expect(page).toHaveURL(base+'/');
-  assert.deepEqual(failures,[]);console.log(`PASS: ${base} — 36 lesson pages, four course learning flows, home link, mobile layout, no asset or JS errors`);
+  assert.deepEqual(failures,[]);console.log(`PASS: ${base} — all lesson pages, ${courseIds.length} course learning flows, home link, mobile layout, no asset or JS errors`);
  }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});
 

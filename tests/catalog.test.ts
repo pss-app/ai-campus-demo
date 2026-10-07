@@ -33,7 +33,23 @@ test('全コースのID・URL・出題対象は一意で、各論点に別問題
    assert(!JSON.stringify(lesson).includes('correctChoiceIds'));
   });
  }
- assert.equal(questions,324);
+ assert.equal(questions,396);
+});
+
+test('AI基礎の全レッスンを確認でき、他コースの進捗を変更しない',()=>{
+ const state=fresh(),course=courseCatalog.find(c=>c.id==='ai-foundations')!;
+ assert.equal(course.lessons.length,8);
+ for(const summary of course.lessons){
+  const lesson=read<Lesson>(course.id,`lessons/${summary.slug}.json`),bank=read<Assessment>(course.id,`assessments/${summary.slug}.json`);
+  assert(lesson.sources.length>0);
+  assert(accessible(course,summary.slug,state));
+  const attempt=startAttempt(state,course,lesson,bank,summary.id);
+  for(const row of attempt.rows)row.selectedChoiceIds=bank.questions.find(q=>q.id===row.questionId)!.correctChoiceIds;
+  submitAttempt(state,attempt,bank);
+ }
+ assert.equal(publicProgress(state).records.length,24);
+ assert(Object.keys(state.confirmations).every(id=>id.startsWith('AI')));
+ for(const other of courseCatalog.filter(c=>c.id!==course.id))assert(!accessible(other,other.lessons[1].slug,state));
 });
 
 test('インターネット基礎を進級し、URL練習と指標問題の対応を確認する',()=>{

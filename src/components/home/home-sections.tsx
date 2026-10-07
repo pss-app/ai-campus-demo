@@ -1,16 +1,11 @@
 import Link from 'next/link';
 import { courseCatalog } from '@/lib/course-catalog';
 import { courseUrl } from '@/lib/routes';
-import { HomeIcon, type IconName } from './home-icon';
+import { HomeIcon } from './home-icon';
+import { coursePresentation } from '@/lib/course-presentation';
 import { trialLesson } from './home-hero';
 import styles from './home.module.css';
 
-const courseVisuals: { icon: IconName; label: string; terms: string[] }[] = [
-  { icon: 'screen', label: 'PCの基礎', terms: ['ハードウェア', 'ソフトウェア', 'メモリ'] },
-  { icon: 'folder', label: 'ファイルとデータ', terms: ['保存場所', '拡張子', '共有'] },
-  { icon: 'code', label: 'Web・HTML', terms: ['HTML', 'CSS', '画面の仕組み'] },
-  { icon: 'globe', label: 'インターネット', terms: ['URL', 'サーバー', 'サイトの公開'] },
-];
 const steps = [
   { icon: 'book' as const, title: '読んで、理解する', text: '言葉の意味を知り、図や身近な例で仕組みを学びます。自分のペースで読み進められます。' },
   { icon: 'check' as const, title: 'ミニテストで確かめる', text: '「理解した」ボタンから確認問題へ。覚えた言葉や仕組みを、具体的な場面で確かめます。' },
@@ -63,7 +58,7 @@ export function HomeSections() {
     <section id="home-courses" className={`${styles.section} ${styles.courseSection}`}><div className={styles.container}>
       <SectionHeading label="COURSES" title={`基礎からつながる、${courseCatalog.length}つのコース。`} text="初めての方は01から。内容を確かめて、自分に必要な学びを選べます。"/>
       <div className={styles.courseGrid}>{courseCatalog.map((course, index) => {
-        const visual = courseVisuals[index] ?? {icon: 'book' as const, label: course.title, terms: []};
+        const visual = coursePresentation(course.id);
         return <article key={course.id} className={styles.courseCard}>
           <div className={styles.courseArt} data-tone={index}><span className={styles.courseNumber}>COURSE 0{index + 1}</span><HomeIcon name={visual.icon}/><strong>{visual.label}</strong></div>
           <div className={styles.courseBody}><p className={styles.courseMeta}>基礎コース<span>{course.lessons.length}レッスン</span></p><h3>{course.title}</h3><p>{course.description}</p><ul className={styles.terms}>{visual.terms.map(term => <li key={term}>{term}</li>)}</ul><Link href={courseUrl(course.id)}>カリキュラムを見る<span className="sr-only">：{course.title}</span><HomeIcon name="arrow"/></Link></div>

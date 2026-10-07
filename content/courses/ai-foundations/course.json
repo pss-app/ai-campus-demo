@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "ai-foundations",
+  "title": "AIの基本と言葉",
+  "description": "モデル・コンテキスト・検索・ツールの役割を知り、AIに渡すものと、返された結果を確かめる方法を学びます。",
+  "audience": "PC・ファイル・Webの基礎を学び、AIの仕組みと言葉を整理して使い始めたい方",
+  "version": 1,
+  "status": "draft",
+  "finalTask": {
+    "title": "AIへ依頼する前の準備メモ",
+    "description": "架空店舗の休業案内を題材に、目的、読み手、参照資料と版、渡す情報、未確認事項、AIが行う作業、確認項目、公開までの役割を整理します。実在する顧客情報は使いません。"
+  },
+  "lessons": [
+    {
+      "id": "AI01",
+      "slug": "ai-vocabulary",
+      "title": "最初に覚える：AIの基本と言葉",
+      "order": 1,
+      "goal": "生成AI・モデル・サービス・プロンプト・出力を、役割で区別できる。",
+      "objectiveIds": [
+        "AI01-O1",
+        "AI01-O2",
+        "AI01-O3"
+      ]
+    },
+    {
+      "id": "AI02",
+      "slug": "ai-training-generation",
+      "title": "AIはどう学び、どう答えを作るのか",
+      "order": 2,
+      "goal": "学習・推論・トークンを区別し、生成した文章と検索した原文の違いを説明できる。",
+      "objectiveIds": [
+        "AI02-O1",
+        "AI02-O2",
+        "AI02-O3"
+      ]
+    },
+    {
+      "id": "AI03",
+      "slug": "ai-context",
+      "title": "コンテキスト：AIに渡す背景と材料",
+      "order": 3,
+      "goal": "指示・背景・参照資料を分け、回答に必要な情報と不足している情報を見つけられる。",
+      "objectiveIds": [
+        "AI03-O1",
+        "AI03-O2",
+        "AI03-O3"
+      ]
+    },
+    {
+      "id": "AI04",
+      "slug": "ai-conversation-memory",
+      "title": "会話の履歴と、AIが参照する範囲",
+      "order": 4,
+      "goal": "履歴・コンテキストウィンドウ・保存された記憶を区別し、会話を引き継ぐ材料を準備できる。",
+      "objectiveIds": [
+        "AI04-O1",
+        "AI04-O2",
+        "AI04-O3"
+      ]
+    },
+    {
+      "id": "AI05",
+      "slug": "ai-search-evidence",
+      "title": "検索した情報と、AIの回答を分けて見る",
+      "order": 5,
+      "goal": "生成・検索・参照元を区別し、数字や引用を原資料と照合できる。",
+      "objectiveIds": [
+        "AI05-O1",
+        "AI05-O2",
+        "AI05-O3"
+      ]
+    },
+    {
+      "id": "AI06",
+      "slug": "ai-files-modalities",
+      "title": "文章・画像・ファイルを渡すとき",
+      "order": 6,
+      "goal": "ファイルの添付と内容の読み取りを区別し、読み取れた範囲を具体的に確認できる。",
+      "objectiveIds": [
+        "AI06-O1",
+        "AI06-O2",
+        "AI06-O3"
+      ]
+    },
+    {
+      "id": "AI07",
+      "slug": "ai-tools-actions",
+      "title": "ツールとエージェント：答えることと動かすこと",
+      "order": 7,
+      "goal": "モデル・ツール・エージェントの役割を分け、操作の対象と結果を確認できる。",
+      "objectiveIds": [
+        "AI07-O1",
+        "AI07-O2",
+        "AI07-O3"
+      ]
+    },
+    {
+      "id": "AI08",
+      "slug": "ai-first-workflow",
+      "title": "使う前に整理する：情報・確認・作業の終わり",
+      "order": 8,
+      "goal": "一つの依頼について、渡す情報・確認方法・実行範囲を整理できる。",
+      "objectiveIds": [
+        "AI08-O1",
+        "AI08-O2",
+        "AI08-O3"
+      ]
+    }
+  ]
+}
